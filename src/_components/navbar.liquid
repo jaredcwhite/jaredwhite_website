@@ -1,5 +1,47 @@
-<nav>
-  <a href="/">Home</a><br/>
-  <a href="/about">About</a><br/>
-  <a href="/posts">Posts</a><br/>
-</nav>
+<responsive-sidebar>
+  <button id="nav-tab" onclick='
+    if (this.parentNode.getAttribute("open") == "") {
+      this.parentNode.removeAttribute("open")
+      document.querySelector("main-content").removeAttribute("underneath")
+    } else {
+      this.parentNode.setAttribute("open", "")
+      document.querySelector("main-content").setAttribute("underneath", "")
+    }
+  '>=</button>
+  <nav>
+    <h2 style="margin-top:0">Explore</h2>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/posts">Posts</a></li>
+    </ul>
+
+    <h2>Follow</h2>
+
+    <ul>
+      <li><a href="https://twitter.com/jaredcwhite">Twitter</a></li>
+      <li><a href="https://jaredcwhite.tumblr.com">Tumblr</a></li>
+      <li><a href="https://github.com/jaredcwhite">GitHub</a></li>
+    </ul>
+
+    <h2>Subscribe</h2>
+
+    <p>Creator Class newsletter is da bomb!</p>
+
+    <h2>Popular Tags</h2>
+
+    <ul>
+      <li><a href="/tag/portland/"><strong>#</strong>portland</a></li>
+      <li><a href="/tag/oregonexplored/"><strong>#</strong>oregonexplored</a></li>
+      <li><a href="/tag/apple/"><strong>#</strong>Apple</a></li>
+      <li><a href="/tag/creativity"><strong>#</strong>creativity</a></li>
+      <li><a href="/tag/spirituality/"><strong>#</strong>spirituality</a></li>
+      <li><a href="/tag/mindfulness/"><strong>#</strong>mindfulness</a></li>
+      <li><a href="/tag/lifehacks/"><strong>#</strong>lifehacks</a></li>
+      <li><a href="/tag/openweb/"><strong>#</strong>openweb</a></li>
+      <li><a href="/tag/minimalism/"><strong>#</strong>minimalism</a></li>
+      <li><a href="/tag/writing/"><strong>#</strong>writing</a></li>
+    </ul>
+  </nav>
+</responsive-sidebar>

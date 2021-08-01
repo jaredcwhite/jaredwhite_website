@@ -13,7 +13,7 @@ layout: default
 {% endif %}
 
 {% if resource.data.cloudinary_id %}
-  <p><img class="u-photo" src="https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/{{ resource.data.cloudinary_id }}.jpg" alt="Photo associated with the article"></p>
+  <p class="featured-image"><img class="u-photo" src="https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/{{ resource.data.cloudinary_id }}.jpg" alt="Photo associated with the article"></p>
 {% endif %}
 
 {% if resource.data.vimeo_id %}
