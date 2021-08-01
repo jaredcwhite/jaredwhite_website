@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.metadata, title: page.title %}
+  </head>
+  <body class="{{ page.layout }} {{ page.page_class }}">
+    <main>
+      <a href="/" style="text-decoration: none">
+        <h1 style="text-transform:uppercase; text-shadow:0px 0px 0.5px black; color:black; letter-spacing: -0.02em">
+          <h-inner style="display:inline-block; padding-bottom:0.4rem; border-bottom:7px solid black">
+            Jared White
+          </h-inner>
+          🌲
+        </h1>
+      </a>
+
+      <p id="tagline" style="width:100%; font-size: 110%"><strong>Expressively publishing on the open web since 1996. <br/>Entranced by Portland, Oregon since 2017.</strong></p>
+
+      <main-content>
+        {{ content }}
+      </main-content>
+      <aside>
+        {% render "navbar", metadata: site.metadata, page: page %}
+      </aside>
+    </main>
+
+    {% render "footer", metadata: site.metadata %}
+  </body>
+</html>

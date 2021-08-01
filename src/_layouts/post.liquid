@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<article>
+
+{% if resource.data.category == "articles" or resource.data.category == "links" or resource.data.category == "videos" %}
+<h2>{{ resource.data.title }}</h2>
+{% endif %}
+
+{% if resource.data.subtitle %}
+  <h3>{{ resource.data.subtitle }}</h3>
+{% endif %}
+
+{% if resource.data.cloudinary_id %}
+  <p><img class="u-photo" src="https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/{{ resource.data.cloudinary_id }}.jpg" alt="Photo associated with the article"></p>
+{% endif %}
+
+{% if resource.data.vimeo_id %}
+  <div class="video">
+    <div class="responsive-embed widescreen"><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+  </div>
+{% endif %}
+
+{% if resource.data.link_url %}
+  <a href="{{ resource.data.link_url }}" target="_blank"><blockquote>
+    {{ resource.data.link_excerpt | markdownify }}
+  </blockquote></a>
+{% endif %}
+
+{% if resource.data.category == "articles" %}
+{{ content }}
+{% else %}
+{{ content | hashtags }}
+{% endif %}
+
+</article>

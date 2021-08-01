@@ -1,0 +1,13 @@
+url: "https://jaredwhite.com" # the base hostname & protocol for your site, e.g. https://example.com
+
+permalink: pretty
+
+content_engine: resource
+
+# Other options you might want to investigate:
+# 
+# base_path: "/" # the subpath of your site, e.g. /blog
+timezone: America/Los_Angeles
+pagination:
+  enabled: true
+  per_page: 15

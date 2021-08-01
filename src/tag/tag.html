@@ -1,0 +1,28 @@
+---
+layout: page
+title: Tagged :prototype-term
+prototype:
+  term: tag
+  collection: posts
+---
+
+{% for post in paginator.resources %}
+  <li>
+    <a href="{{ post.relative_url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+    <li>
+      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li>
+      <a href="{{ paginator.next_page_path }}">Next Page</a>
+    </li>
+    {% endif %}
+  </ul>
+{% endif %}
