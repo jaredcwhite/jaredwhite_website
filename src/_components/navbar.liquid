@@ -17,6 +17,28 @@
       <li><a href="/posts">Posts</a></li>
     </ul>
 
+    <h2>Subscribe</h2>
+
+    <p>Fresh insight in your inbox twice a month with the <strong><a href="https://www.getrevue.co/profile/creatorclass">Creator Class</a></strong> newsletter.</p>
+
+    <div id="revue-embed">
+      <form action="https://www.getrevue.co/profile/creatorclass/add_subscriber" method="post" id="revue-form" name="revue-form">
+        <div class="revue-form-group">
+          <label for="member_email">Email address</label>
+          <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
+        </div>
+        <div class="revue-form-group">
+          <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
+          <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
+        </div>
+        
+        <div class="revue-form-actions text-center">
+          <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="button primary">
+        </div>
+        <small><div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></div></small>
+      </form>
+    </div>
+
     <h2>Follow</h2>
 
     <ul>
@@ -25,9 +47,9 @@
       <li><a href="https://github.com/jaredcwhite">GitHub</a></li>
     </ul>
 
-    <h2>Subscribe</h2>
+    <h2>Tumblr Photos</h2>
 
-    <p>Creator Class newsletter is da bomb!</p>
+    <tumblr-photos src="https://jwadmin.whitefusion.studio/tumblr/photos"></tumblr-photos>
 
     <h2>Popular Tags</h2>
 

@@ -145,7 +145,7 @@ main > aside {
 
   @media (min-width: 1024px) {
     &.faded {
-      opacity: 0.4;
+      opacity: 0.6;
 
       &:hover {
         opacity: 1;
@@ -191,6 +191,17 @@ responsive-sidebar {
   .featured-image {
     margin-left: -0.6rem;
     margin-right: -0.55rem;
+  }
+}
+
+@media (min-width: 1175px) {
+  main-content {
+    transform: translate(2vw, 0);
+  }
+}
+@media (min-width: 1250px) {
+  main-content {
+    transform: translate(4vw, 0);
   }
 }
 
