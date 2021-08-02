@@ -1,13 +1,15 @@
 <responsive-sidebar>
   <button id="nav-tab" onclick='
-    if (this.parentNode.getAttribute("open") == "") {
+    if (this.parentNode.getAttribute("open") === "") {
       this.parentNode.removeAttribute("open")
       document.querySelector("main-content").removeAttribute("underneath")
     } else {
       this.parentNode.setAttribute("open", "")
       document.querySelector("main-content").setAttribute("underneath", "")
     }
-  '>=</button>
+  '>
+    <sl-icon library="remixicon" name="system/menu"></sl-icon>
+  </button>
   <nav>
     <h2 style="margin-top:0">Explore</h2>
 
@@ -23,18 +25,21 @@
 
     <div id="revue-embed">
       <form action="https://www.getrevue.co/profile/creatorclass/add_subscriber" method="post" id="revue-form" name="revue-form">
-        <div class="revue-form-group">
+        <p class="revue-form-group">
           <label for="member_email">Email address</label>
           <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-        </div>
-        <div class="revue-form-group">
+        </p>
+        <p class="revue-form-group">
           <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
           <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
-        </div>
+        </p>
         
-        <div class="revue-form-actions text-center">
-          <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit" class="button primary">
-        </div>
+        <p class="revue-form-actions text-center">
+          <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+            <sl-icon library="remixicon" name="business/mail-send"></sl-icon>
+            Subscribe
+          </button>
+        </p>
         <small><div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></div></small>
       </form>
     </div>
@@ -42,9 +47,15 @@
     <h2>Follow</h2>
 
     <ul>
-      <li><a href="https://twitter.com/jaredcwhite">Twitter</a></li>
-      <li><a href="https://jaredcwhite.tumblr.com">Tumblr</a></li>
-      <li><a href="https://github.com/jaredcwhite">GitHub</a></li>
+      <li><a href="https://twitter.com/jaredcwhite">
+        <sl-icon library="remixicon" name="logos/twitter-fill" style="margin-right:8px"></sl-icon>Twitter
+      </a></li>
+      <li><a href="https://jaredcwhite.tumblr.com">
+        <sl-icon library="remixicon" name="logos/tumblr-fill" style="margin-right:8px"></sl-icon>Tumblr
+      </a></li>
+      <li><a href="https://github.com/jaredcwhite">
+        <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
+      </a></li>
     </ul>
 
     <h2>Tumblr Photos</h2>
