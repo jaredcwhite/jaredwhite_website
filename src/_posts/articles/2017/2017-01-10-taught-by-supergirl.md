@@ -14,9 +14,9 @@ However, once I really gave Season 1 a chance and allowed myself to become attac
 
 As a matter of fact, one of the most striking aspects of Kara Danvers (aka Supergirl) is her somewhat anachronistic demeanor. She is, in most respects, a traditionally feminine character. She's soft and pretty. She's compassionate.  She wears her emotions on her sleeve (despite her regular attempts to do otherwise). She's constantly second guessing herself. She's an executive assistant, which is essentially a fancy way of saying she's a secretary. She is afraid to shine, to stand out. And for good reason! Hiding god-like powers and blending into the crowd is no small feat.
 
-{% rendercontent "figure", caption: "Kara Danvers & Cat Grant (Credit: CBS/The CW)" %}
+{% liquid_render "figure", caption: "Kara Danvers & Cat Grant (Credit: CBS/The CW)" do %}
 ![Supergirl and Cat Grant]({{ 'supergirl-and-cat-grant' | cloudinary_url:'w_2048,c_limit,q_65' }})
-{% endrendercontent %}
+{% end %}
 
 Supergirl teaches us that, even when it seems women are particularly at a disadvantage of "having it all" and managing professional as well as personal lives with aplomb, it absolutely possible. Not only does Kara Danvers become better at playing Executive Assistant by day and Supergirl by night, with a side helping of romance for good measure, but she aids her sometimes mentor sometimes thorn-in-her-side boss Cat Grant, played by Calista Flockhart, in learning to embrace her feminine side and compassion for others without losing what makes her a successful businesswoman and CEO.
 

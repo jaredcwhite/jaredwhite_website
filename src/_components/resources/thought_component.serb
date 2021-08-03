@@ -1,0 +1,9 @@
+<article>
+  {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
+
+  <article-content>{{ resource.content | hashtags }}</article-content>
+
+  {%@ PublishedDateComponent resource: resource %}
+</article>
+
+<hr />

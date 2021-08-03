@@ -1,0 +1,17 @@
+<article>
+  {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
+
+  {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
+
+  {% if resource.data.link_url %}
+    <a href="{{ resource.data.link_url }}" style="text-decoration:none" target="_blank"><blockquote>
+      {{ resource.data.link_excerpt | markdownify }}
+    </blockquote></a>
+  {% end %}
+
+  {{ resource.content }}
+
+  {%@ PublishedDateComponent resource: resource %}
+</article>
+
+<hr />

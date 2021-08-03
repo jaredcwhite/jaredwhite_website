@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h2>
+  {{ resource.data.translate_title ? t(resource.data.title) : resource.data.title }}
+</h2>
+
+{{ content }}

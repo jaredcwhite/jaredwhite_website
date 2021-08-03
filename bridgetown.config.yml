@@ -3,6 +3,7 @@ url: "https://jaredwhite.com" # the base hostname & protocol for your site, e.g.
 permalink: pretty
 
 content_engine: resource
+template_engine: serbea
 
 # Other options you might want to investigate:
 # 

@@ -1,0 +1,47 @@
+---{%
+front_matter do
+  layout :page
+  title "categories.:prototype-term.name_plural"
+  translate_title true
+  prototype({
+    term: "category",
+    collection: "posts"
+  })
+end
+%}---
+
+{% if paginator.total_pages > 1 and paginator.previous_page %}
+  <p class="text-center">
+    {% if paginator.previous_page %}
+      <span style="margin: 0 0.8em">
+        <a href="{{ paginator.previous_page_path }}" class="button"><i class="fa fa-arrow-left"></i> Previous Page</a>
+      </span>
+    {% end %}
+    {% if paginator.next_page %}
+      <span style="margin: 0 0.8em">
+        <a href="{{ paginator.next_page_path }}" class="button">Next Page <i class="fa fa-arrow-right" style="margin-left:0.3em;margin-right:0"></i></a>
+      </span>
+    {% end %}
+  </p>
+{% end %}
+
+<resources-feed>
+  {% paginator.resources.each do |resource| %}
+    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3, show_thumbnail: true %}
+  {% end %}
+</resources-feed>
+
+{% if paginator.total_pages > 1 %}
+  <p class="text-center">
+    {% if paginator.previous_page %}
+      <span style="margin: 0 0.8em">
+        <a href="{{ paginator.previous_page_path }}" class="button"><i class="fa fa-arrow-left"></i> Previous Page</a>
+      </span>
+    {% end %}
+    {% if paginator.next_page %}
+      <span style="margin: 0 0.8em">
+        <a href="{{ paginator.next_page_path }}" class="button">Next Page <i class="fa fa-arrow-right" style="margin-left:0.3em;margin-right:0"></i></a>
+      </span>
+    {% end %}
+  </p>
+{% end %}

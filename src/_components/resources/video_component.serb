@@ -1,0 +1,24 @@
+<article>
+  {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
+
+  {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
+
+  {% if resource.data.vimeo_id && !show_thumbnail %}
+    <responsive-embed><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></responsive-embed>
+  {% elsif resource.data.cloudinary_id %}
+    {%@ FeaturedImageComponent resource: resource %}
+  {% end %}
+
+  {% if h_level == :h2%}
+    {{ resource.content | hashtags }}
+  {% else %}
+    <p>{{ resource.summary }}</p>
+
+    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+    <p>{{ "Watch Video" + icon | link_to: resource.relative_url, class: "button" }}</p>
+  {% end %}
+
+  {%@ PublishedDateComponent resource: resource %}
+</article>
+
+<hr />

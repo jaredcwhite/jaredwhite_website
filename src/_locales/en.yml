@@ -1,0 +1,18 @@
+en:
+  categories:
+    articles:
+      name: Essay
+      name_plural: Essays
+      icon: something
+    pictures:
+      name: Photo
+      name_plural: Photos
+    links:
+      name: Link
+      name_plural: Links
+    thoughts:
+      name: Thought
+      name_plural: Thoughts
+    videos:
+      name: Video
+      name_plural: Videos

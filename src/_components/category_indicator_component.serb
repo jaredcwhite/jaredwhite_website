@@ -1,0 +1,5 @@
+<category-indicator>
+  <a href="/browse/{{ @category }}">
+    <p>{{ "categories.#{@category}.name" | t }}</p>
+  </a>
+</category-indicator>

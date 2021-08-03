@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: 7ff9f8a7e70fd598a0bec1035247fadb16da8461
+  revision: f726bb81e0910c9436d237392b71191c22a86372
   branch: support-rake-and-rack
   specs:
     bridgetown (0.21.2)
@@ -52,7 +52,7 @@ GEM
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
     erubi (1.10.0)
-    faraday (1.5.1)
+    faraday (1.6.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -60,6 +60,7 @@ GEM
       faraday-net_http (~> 1.0)
       faraday-net_http_persistent (~> 1.1)
       faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords (>= 0.0.4)
     faraday-em_http (1.0.0)
@@ -69,6 +70,7 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
     faraday_middleware (1.1.0)
       faraday (~> 1.0)
     ffi (1.15.3)
@@ -104,6 +106,11 @@ GEM
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
+    serbea (0.12)
+      activesupport (~> 6.0)
+      erubi (>= 1.10)
+      hash_with_dot_access (~> 1.1)
+      tilt (~> 2.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thor (1.1.0)
@@ -121,6 +128,7 @@ DEPENDENCIES
   bridgetown (~> 0.21.2)!
   bridgetown-core (~> 0.21.2)!
   puma (~> 5.2)
+  serbea (~> 0.12)
 
 BUNDLED WITH
    2.2.22

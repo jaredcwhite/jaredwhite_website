@@ -1,0 +1,25 @@
+<article>
+  {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
+
+  {% if h_level == :h2 %}
+    {% if resource.data.subtitle %}
+      <h3>{{ resource.data.subtitle }}</h3>
+    {% end %}
+    {%@ CategoryIndicatorComponent category: resource.data.category %}
+  {% end %}
+
+  {%@ FeaturedImageComponent resource: resource %}
+
+  {% if h_level == :h2 %}
+    <article-content>{{ resource.content }}</article-content>
+  {% else %}
+    <p>{{ resource.data.subtitle }}</p>
+
+    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+    <p>{{ "Read Essay" + icon | link_to: resource.relative_url, class: "button" }}</p>
+  {% end %}
+
+  {%@ PublishedDateComponent resource: resource %}
+</article>
+
+<hr />
