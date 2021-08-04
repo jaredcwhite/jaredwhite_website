@@ -3,7 +3,7 @@
   <head>
     {% render "head", metadata: site.metadata, title: page.title %}
   </head>
-  <body class="{{ page.layout }} {{ page.page_class }}">
+  <body class="{{ resource.data.layout }}">
     <main>
       <header style="width:100%">
         <a href="/" style="text-decoration: none">

@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: f726bb81e0910c9436d237392b71191c22a86372
+  revision: ba7a19eaf8ec3f9ca88729a7dfdc097e982ac5bd
   branch: support-rake-and-rack
   specs:
     bridgetown (0.21.2)
