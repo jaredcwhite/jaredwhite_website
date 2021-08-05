@@ -3,16 +3,20 @@ en:
     articles:
       name: Essay
       name_plural: Essays
-      icon: something
+      icon: document/article
     pictures:
       name: Photo
       name_plural: Photos
+      icon: media/image
     links:
       name: Link
       name_plural: Links
+      icon: business/links
     thoughts:
       name: Thought
       name_plural: Thoughts
+      icon: communication/chat-1
     videos:
       name: Video
       name_plural: Videos
+      icon: media/movie

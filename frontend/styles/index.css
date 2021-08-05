@@ -268,7 +268,7 @@ responsive-sidebar {
 }
 
 footer {
-  padding: 1rem;
+  padding: 3rem 1rem;
   text-align: center;
   font-size: 85%;
 }
@@ -348,15 +348,15 @@ body.post {
   & .featured-image {
     margin-bottom: 3rem;
   }
+}
 
-  @media (min-width: 1280px) {
-    & .featured-image {
-      margin-right: -1rem;
-    }
+@media (min-width: 1280px) {
+  .featured-image {
+    margin-right: -1rem;
+  }
 
-    & article-content {
-      padding-left: 1rem;
-    }
+  body.post article-content {
+    padding-left: 1rem;
   }
 }
 

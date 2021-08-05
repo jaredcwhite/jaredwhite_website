@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {%@ "head", title: resource.data.title %}
+  </head>
+  <body class="{{ resource.data.layout }} category-{{ resource.data.category || "none" }}">
+    <main>
+      <header style="width:100%">
+        <a href="/" style="text-decoration: none">
+          <h1>
+            <h-inner>
+              {{ site.metadata.title }}
+            </h-inner>
+            🌲
+          </h1>
+        </a>
+
+        <p id="tagline" style="font-size: 110%"><strong>{{ site.metadata.tagline | safe }}</strong></p>
+      </header>
+
+      <main-content>
+        {{ content }}
+      </main-content>
+      <aside>
+        {%@ "navbar" %}
+      </aside>
+    </main>
+
+    {%@ "footer" %}
+  </body>
+</html>

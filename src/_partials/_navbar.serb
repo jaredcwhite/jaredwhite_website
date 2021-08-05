@@ -16,12 +16,20 @@
     <ul>
       <li><a href="/"><sl-icon library="remixicon" name="buildings/home" style="margin-right:8px"></sl-icon>Home</a></li>
       <li><a href="/about"><sl-icon library="remixicon" name="user/user-5" style="margin-right:8px"></sl-icon>About</a></li>
-<!--      <li><a href="/posts">Posts</a></li>-->
-      <li><a href="/browse/articles"><sl-icon library="remixicon" name="document/article" style="margin-right:8px"></sl-icon>Essays</a></li>
-      <li><a href="/browse/pictures"><sl-icon library="remixicon" name="media/image-fill" style="margin-right:8px"></sl-icon>Photos</a></li>
-      <li><a href="/browse/links"><sl-icon library="remixicon" name="business/links" style="margin-right:8px"></sl-icon>Links</a></li>
-      <li><a href="/browse/thoughts"><sl-icon library="remixicon" name="communication/chat-1" style="margin-right:8px"></sl-icon>Thoughts</a></li>
-      <li><a href="/browse/videos"><sl-icon library="remixicon" name="media/movie" style="margin-right:8px"></sl-icon>Videos</a></li>
+      <li><a href="/now"><sl-icon library="remixicon" name="business/stack" style="margin-right:8px"></sl-icon>Projects</a></li>
+      <li style="margin-bottom:1.25rem"><a href="/now"><sl-icon library="remixicon" name="media/mic" style="margin-right:8px"></sl-icon>Podcast</a></li>
+
+      {% %w(articles pictures links thoughts videos).each do |category | %}
+        <li>
+          <a href="/browse/{{ category }}">
+            <sl-icon
+              library="remixicon"
+              name="{{ "categories.#{category}.icon" | t }}"
+              style="margin-right:8px"
+            ></sl-icon>{{ "categories.#{category}.name_plural" | t }}
+          </a>
+        </li>
+      {% end %}
     </ul>
 
     <h2>Subscribe</h2>

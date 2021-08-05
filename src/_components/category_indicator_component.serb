@@ -1,5 +1,11 @@
 <category-indicator>
   <a href="/browse/{{ @category }}">
-    <p>{{ "categories.#{@category}.name" | t }}</p>
+    <p>
+      <sl-icon
+        library="remixicon"
+        name="{{ "categories.#{@category}.icon" | t }}"
+      ></sl-icon>
+      {{ "categories.#{@category}.name" | t }}
+    </p>
   </a>
 </category-indicator>
