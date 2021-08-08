@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: jaredwhite2021
+    env: static
+    buildCommand: bin/bridgetown deploy
+    staticPublishPath: ./output
