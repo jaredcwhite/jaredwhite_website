@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{% now_entry = resource.data.current_now_entry.presence || resource %}
+{% is_entry_now = now_entry == collections.now_entries.resources.first %}
+{% if now_entry.collection.label == "now_entries" %}
+  <h2>
+    {% if is_entry_now %}
+      {{ "destinations.now.name" | t }}
+    {% else %}
+      {{ "destinations.now.then" | t }} <small>({{ now_entry.date | strftime: "%b. %-d, %Y" }})</small>
+    {% end %}
+    <sl-icon
+      library="remixicon"
+      name="{{ "destinations.now.icon" | t }}"
+    ></sl-icon>
+  </h2>
+
+  {%= markdownify do %}
+
+Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing **Now** pages](https://nownownow.com/about){:target="_blank"} to their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
+
+  {% end %}
+
+  {{ now_entry.content }}
+
+  {% if is_entry_now %}
+    {%= markdownify do %}
+----
+
+{:.text-center}
+**Last Updated on {{ now_entry.date | strftime: "%B %-d, %Y" }}**
+    {% end %}
+  {% end %}
+
+  {% if collections.now_entries.resources.length > 1 %}
+    <blockquote style="margin-top:5rem">
+      <h3>“Now Page” Archive</h3>
+
+      <ul>
+        {% collections.now_entries.resources.each do |entry| %}
+          {% next if entry == now_entry %}
+          <li>{{ entry.date | strftime: "%B %-d, %Y" | link_to: entry.relative_url }}</li>
+        {% end %}
+      </ul>
+    </blockquote>
+  {% end %}
+{% else %}
+  {%= site.resources.find {|r| r.relative_url.start_with?("/404") }.content %}
+{% end %}

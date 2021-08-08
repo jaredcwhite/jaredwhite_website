@@ -20,3 +20,20 @@ en:
       name: Video
       name_plural: Videos
       icon: media/movie
+  destinations:
+    home:
+      name: Home
+      icon: buildings/home
+    about:
+      name: About
+      icon: user/user-5
+    now:
+      name: Now Page
+      then: Then
+      icon: map/map-pin-time
+    projects:
+      name: Projects
+      icon: business/stack
+    podcast:
+      name: Podcast
+      icon: media/mic

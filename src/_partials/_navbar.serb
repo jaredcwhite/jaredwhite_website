@@ -14,10 +14,11 @@
     <h2 style="margin-top:0">Explore</h2>
 
     <ul>
-      <li><a href="/"><sl-icon library="remixicon" name="buildings/home" style="margin-right:8px"></sl-icon>Home</a></li>
-      <li><a href="/about"><sl-icon library="remixicon" name="user/user-5" style="margin-right:8px"></sl-icon>About</a></li>
-      <li><a href="/now"><sl-icon library="remixicon" name="business/stack" style="margin-right:8px"></sl-icon>Projects</a></li>
-      <li style="margin-bottom:1.25rem"><a href="/now"><sl-icon library="remixicon" name="media/mic" style="margin-right:8px"></sl-icon>Podcast</a></li>
+      <li><a href="/"><sl-icon library="remixicon" name="{{ "destinations.home.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.home.name" | t }}</a></li>
+      <li><a href="/about"><sl-icon library="remixicon" name="{{ "destinations.about.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.about.name" | t }}</a></li>
+      <li><a href="/now"><sl-icon library="remixicon" name="{{ "destinations.now.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.now.name" | t }}</a></li>
+      <li><a href="/projects"><sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.projects.name" | t }}</a></li>
+      <li style="margin-bottom:1.25rem"><a href="/now"><sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.podcast.name" | t }}</a></li>
 
       {% %w(articles pictures links thoughts videos).each do |category | %}
         <li>
@@ -34,28 +35,9 @@
 
     <h2>Subscribe</h2>
 
-    <p>Fresh insight in your inbox twice a month with the <strong><a href="https://www.getrevue.co/profile/creatorclass">Creator Class</a></strong> newsletter.</p>
+    <p>Fresh insight in your inbox twice a month with the <strong><a href="{{ site.metadata.newsletter.url }}" target="_blank">{{ site.metadata.newsletter.name }}</a></strong> newsletter.</p>
 
-    <div id="revue-embed">
-      <form action="https://www.getrevue.co/profile/creatorclass/add_subscriber" method="post" id="revue-form" name="revue-form">
-        <p class="revue-form-group">
-          <label for="member_email">Email address</label>
-          <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-        </p>
-        <p class="revue-form-group">
-          <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
-          <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
-        </p>
-        
-        <p class="revue-form-actions text-center">
-          <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-            <sl-icon library="remixicon" name="business/mail-send"></sl-icon>
-            Subscribe
-          </button>
-        </p>
-        <small><div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></div></small>
-      </form>
-    </div>
+    {%@ "newsletter_form" %}
 
     <h2>Follow</h2>
 

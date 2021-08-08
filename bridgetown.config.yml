@@ -1,9 +1,14 @@
 url: "https://jaredwhite.com" # the base hostname & protocol for your site, e.g. https://example.com
 
-permalink: pretty
+permalink: simple
 
 content_engine: resource
 template_engine: serbea
+
+collections:
+  now_entries:
+    output: true
+    sort_direction: descending
 
 # Other options you might want to investigate:
 # 

@@ -2,6 +2,7 @@
 front_matter do
   layout :page
   title "categories.:prototype-term.name_plural"
+  icon true
   translate_title true
   prototype({
     term: "category",

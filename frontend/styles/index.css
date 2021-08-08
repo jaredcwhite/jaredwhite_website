@@ -291,9 +291,18 @@ a.button {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 sl-icon {
   vertical-align: -2px;
   margin-right: 2px;
+}
+h2 > sl-icon {
+  margin-left: 8px;
+  vertical-align: -0.15em;
+  color: var(--secondary);
 }
 
 #nav-tab {

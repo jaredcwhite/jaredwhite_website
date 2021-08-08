@@ -4,6 +4,12 @@ layout: default
 
 <h2>
   {{ resource.data.translate_title ? t(resource.data.title) : resource.data.title }}
+  {% if resource.data.icon %}
+    <sl-icon
+      library="remixicon"
+      name="{{ resource.data.title.sub(".name_plural", ".icon") | t }}"
+    ></sl-icon>
+  {% end %}
 </h2>
 
 {{ content }}
