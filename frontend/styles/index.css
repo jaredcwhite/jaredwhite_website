@@ -343,7 +343,7 @@ blockquote, .featured-image > img {
 article-content {
   display: block;
 
-  & p {
+  & p, & li {
     & strong, & b {
       font-size: 105%;
     }
