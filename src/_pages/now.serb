@@ -1,9 +1,0 @@
----
-layout: now
-title: What I'm Doing Now
----
-
-{%
-  # send this off to the layout for processing
-  resource.data.current_now_entry = collections.now_entries.resources.first
-%}

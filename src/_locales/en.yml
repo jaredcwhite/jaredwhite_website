@@ -27,6 +27,9 @@ en:
     about:
       name: About
       icon: user/user-5
+    membership:
+      name: Membership
+      icon: finance/bank-card
     now:
       name: Now Page
       then: Then

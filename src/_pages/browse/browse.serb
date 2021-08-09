@@ -1,4 +1,4 @@
----{%
+~~~{%
 front_matter do
   layout :page
   title "categories.:prototype-term.name_plural"
@@ -9,7 +9,7 @@ front_matter do
     collection: "posts"
   })
 end
-%}---
+%}~~~
 
 {% if paginator.total_pages > 1 and paginator.previous_page %}
   <p class="text-center">
