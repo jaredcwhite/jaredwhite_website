@@ -239,6 +239,7 @@ responsive-sidebar {
   responsive-sidebar {
     background: white;
     position: absolute;
+    z-index: 1;
     width: 275px;
     padding: 26px 15px;
     transform: translate(calc(-275px - 5vw), 0);
