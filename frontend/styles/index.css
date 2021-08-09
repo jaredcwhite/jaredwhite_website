@@ -341,6 +341,12 @@ blockquote, .featured-image > img {
 
 article-content {
   display: block;
+
+  & p {
+    & strong, & b {
+      font-size: 105%;
+    }
+  }
 }
 
 article-content > p:first-of-type:first-letter {
@@ -399,7 +405,7 @@ published-date, category-indicator {
     padding: 5px 10px;
     width: fit-content;
     font-size: 80%;
-    margin: 3rem 0 4rem;
+    margin: 3rem auto 3.5rem;
     border-radius: 2px;
   }
 }
