@@ -4,3 +4,6 @@ services:
     env: static
     buildCommand: bin/bridgetown deploy
     staticPublishPath: ./output
+    envVars:
+      - key: BRIDGETOWN_ENV
+        value: production
