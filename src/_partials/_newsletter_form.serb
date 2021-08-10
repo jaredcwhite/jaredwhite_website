@@ -9,7 +9,7 @@
       <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
     </p>
     
-    <p class="revue-form-actions text-center">
+    <p class="revue-form-actions">
       <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
         <sl-icon library="remixicon" name="business/mail-send"></sl-icon>
         Subscribe
