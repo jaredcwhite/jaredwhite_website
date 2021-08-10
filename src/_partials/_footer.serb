@@ -1,3 +1,20 @@
 <footer>
-  Yo! <a href="mailto:{{ site.metadata.email }}">{{ site.metadata.email }}</a>
+  <figure style="margin: 0 -1rem 3rem">
+    {% if resource.data.title[0].downcase < "h" %}
+      <img loading="lazy" alt="wide landscape photo" src="/images/background-portland-naito-pkwy.jpg" />
+      <figcaption>Looking North Over Naito Parkway in Portland, Oregon</figcaption>
+    {% elsif resource.data.title[0].downcase < "q" %}
+      <img loading="lazy" alt="wide landscape photo" src="/images/background-portland-lan-su.jpg" />
+      <figcaption>Lan Su Chinese Garden in Portland, Oregon</figcaption>
+    {% else %}
+      <img loading="lazy" alt="wide landscape photo" src="/images/background-portland-waterfront.jpg" />
+      <figcaption>Tom McCall Waterfront Park in Portland, Oregon</figcaption>
+    {% end %}
+  </figure>
+
+  {%= markdownify do %}
+    Write me: [{{ site.metadata.email }}](mailto:{{ site.metadata.email }})
+
+    Copyright © 2012-{{ site.time | strftime: "%Y" }} Jared White
+  {% end %}
 </footer>

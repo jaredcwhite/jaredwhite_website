@@ -8,7 +8,7 @@ layout: default
 
 I’m Jared, _an award-winning_ essayist, **Rubyist**, and podcaster who’s been commenting on and building for the web since Mosaic was a thing. (Yup, it’s true! 😆)
 
-In my spare time I travel around Portland and the Pacific Northwest (pandemic lockdowns notwithstanding) and make artsy-fartsy videos. 📹 📺
+In my spare time I travel around Portland 🌲 and the Pacific Northwest (pandemic lockdowns notwithstanding) and make artsy-fartsy videos. 📹 📺
 
 This is my home on the internet. I hope you enjoy browsing around! 📍
 

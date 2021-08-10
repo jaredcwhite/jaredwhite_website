@@ -11,7 +11,7 @@
             <h-inner>
               {{ site.metadata.title }}
             </h-inner>
-            🌲
+            <img alt="Photo of Jared" src="/images/jared-white-2020.jpg" style="height: 48px;vertical-align: -0.25em;margin-left: 5px;border-radius: 48px;" />
           </h1>
         </a>
 
