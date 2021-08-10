@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis-medium_500-webfont.woff2") format("woff2"),
+    url("../fonts/metropolis-medium_500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis_medium_italic_500-webfont.woff2") format("woff2"),
+    url("../fonts/metropolis_medium_italic_500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/metropolis_bold_700-webfont.woff2") format("woff2"),
+    url("../fonts/metropolis_bold_700-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiempos Fine";
+  src: url("../fonts/tiempos-fine-web-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --text-color: #292726;
+  --body-background: #f9f9f9;
+  --body-font: Metropolis, sans-serif;
+  --line-height: 1.4;
+
+  --primary: #18704c;
+  --primary-light: #b1c8bf;
+  --secondary: #f7693e;
+
+  --heading-font: "Tiempos Fine", serif;
+  --heading-text-color: black;
+  --heading-2-size: 3.5rem;
+  --heading-3-size: 1.8rem;
+
+  @media (max-width: 1023px) {
+    --heading-2-size: 2.2rem;
+    --heading-3-size: 1.35rem;
+  }
+}
