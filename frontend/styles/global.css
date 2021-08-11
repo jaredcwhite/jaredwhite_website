@@ -86,9 +86,27 @@ blockquote {
 
 a {
   color: var(--primary);
-
   text-decoration-color: var(--primary-light);
   text-underline-offset: 4px;
+}
+
+button, input[type=button], input[type=submit], a.button {
+  appearance: none;
+  cursor: pointer;
+  background: var(--primary);
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 100%;
+  padding: 9px 14px;
+  margin: 0;
+  border-radius: 2px;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
 }
 
 hr {
@@ -226,28 +244,6 @@ footer {
   font-size: 85%;
 }
 
-button, input[type=button], input[type=submit], a.button {
-  appearance: none;
-  background: var(--primary);
-  border: none;
-  color: white;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 100%;
-  padding: 9px 14px;
-  margin: 0;
-  border-radius: 2px;
-}
-
-a.button {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
 sl-icon {
   vertical-align: -2px;
   margin-right: 2px;
@@ -256,4 +252,8 @@ h2 > sl-icon {
   margin-left: 8px;
   vertical-align: -0.15em;
   color: var(--secondary);
+}
+
+.text-center {
+  text-align: center !important;
 }

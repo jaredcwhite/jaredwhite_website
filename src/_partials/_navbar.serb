@@ -1,13 +1,5 @@
 <responsive-sidebar>
-  <button id="nav-tab" onclick='
-    if (this.parentNode.getAttribute("open") === "") {
-      this.parentNode.removeAttribute("open")
-      document.querySelector("main-content").removeAttribute("underneath")
-    } else {
-      this.parentNode.setAttribute("open", "")
-      document.querySelector("main-content").setAttribute("underneath", "")
-    }
-  '>
+  <button id="nav-tab">
     <sl-icon library="remixicon" name="system/menu"></sl-icon>
   </button>
   <nav>

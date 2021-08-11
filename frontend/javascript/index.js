@@ -4,6 +4,7 @@ import TumblrPhotos from "./tumblr_photos.js"
 import SlIcon from '@shoelace-style/shoelace/dist/components/icon/icon';
 import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
 
+// Register icons from the Remix collection (https://remixicon.com) for use by Shoelace
 registerIconLibrary('remixicon', {
   resolver: name => {
     const match = name.match(/^(.*?)\/(.*?)(-(fill))?$/);
@@ -17,7 +18,18 @@ registerIconLibrary('remixicon', {
 const componentsContext = require.context("bridgetownComponents", true, /.js$/)
 componentsContext.keys().forEach(componentsContext)
 
+// Handle responsive sidebar taps outside the sidebar
 window.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#nav-tab").addEventListener("click", (e) => {
+    const tab = e.currentTarget
+    if (tab.parentNode.getAttribute("open") === "") {
+      tab.parentNode.removeAttribute("open")
+      document.querySelector("main-content").removeAttribute("underneath")
+    } else {
+      tab.parentNode.setAttribute("open", "")
+      document.querySelector("main-content").setAttribute("underneath", "")
+    }
+  })
   document.body.addEventListener("click", (e) => {
     const sidebar = document.querySelector("responsive-sidebar")
     if (sidebar.getAttribute("open") === "" && !e.target.closest("responsive-sidebar")) {
