@@ -207,7 +207,7 @@ responsive-sidebar {
   }
 
   responsive-sidebar {
-    background: white;
+    background: var(--outlined);
     position: absolute;
     z-index: 1;
     width: 275px;

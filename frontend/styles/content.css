@@ -5,8 +5,8 @@
   margin: 0;
   margin-top: -15px;
   padding: 10px 14px;
-  background: white;
-  border: 1px solid #eee;
+  background: var(--outlined);
+  border: 1px solid var(--grey-outlined);
   border-left: none;
   border-radius: 0px 10px 10px 0px;
   color: var(--primary);

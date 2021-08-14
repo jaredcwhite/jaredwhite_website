@@ -40,6 +40,7 @@
   --primary-light: #b1c8bf;
   --secondary: #f7693e;
   --outlined: white;
+  --grey-outlined: #eee;
 
   --heading-font: "Tiempos Fine", serif;
   --heading-text-color: black;
@@ -59,6 +60,7 @@ body.dark-mode {
   --primary: #63d0a3;
   --primary-light: #5e736a;
   --outlined: #22201f;
+  --grey-outlined: #404040;
 
   --heading-text-color: #fff;
 }
