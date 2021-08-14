@@ -18,6 +18,15 @@ registerIconLibrary('remixicon', {
 const componentsContext = require.context("bridgetownComponents", true, /.js$/)
 componentsContext.keys().forEach(componentsContext)
 
+const activateDarkMode = () => {
+  document.body.classList.toggle("dark-mode", true)
+}
+if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  activateDarkMode()
+}
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => e.matches && activateDarkMode() )
+
 // Handle responsive sidebar taps outside the sidebar
 window.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#nav-tab").addEventListener("click", (e) => {

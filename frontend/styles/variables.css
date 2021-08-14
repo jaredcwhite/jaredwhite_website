@@ -36,8 +36,10 @@
   --line-height: 1.4;
 
   --primary: #18704c;
+  --primary-button: var(--primary);
   --primary-light: #b1c8bf;
   --secondary: #f7693e;
+  --outlined: white;
 
   --heading-font: "Tiempos Fine", serif;
   --heading-text-color: black;
@@ -48,4 +50,15 @@
     --heading-2-size: 2.2rem;
     --heading-3-size: 1.35rem;
   }
+}
+
+body.dark-mode {
+  --text-color: #c9c9c9;
+  --body-background: #292726;
+
+  --primary: #63d0a3;
+  --primary-light: #5e736a;
+  --outlined: #22201f;
+
+  --heading-text-color: #fff;
 }
