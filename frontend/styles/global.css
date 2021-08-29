@@ -272,6 +272,21 @@ h2 > sl-icon {
 
 flex-row {
   display: flex;
+
+  &.mobile-single-column {
+    @media (max-width: 650px) {
+      display: block;
+
+      & flex-cell {
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 flex-cell {
   display: block;

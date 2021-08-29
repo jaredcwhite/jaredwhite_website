@@ -1,4 +1,4 @@
-<flex-row>
+<flex-row class="mobile-single-column">
   <flex-cell style="flex-basis:40%">
     <a href="/podcast">
       <img class="podcast-cover" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
