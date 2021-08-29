@@ -14,3 +14,15 @@ description: >-
 newsletter:
   name: Creator Class 
   url: https://www.getrevue.co/profile/creatorclass
+
+# Podcast Setup #
+podcast_title: Fresh Fusion
+podcast_description: A weekly show where we discuss the business, the art, the ethics of content creation on the open web. Hosted by Jared White.
+podcast_cover_img: /images/fresh-fusion-podcast.jpg
+podcast_author: Jared White
+podcast_email: jared@jaredwhite.com
+podcast_is_explicit: clean
+podcast_category: Society &amp; Culture
+podcast_sub_category: Personal Journals
+podcast_category2: Technology
+podcast_type: episodic

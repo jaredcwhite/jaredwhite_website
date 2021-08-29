@@ -1,0 +1,28 @@
+~~~{%
+front_matter do
+  layout :default
+  title ->{ site.metadata.podcast_title }
+  paginate({
+    collection: "podcast",
+    enabled: true
+  })
+end
+%}~~~
+
+<h2>
+  {{ resource.data.title }}
+  <sl-icon
+    library="remixicon"
+    name="{{ "destinations.podcast.icon" | t }}"
+  ></sl-icon>
+</h2>
+
+<a-card style="margin-bottom:3rem">
+  {%@ "podcast_subscriptions" %}
+</a-card>
+
+<resources-feed>
+  {% paginator.resources.each do |resource| %}
+    {%@ Resources::EpisodeComponent resource: resource, h_level: :h3 %}
+  {% end %}
+</resources-feed>

@@ -4,7 +4,9 @@
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
   {% if resource.data.vimeo_id && !show_thumbnail %}
-    <responsive-embed><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></responsive-embed>
+    <responsive-embed><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
+  {% elsif resource.data.youtube_id && !show_thumbnail %}
+    <responsive-embed><iframe src="https://www.youtube-nocookie.com/embed/{{ resource.data.youtube_id }}?rel=0" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
   {% elsif resource.data.cloudinary_id %}
     {%@ FeaturedImageComponent resource: resource %}
   {% end %}

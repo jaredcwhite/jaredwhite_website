@@ -1,0 +1,22 @@
+<flex-row>
+  <flex-cell style="flex-basis:40%">
+    <a href="/podcast">
+      <img class="podcast-cover" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
+    </a>
+  </flex-cell>
+  <flex-cell style="flex-basis:60%">
+    <p>{{ resource.site.metadata.podcast_description }}</p>
+
+    <ul style="margin-bottom:0">
+      <li style="margin-bottom:0.5em"><a href="https://podcasts.apple.com/us/podcast/fresh-fusion/id1387528457">Subscribe in Apple Podcasts</a></li>
+
+      <li style="margin-bottom:0.5em"><a href="https://castro.fm/podcast/a0568d7d-099a-4214-be7e-97a8f5b3c995">Subscribe in Castro</a></li>
+
+      <li style="margin-bottom:0.5em"><a href="https://overcast.fm/itunes1387528457/the-jared-white-show">Subscribe in Overcast</a></li>
+
+      <li style="margin-bottom:0.5em"><a href="https://pca.st/6tEG">Subscribe in Pocket Casts</a></li>
+
+      <li style="margin-bottom:0"><a href="/podcast.xml">Podcast RSS Feed</a></li>
+    </ul>
+  </flex-cell>
+</flex-row>

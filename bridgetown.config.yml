@@ -9,6 +9,11 @@ collections:
   now_entries:
     output: true
     sort_direction: descending
+  newsletters:
+    output: false # we'll just reference them from an archive page, but the actual issues are legacy static files
+  podcast:
+    output: true
+    sort_direction: descending
 
 # Other options you might want to investigate:
 # 

@@ -1,15 +1,15 @@
 GIT
   remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: ba7a19eaf8ec3f9ca88729a7dfdc097e982ac5bd
+  revision: 81a13afa7cdfe0d5ff7730f0ce8ae916d762c6aa
   branch: support-rake-and-rack
   specs:
-    bridgetown (0.21.2)
-      bridgetown-builder (= 0.21.2)
-      bridgetown-core (= 0.21.2)
-      bridgetown-paginate (= 0.21.2)
-    bridgetown-builder (0.21.2)
-      bridgetown-core (= 0.21.2)
-    bridgetown-core (0.21.2)
+    bridgetown (0.21.3)
+      bridgetown-builder (= 0.21.3)
+      bridgetown-core (= 0.21.3)
+      bridgetown-paginate (= 0.21.3)
+    bridgetown-builder (0.21.3)
+      bridgetown-core (= 0.21.3)
+    bridgetown-core (0.21.3)
       activemodel (~> 6.0)
       activesupport (~> 6.0)
       addressable (~> 2.4)
@@ -32,15 +32,15 @@ GIT
       thor (~> 1.1)
       tilt (~> 2.0)
       webrick (~> 1.7)
-    bridgetown-paginate (0.21.2)
-      bridgetown-core (= 0.21.2)
+    bridgetown-paginate (0.21.3)
+      bridgetown-core (= 0.21.3)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (6.1.4)
-      activesupport (= 6.1.4)
-    activesupport (6.1.4)
+    activemodel (6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activesupport (6.1.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -49,10 +49,11 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     amazing_print (1.3.0)
+    ast (2.4.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
     erubi (1.10.0)
-    faraday (1.6.0)
+    faraday (1.7.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -86,12 +87,14 @@ GEM
     liquid-component (0.1.0)
       activesupport (>= 5.0)
       safe_yaml (~> 1.0)
-    listen (3.6.0)
+    listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     minitest (5.14.4)
     multipart-post (2.1.1)
-    nio4r (2.5.7)
+    nio4r (2.5.8)
+    parser (3.0.2.0)
+      ast (~> 2.4.1)
     public_suffix (4.0.6)
     puma (5.4.0)
       nio4r (~> 2.0)
@@ -100,11 +103,15 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    regexp_parser (2.1.1)
     rexml (3.2.5)
-    roda (3.46.0)
+    roda (3.47.0)
       rack
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
+    ruby2js (4.1.6)
+      parser
+      regexp_parser (~> 2.1.1)
     safe_yaml (1.0.5)
     serbea (0.12)
       activesupport (~> 6.0)
@@ -128,6 +135,7 @@ DEPENDENCIES
   bridgetown (~> 0.21.2)!
   bridgetown-core (~> 0.21.2)!
   puma (~> 5.2)
+  ruby2js (>= 3.5)
   serbea (~> 0.12)
 
 BUNDLED WITH

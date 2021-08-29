@@ -1,0 +1,55 @@
+<article>
+  {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
+
+  {% if h_level == :h2 %}
+    <h3>{{ resource.site.metadata.podcast_title }}
+      <sl-icon
+        library="remixicon"
+        name="media/headphone"
+        style="margin-left:2px; vertical-align:-0.09em; color:var(--secondary)"
+      ></sl-icon>
+      Episode {{ resource.data.number }}
+    </h3>
+
+    <flex-row style="align-items:center">
+      <flex-cell>
+        <a href="/podcast">
+          <img class="u-photo podcast-cover" style="width:150px" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
+        </a>
+      </flex-cell>
+      <flex-cell style="flex-basis:100%">
+        <p><audio controls class="u-audio" src="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" style="width:100%; max-width:350px; display: block; border-radius: 14px; margin:0; background: var(--primary)"></audio></p>
+    
+        <p style="margin-bottom:0"><a href="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" class="button" style="font-size:80%">
+          <sl-icon library="remixicon" name="system/download-2-fill"></sl-icon>
+          Download MP3 File
+        </a></p>
+      </flex-cell>
+    </flex-row>
+
+    <category-indicator>
+      <a href="/podcast">
+        <p>
+          <sl-icon
+            library="remixicon"
+            name="{{ "destinations.podcast.icon" | t }}"
+          ></sl-icon>
+          {{ "destinations.podcast.name" | t }}
+        </p>
+      </a>
+    </category-indicator>
+  {% end %}
+
+{% if h_level == :h2 %}
+    <article-content>{{ resource.content }}</article-content>
+  {% else %}
+    <p>{{ resource.data.description }}</p>
+
+    {% icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="media/headphone"></sl-icon> {% end %}
+    <p>{{ icon + "Listen to Episode #{resource.data.number}" | link_to: resource.relative_url, class: "button" }}</p>
+  {% end %}
+
+  {%@ PublishedDateComponent resource: resource %}
+</article>
+
+<hr />

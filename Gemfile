@@ -24,3 +24,5 @@ gem "bridgetown-core", "~> 0.21.2", github: "bridgetownrb/bridgetown", branch: "
 gem "puma", "~> 5.2"
 
 gem "serbea", "~> 0.12", group: :bridgetown_plugins
+
+gem "ruby2js", ">= 3.5"

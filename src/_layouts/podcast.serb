@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{%@ Resources::EpisodeComponent resource: resource %}
+
+<a-card>
+  {%@ "podcast_subscriptions" %}
+</a-card>
+
+<br/>
+<hr />
+
+<h2>Keep Listening…</h2>
+
+<resources-feed>
+  {% resource.collection.resources[0..8].each do |podcast| %}
+    {% next if podcast == resource %}
+    {%@ Resources::EpisodeComponent resource: podcast, h_level: :h3 %}
+  {% end %}
+</resources-feed>
+
+{% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+<p class="text-center">{{ "More Episodes This Way" + icon | link_to: "/podcast", class: "button" }}</p>

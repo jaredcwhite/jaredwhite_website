@@ -64,6 +64,19 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
+"@ruby2js/ruby2js@>= 0.0.3":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@ruby2js/ruby2js/-/ruby2js-0.1.8.tgz#e7f0ee731dd2bf996ad02fddbf8c0c3ea17726af"
+  integrity sha512-wiP6YiYcVuTCrXDYgRzz/MJDMzRlSV9OhqZgypExi6lSq7N8b5f3m8Jfxj8+sPHbwKJfuRHgd5VlBIY5XUpdnw==
+
+"@ruby2js/webpack-loader@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@ruby2js/webpack-loader/-/webpack-loader-2.0.2.tgz#7f920671edb86447a9b802e20fa295745ac41db1"
+  integrity sha512-MOOSt8T7IUP1AosM2QQ6Lqp6v1JOYNFbD6k6XSU28RPmsx7zgNF/f+qdT6UotyjorXulsY9HDAgm6R5B2SDlnQ==
+  dependencies:
+    "@ruby2js/ruby2js" ">= 0.0.3"
+    loader-utils "^2.0.0"
+
 "@shoelace-style/animations@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@shoelace-style/animations/-/animations-1.1.0.tgz#17539abafd6dcbf2a79e089e1593175e9f7835b5"

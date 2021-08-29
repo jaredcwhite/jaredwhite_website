@@ -1,0 +1,50 @@
+---
+template_engine: liquid
+---
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>{{ site.metadata.podcast_title }}</title>
+    <link>{{ site.url }}/podcast</link>
+    <description>{{ site.metadata.podcast_description }}</description>
+    <language>en-us</language>
+    <copyright>Copyright © {{ site.time | date: '%Y' }} {{ site.metadata.podcast_author }} </copyright>
+    <itunes:author>{{ site.metadata.podcast_author }}</itunes:author>
+    <itunes:image href="{{ site.metadata.podcast_cover_img | prepend: site.url }}" />
+
+    <itunes:owner>
+      <itunes:name>{{ site.metadata.podcast_author }}</itunes:name>
+      <itunes:email>{{ site.metadata.podcast_email }}</itunes:email>
+    </itunes:owner>
+
+    <itunes:category text="{{ site.metadata.podcast_category }}">
+      <itunes:category text="{{ site.metadata.podcast_sub_category }}"/>
+    </itunes:category>
+    <itunes:category text="{{ site.metadata.podcast_category2 }}" />
+
+    <itunes:explicit>{{ site.metadata.podcast_is_explicit }}</itunes:explicit>
+
+    <itunes:type>{{ site.metadata.podcast_type }}</itunes:type>
+
+    <atom:link href="{{ site.url }}/podcast.xml" rel="self" type="application/rss+xml" />
+    {% assign episodes = collections.podcast.resources %}
+    {% for ep in episodes %}
+    <item>
+      <title>{{ ep.number }}: {{ ep.title | xml_escape }}</title>
+      <description>{{ ep.description | xml_escape }}</description>
+      <itunes:episode>{{ ep.number }}</itunes:episode>
+      <itunes:title>{{ ep.title | xml_escape }}</itunes:title>
+      <itunes:subtitle>{{ ep.description | xml_escape }}</itunes:subtitle>
+      <itunes:author>{{ site.metadata.podcast_author }}</itunes:author>
+      <itunes:summary>{{ ep.description | xml_escape }}</itunes:summary>
+      <itunes:image href="{{site.metadata.podcast_cover_img | prepend: site.url }}" />
+      <itunes:explicit>{{ site.metadata.podcast_is_explicit }}</itunes:explicit>
+      <enclosure url="https://media.blubrry.com/jaredwhiteshow/{{ ep.enclosure_mp3_url | replace: 'https://', '' }}" length="{{ ep.enclosure_length}}" type="audio/mpeg" />
+      <link>{{ ep.absolute_url }}</link>
+      <guid>{{ ep.absolute_url }}</guid>
+      <pubDate>{{ ep.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <itunes:duration>{{ ep.enclosure_duration }}</itunes:duration>
+      <content:encoded>{{ ep.content | xml_escape }}</content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

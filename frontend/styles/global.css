@@ -68,20 +68,32 @@ p {
   margin-bottom: 1.5em;
 }
 
-blockquote {
+blockquote, a-card {
+  display: block;
   margin: 1.5em 0 2em;
   padding: 1.5em;
   background: var(--outlined);
   font-size: 120%;
   text-align: center;
   border: none !important;
-  border-left: 7px solid var(--heading-text-color) !important;
+  border-left: 7px solid var(--card-border-color) !important;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
 
   & p:last-of-type {
     margin-bottom: 0;
   }
+
+  & h3 {
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
+}
+
+a-card {
+  text-align: left;
+  font-size: 100%;
 }
 
 a {
@@ -256,4 +268,16 @@ h2 > sl-icon {
 
 .text-center {
   text-align: center !important;
+}
+
+flex-row {
+  display: flex;
+}
+flex-cell {
+  display: block;
+  padding-right: 1rem;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
 }

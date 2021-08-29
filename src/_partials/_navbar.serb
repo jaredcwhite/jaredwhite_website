@@ -9,10 +9,10 @@
       <li><a href="/"><sl-icon library="remixicon" name="{{ "destinations.home.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.home.name" | t }}</a></li>
       <li><a href="/about"><sl-icon library="remixicon" name="{{ "destinations.about.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.about.name" | t }}</a></li>
       <li><a href="/now"><sl-icon library="remixicon" name="{{ "destinations.now.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.now.name" | t }}</a></li>
-      <li style="margin-bottom:1.25rem"><a href="/projects"><sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.projects.name" | t }}</a></li>
+      <li><a href="/projects"><sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.projects.name" | t }}</a></li>
 
-      <li><a href="/now"><sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.podcast.name" | t }}</a></li>
-      <li style="margin-bottom:1.25rem"><a href="/membership"><sl-icon library="remixicon" name="{{ "destinations.membership.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.membership.name" | t }}</a></li>
+      <li style="margin-bottom:1.25rem"><a href="/podcast"><sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.podcast.name" | t }}</a></li>
+      <!--<li style="margin-bottom:1.25rem"><a href="/membership"><sl-icon library="remixicon" name="{{ "destinations.membership.icon" | t }}" style="margin-right:8px"></sl-icon>{{ "destinations.membership.name" | t }}</a></li>-->
 
       {% %w(articles pictures links thoughts videos).each do |category | %}
         <li>

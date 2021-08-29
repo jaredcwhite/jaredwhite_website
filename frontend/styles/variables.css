@@ -51,6 +51,8 @@
     --heading-2-size: 2.2rem;
     --heading-3-size: 1.35rem;
   }
+
+  --card-border-color: var(--heading-text-color);
 }
 
 body.dark-mode {
@@ -63,4 +65,6 @@ body.dark-mode {
   --grey-outlined: #404040;
 
   --heading-text-color: #fff;
+
+  --card-border-color: #344941;
 }

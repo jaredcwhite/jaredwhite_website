@@ -22,9 +22,20 @@ var config = require("./config/webpack.defaults.js")
 //    config = merge(config, customConfig)
 //  ```
 
-
-
-
+config.module.rules.push(
+  {
+    test: /\.js\.rb$/,
+    use: [
+      {
+        loader: "esbuild-loader",
+        options: {
+          target: 'es2016'
+        },
+      },
+      "@ruby2js/webpack-loader"
+    ]
+  }
+)
 
 ////////////////////////////////////////////////////////
 

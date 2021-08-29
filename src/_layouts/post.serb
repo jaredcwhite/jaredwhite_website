@@ -4,32 +4,23 @@ layout: default
 
 {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource %}
 
-<blockquote>
-  <div id="revue-embed2">
-    <form action="https://www.getrevue.co/profile/creatorclass/add_subscriber" method="post" id="revue-form2" name="revue-form">
-      <p class="revue-form-group">
-        <label for="member_email">Email address</label>
-        <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-      </p>
-      <p class="revue-form-group">
-        <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
-        <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
-      </p>
-      
-      <p class="revue-form-actions text-center">
-        <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-          <sl-icon library="remixicon" name="business/mail-send"></sl-icon>
-          Subscribe
-        </button>
-      </p>
-      <small><div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></div></small>
-    </form>
-  </div>
-</blockquote>
+<a-card>
+  {%@ "newsletter_form" %}
+</a-card>
 
 <br/>
 <hr />
 
-<h2>Keep Exploring</h2>
+<h2>Keep Exploring…</h2>
 
-<p>Posts here…</p>
+<resources-feed>
+  {% site.categories[resource.data.category][0..8].each do |post| %}
+    {% next if post == resource %}
+    {%@ Resources::BaseComponent.component_for_resource(post) resource: post, h_level: :h3, show_thumbnail: true %}
+  {% end %}
+</resources-feed>
+
+{% left_icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="{{ t("categories.#{resource.data.category}.icon") }}"></sl-icon> {% end %}
+{% right_icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+{% plural_name = t("categories.#{resource.data.category}.name_plural") %}
+<p class="text-center">{{ left_icon + "More #{plural_name} This Way" + right_icon | link_to: "/browse/#{resource.data.category}", class: "button" }}</p>

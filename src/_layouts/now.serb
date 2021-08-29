@@ -35,7 +35,7 @@ Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of
   {% end %}
 
   {% if collections.now_entries.resources.length > 1 %}
-    <blockquote style="margin-top:5rem">
+    <a-card style="margin-top:5rem">
       <h3>“Now Page” Archive</h3>
 
       <ul>
@@ -44,7 +44,7 @@ Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of
           <li>{{ entry.date | strftime: "%B %-d, %Y" | link_to: entry.relative_url }}</li>
         {% end %}
       </ul>
-    </blockquote>
+    </a-card>
   {% end %}
 {% else %}
   {%= site.resources.find {|r| r.relative_url.start_with?("/404") }.content %}
