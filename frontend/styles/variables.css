@@ -33,7 +33,9 @@
   --text-color: #292726;
   --body-background: #f9f9f9;
   --body-font: Metropolis, sans-serif;
+  --body-size: 18px;
   --line-height: 1.4;
+  --content-scaling: 100%;
 
   --primary: #18704c;
   --primary-button: var(--primary);
@@ -50,6 +52,9 @@
   @media (max-width: 1023px) {
     --heading-2-size: 2.2rem;
     --heading-3-size: 1.35rem;
+  }
+  @media (max-width: 500px) {
+    --content-scaling: 90%;
   }
 
   --card-border-color: var(--heading-text-color);

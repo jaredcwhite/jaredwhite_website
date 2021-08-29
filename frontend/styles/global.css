@@ -7,7 +7,7 @@ html {
 
 html {
   -webkit-font-smoothing: antialiased;
-  font-size: 18px;
+  font-size: var(--body-size);
 }
 
 body {
@@ -247,6 +247,12 @@ responsive-sidebar {
 @media (min-width: 1250px) {
   main-content {
     transform: translate(4vw, 0);
+  }
+}
+
+article {
+  & p, & ul, & ol, & blockquote {
+    font-size: var(--content-scaling);
   }
 }
 
