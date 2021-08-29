@@ -17,13 +17,15 @@ layout: default
     ></sl-icon>
   </h2>
 
-  {%= markdownify do %}
+  <article>
+    {%= markdownify do %}
 
-Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing **Now** pages](https://nownownow.com/about){:target="_blank"} to their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
+  Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing **Now** pages](https://nownownow.com/about){:target="_blank"} to their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
 
-  {% end %}
+    {% end %}
 
-  {{ now_entry.content }}
+    {{ now_entry.content }}
+  </article>
 
   {% if is_entry_now %}
     {%= markdownify do %}
