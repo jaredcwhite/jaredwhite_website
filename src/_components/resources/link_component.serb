@@ -9,7 +9,7 @@
     </blockquote></a>
   {% end %}
 
-  {{ resource.content }}
+  {{ resource.content | hashtags }}
 
   {%@ PublishedDateComponent resource: resource %}
 </article>
