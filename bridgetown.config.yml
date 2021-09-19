@@ -11,6 +11,7 @@ collections:
     sort_direction: descending
   newsletters:
     output: false # we'll just reference them from an archive page, but the actual issues are legacy static files
+    sort_direction: descending
   podcast:
     output: true
     sort_direction: descending

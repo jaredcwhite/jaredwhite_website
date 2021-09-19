@@ -1,0 +1,19 @@
+---
+layout: default
+title: Tag Cloud
+---
+
+<h2>Older Newsletter Archive</h2>
+
+<p><em>Looking for newsletters in Summer 2021 &amp; beyond?</em> <strong><a href="https://www.getrevue.co/profile/creatorclass">Here you go!</a></strong></p>
+
+<hr />
+
+<ul>
+  {% collections.newsletters.resources.each do |newsletter| %}
+    <li>{{
+          "##{newsletter.data.number}: #{newsletter.data.subject}" |>
+          link_to: "/newsletters/#{newsletter.data.number}"
+        }}</li>
+  {% end %}
+</ul>
