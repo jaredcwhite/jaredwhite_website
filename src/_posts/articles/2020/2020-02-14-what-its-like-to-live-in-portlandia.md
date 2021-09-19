@@ -8,6 +8,7 @@ cloudinary_id: FDF0F3FE-0D1F-40C5-AB7E-68BC2AA91765_h4ltsy
 tags: portland lifehacks comedy tvshows
 newsletter: 46
 category: articles
+favorite: true
 ---
 
 I'm not sure how many people have moved to a new city because they saw it on TV. I could envision that happening for New York maybe. Or Paris. Or Singapore. But for a moderately-sized city in the Pacific Northwest carved out of evergreens and a couple large rivers that has historically been routinely upstaged in the cultural zeitgeist by its larger siblings to the north and the south (aka Seattle and San Francisco)?

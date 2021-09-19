@@ -36,7 +36,10 @@ en:
       icon: map/map-pin-time-line
     projects:
       name: Projects
+      name_plural: Projects
       icon: business/stack-line
     podcast:
       name: Podcast
       icon: media/mic-line
+  labels:
+    podcast_episode: Podcast Episode

@@ -8,6 +8,7 @@ subtitle: It's taken a global pandemic for many of us to realize something profo
   on a certain level, is IS the world.
 cloudinary_id: EEF14FD7-4409-419C-B4CF-DE4934C67F1A_eexxp7
 tags: openweb website remotework
+favorite: true
 ---
 
 Things always seem to happen in waves, don't they? There's a cycle of first excitement about a new idea or technology, then comes hype, then disillusionment, then a rush to find the next big thing. Some things never quite make it past a single excitement-hype-disillusionment-abandonment cycle. But other things do.

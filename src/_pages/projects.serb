@@ -1,0 +1,22 @@
+---
+layout: page
+title: destinations.projects.name_plural
+translate_title: true
+icon: true
+---
+
+<p>Just a smattering of the endeavors I have going on at any given moment (besides what's obviously available on this website). <em>Welcome to the Jaredverse!</em></p>
+
+<hr />
+
+{% collections.projects.resources.each do |project| %}
+  <a-card>
+    <article>
+      <h3><a href="{{ project.data.link }}" target="_blank" style="color:var(--heading-font-color); text-transform:uppercase">{{ project.data.title }}</a></h3>
+
+      {{ project.content }}
+
+      <p><a class="button" href="{{ project.data.link }}" target="_blank">{{ project.data.link | sub: "https://www.", "" }}</a></p>
+    </article>
+  </a-card>
+{% end %}

@@ -11,7 +11,19 @@
       Episode {{ resource.data.number }}
     </h3>
 
-    <flex-row style="align-items:center">
+    <category-indicator>
+      <a href="/podcast">
+        <p style="margin-top:2.5rem">
+          <sl-icon
+            library="remixicon"
+            name="{{ "destinations.podcast.icon" | t }}"
+          ></sl-icon>
+          {{ "labels.podcast_episode" | t }}
+        </p>
+      </a>
+    </category-indicator>
+
+    <flex-row style="align-items:center; margin-bottom:2.5em">
       <flex-cell>
         <a href="/podcast">
           <img class="u-photo podcast-cover" style="width:150px" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
@@ -26,18 +38,6 @@
         </a></p>
       </flex-cell>
     </flex-row>
-
-    <category-indicator>
-      <a href="/podcast">
-        <p>
-          <sl-icon
-            library="remixicon"
-            name="{{ "destinations.podcast.icon" | t }}"
-          ></sl-icon>
-          {{ "destinations.podcast.name" | t }}
-        </p>
-      </a>
-    </category-indicator>
   {% end %}
 
 {% if h_level == :h2 %}

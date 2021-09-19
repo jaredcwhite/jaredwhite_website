@@ -8,6 +8,7 @@ category: articles
 date: '2018-05-04T09:05:00-07:00'
 tags: parenting
 newsletter: 5
+favorite: true
 ---
 
 I've been doing this parenting thing a little while now. My oldest child will be entering first grade in the not-so-distant future. We've had a lot of ups and downs over the years, as any parents do, but there's one thing I've learned by now that helps me temper my frustrations and _chill out_ when upsets occur, and it is this:

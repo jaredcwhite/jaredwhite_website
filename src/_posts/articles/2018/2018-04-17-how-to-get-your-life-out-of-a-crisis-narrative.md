@@ -7,6 +7,7 @@ category: articles
 date: '2018-04-17T10:06:38-07:00'
 tags: mindfulness minimalism spirituality
 newsletter: 3
+favorite: true
 ---
 
 So much of modern storytelling we see in TV shows and movies revolves around the plot device of epic conflict & resolution. Our scrappy heroes are constantly having to deal with one crisis after another in a never-ending Sisyphean stuggle to overcome evil and tragic circumstances. You can almost predict when something terrible will happen next — a character gets a moment of peace and feels, for a brief time, happy. _Sorry,_ the writers say. _Can't let you stay there too long. **Release the Kraken!**_

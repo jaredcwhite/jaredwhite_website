@@ -32,6 +32,14 @@ blockquote, a-card, .featured-image > img {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
 
+resources-feed {
+  &[skip-last-hr] {
+    & hr:last-of-type {
+      display: none;
+    }
+  }
+}
+
 article-content {
   display: block;
 

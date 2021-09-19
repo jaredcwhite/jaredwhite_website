@@ -8,6 +8,7 @@ category: articles
 date: '2018-08-03T09:28:34-07:00'
 tags: ''
 newsletter: 13
+favorite: true
 ---
 
 A fascinating question turned up on Quora entitled **Should I quit my job to rest?** As it turns out, I have some thoughts about that. [Here's what I wrote in answer:](https://www.quora.com/Should-I-quit-my-job-to-rest/answer/Jared-White?share=898253cc&srid=BAq)

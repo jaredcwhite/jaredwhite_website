@@ -6,6 +6,7 @@ category: articles
 date: '2019-08-04T14:35:22-07:00'
 tags: mindfulness lifehacks
 newsletter: 31
+favorite: true
 ---
 
 At various points in your life, you will have to start over from scratch. There, I said it. It's not the most pleasant idea to contemplate. It's not really something you get as a pep talk when you're entering adulthood. It's not the sort of inspirational speech you look for when browsing TED.

@@ -6,16 +6,16 @@
   <body class="{{ resource.data.layout }} category-{{ resource.data.category || "none" }}">
     <main>
       <header style="width:100%">
-        <a href="/" style="text-decoration: none">
-          <h1>
+        <a href="/" style="text-decoration:none">
+          <h1 style="white-space: nowrap">
             <h-inner>
               {{ site.metadata.title }}
             </h-inner>
-            <img alt="Photo of Jared" src="/images/jared-white-2020.jpg" style="height: 48px;vertical-align: -0.25em;margin-left: 5px;border-radius: 48px;" />
+            <img alt="Photo of Jared" src="/images/jared-white-2020.jpg" style="height:70px; vertical-align:-1.1rem; margin-left:5px; border-radius:70px; border:4px solid var(--secondary)" />
           </h1>
         </a>
 
-        <p id="tagline" style="font-size: 110%"><strong>{{ site.metadata.tagline | safe }}</strong></p>
+        <p id="tagline" style="font-size:110%"><strong>{{ site.metadata.tagline | safe }}</strong></p>
       </header>
 
       <main-content>

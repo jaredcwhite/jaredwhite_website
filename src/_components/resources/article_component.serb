@@ -6,13 +6,13 @@
       <h3>{{ resource.data.subtitle }}</h3>
     {% end %}
 
-    <layout-flex style="display:flex; align-items:center; justify-content:space-between">
+    <flex-row style="align-items:center; justify-content:space-between">
       {%@ CategoryIndicatorComponent category: resource.data.category %}
 
       <p id="tag-cloud" style="text-align:right; padding-left:1rem; margin-right:-0.3rem">
         {{ resource.data.tags | map: ->(tag) { "##{tag}" } | join: " " | hashtags }}
       </p>
-    </layout-flex>
+    </flex-row>
   {% end %}
 
   {%@ FeaturedImageComponent resource: resource %}

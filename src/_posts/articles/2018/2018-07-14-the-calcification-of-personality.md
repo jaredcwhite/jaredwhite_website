@@ -7,6 +7,7 @@ category: articles
 date: '2018-07-14T09:06:49-07:00'
 tags: mindfulness bigotry
 newsletter: 12
+favorite: true
 ---
 
 I've notified a phenomenon within myself as I rapidly head towards the age of 40. I'm becoming more unashamedly **me**. I am far more tolerant of leaning into my personality quirks, likes, and dislikes now than I was when I was in my 20s. Back then, I was more concerned about what everyone else thought of me. I'd "moderate" myself. I wouldn't get too outspoken in a way that might cause others discomfort or make them think ill of me.

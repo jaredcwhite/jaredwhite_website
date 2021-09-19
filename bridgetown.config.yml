@@ -1,7 +1,7 @@
-url: "https://jaredwhite.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://jaredwhite.com"
+timezone: America/Los_Angeles
 
 permalink: simple
-
 content_engine: resource
 template_engine: serbea
 
@@ -15,11 +15,11 @@ collections:
   podcast:
     output: true
     sort_direction: descending
+  projects:
+    output: false
+    sort_by: order
+    sort_direction: ascending
 
-# Other options you might want to investigate:
-# 
-# base_path: "/" # the subpath of your site, e.g. /blog
-timezone: America/Los_Angeles
 pagination:
   enabled: true
   per_page: 15

@@ -73,7 +73,6 @@ blockquote, a-card {
   margin: 1.5em 0 2em;
   padding: 1.5em;
   background: var(--outlined);
-  font-size: 120%;
   text-align: center;
   border: none !important;
   border-left: 7px solid var(--card-border-color) !important;
@@ -89,6 +88,10 @@ blockquote, a-card {
     padding-left: 0;
     margin-top: 0;
   }
+}
+
+blockquote {
+  font-size: 120% !important;
 }
 
 a-card {

@@ -6,6 +6,7 @@ cloudinary_id: E18D3683-1820-4843-9123-D7AD96EBC510_hqvdwc
 category: articles
 date: '2018-09-19T08:16:12-07:00'
 tags: ''
+favorite: true
 ---
 
 Let's talk about [The Statement on Social Justice & the Gospel](https://statementonsocialjustice.com){:target='sosjatg'}, which I will henceforth refer to as The Statement. I will be clear from the outset: I am not in favor of The Statement in any way. While I consider myself a Christian in the basic sense that I am a follower of Jesus, I no longer consider myself a member of the American Evangelical movement. So I look at this statement as someone with very specific reasons to be critical of Evangelicalism—particularly its mainstream conservative flavor—yet I remain open to well-reasoned arguments for Evangelical positions and try to engage with them with good intentions and respect.
