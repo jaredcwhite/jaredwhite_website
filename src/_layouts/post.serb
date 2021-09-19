@@ -5,6 +5,7 @@ layout: default
 {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource %}
 
 <a-card>
+  {%@ "newsletter_preamble" %}
   {%@ "newsletter_form" %}
 </a-card>
 

@@ -3,6 +3,8 @@ layout: page
 title: About Me
 ---
 
+![black and white photo of Jared White](/images/jaredwhite-in-bw.jpg){:style="width:350px; border-radius:3px"}
+
 **Height:** 5'10.5"  
 **Hair Color:** Brown (not gray, I swear! 🤨)  
 **Eyes:** Blue  

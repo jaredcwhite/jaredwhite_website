@@ -17,12 +17,18 @@ end
   ></sl-icon>
 </h2>
 
-<a-card style="margin-bottom:3rem">
-  {%@ "podcast_subscriptions" %}
-</a-card>
+{% if paginator.total_pages > 1 and paginator.previous_page %}
+  {%@ "pagination" %}
+{% else %}
+  <a-card style="margin-bottom:3rem">
+    {%@ "podcast_subscriptions" %}
+  </a-card>
+{% end %}
 
 <resources-feed>
   {% paginator.resources.each do |resource| %}
     {%@ Resources::EpisodeComponent resource: resource, h_level: :h3 %}
   {% end %}
 </resources-feed>
+
+{% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}

@@ -6,21 +6,6 @@ prototype:
   collection: posts
 ---
 
-{% if paginator.total_pages > 1 and paginator.previous_page %}
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-    <li>
-      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
-    </li>
-    {% end %}
-    {% if paginator.next_page %}
-    <li>
-      <a href="{{ paginator.next_page_path }}">Next Page</a>
-    </li>
-    {% end %}
-  </ul>
-{% end %}
-
 <category-indicator>
   <a href="/tags">
     <p>
@@ -33,23 +18,12 @@ prototype:
   </a>
 </category-indicator>
 
+{% if paginator.total_pages > 1 and paginator.previous_page %}{%@ "pagination" %}{% end %}
+
 <resources-feed>
   {% paginator.resources.each do |resource| %}
     {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3, show_thumbnail: true %}
   {% end %}
 </resources-feed>
 
-{% if paginator.total_pages > 1 %}
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-    <li>
-      <a href="{{ paginator.previous_page_path }}">Previous Page</a>
-    </li>
-    {% end %}
-    {% if paginator.next_page %}
-    <li>
-      <a href="{{ paginator.next_page_path }}">Next Page</a>
-    </li>
-    {% end %}
-  </ul>
-{% end %}
+{% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}

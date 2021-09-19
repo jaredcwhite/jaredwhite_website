@@ -1,0 +1,3 @@
+<h2>Join the Club!</h2>
+
+<p style="margin-bottom:2rem">Look, I get it. You already subscribe to too many newsletters. So much to keep up with. But guess what? I only send out a newsletter occassionaly. It’s no big deal. And if you peruse the <strong><a href="{{ site.metadata.newsletter.url }}" target="_blank">{{ site.metadata.newsletter.name }}</a></strong> archive, you might find something that resonates with you. It’s a great way to stay current with what I’m publishing, and newsletter recipients <em>always</em> get some extra insight just for them. So what are you waiting for? Let’s roll!</p>

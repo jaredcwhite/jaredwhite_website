@@ -6,17 +6,20 @@ layout: default
 
 ## Hello and Welcome! <sl-icon library="remixicon" name="{{ "destinations.home.icon" | t }}"></sl-icon>
 
-I’m Jared, _an award-winning_ essayist, **Rubyist**, and podcaster who’s been commenting on and building for the web since Mosaic was a thing. (Yup, it’s true! 😆)
+I’m Jared, an _award-winning_ essayist, **Rubyist**, and podcaster who’s been commenting on and building for the web since Mosaic was a thing. (Yup, it’s true! 😆)
 
-In my spare time I travel around Portland 🌲 and the Pacific Northwest (pandemic lockdowns notwithstanding) and make artsy-fartsy videos. 📹 📺
+In my spare time I travel around **Portland** 🌲 and the Pacific Northwest and shoot cinematic-yet-quirky vlogs. 📹 📺
 
-This is my home on the internet. I hope you enjoy browsing around! 📍
+This is my **home base** on the internet. I hope you enjoy browsing around! 📍
 
 **P.S. What am I doing now? [That's what the Now Page is for!](/now)** ⏱
+
+**P.P.S. What’s my favorite (fill-in-the-blank)? [Find out in About Me.](/about)** 😃
 
 ----
 
 ## Things I've Made <sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}"></sl-icon>
+{:style="white-space:nowrap"}
 
 It would seem I'm always but a step away from reaching for an endeavor to occupy my time with at any given moment. Besides what's obviously available on this website…from Bridgetown, a Ruby-powered site generator, to Yarred, my musical alter-ego, there's something for…well…somebody.
 
@@ -43,6 +46,13 @@ It would seem I'm always but a step away from reaching for an endeavor to occupy
 
 ----
 
+<a-card>
+  {%@ "newsletter_preamble" %}
+  {%@ "newsletter_form" %}
+</a-card>
+
+----
+
 ## Videos <sl-icon library="remixicon" name="{{ "categories.videos.icon" | t }}"></sl-icon>
 
 <resources-feed skip-last-hr>
@@ -55,6 +65,8 @@ It would seem I'm always but a step away from reaching for an endeavor to occupy
   More Videos This Way
   <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
 </a></p>
+
+----
 
 ## Photos <sl-icon library="remixicon" name="{{ "categories.pictures.icon" | t }}"></sl-icon>
 
@@ -79,20 +91,12 @@ It would seem I'm always but a step away from reaching for an endeavor to occupy
   {% end %}
 </resources-feed>
 
+----
+
 ## Popular Essays <sl-icon library="remixicon" name="{{ "categories.articles.icon" | t }}"></sl-icon>
 
-<resources-feed>
+<resources-feed skip-last-hr>
   {% collections.posts.resources.select { |r| r.data.favorite }.each do |resource| %}
     {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
   {% end %}
 </resources-feed>
-
-## Email Newsletter
-
-Woohoo!
-
-----
-
-## Tweets <sl-icon library="remixicon" name="logos/twitter-line"></sl-icon>
-
-Not sure about this one

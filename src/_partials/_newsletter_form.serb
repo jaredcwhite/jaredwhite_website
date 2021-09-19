@@ -1,11 +1,11 @@
 <form action="https://www.getrevue.co/profile/creatorclass/add_subscriber" method="post" name="revue-form">
-  <p class="revue-form-group">
-    <label>Email address
-    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]"></label>
+  <p class="revue-form-group" style="margin-bottom: 1rem">
+    <label>Email address <br/>
+    <input class="revue-form-field" placeholder="me@example.com" type="email" name="member[email]"></label>
   </p>
   <p class="revue-form-group">
-    <label>First name <span class="optional">(Optional)</span>
-    <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name"></label>
+    <label>First name (Optional) <br/>
+    <input class="revue-form-field" type="text" name="member[first_name]" id="member_first_name"></label>
   </p>
   
   <p class="revue-form-actions"><!-- text center -->
@@ -14,5 +14,6 @@
       Subscribe
     </button>
   </p>
-  <small><div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></div></small>
+  
+  <p class="revue-form-footer" style="opacity:0.75"><small>By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a></small></p>
 </form>

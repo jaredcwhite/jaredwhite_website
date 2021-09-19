@@ -22,4 +22,5 @@ collections:
 
 pagination:
   enabled: true
+  title: ":title (pg. :num)"
   per_page: 15

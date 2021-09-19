@@ -1,0 +1,18 @@
+<p class="text-center" style="margin-bottom:2.5rem">
+  {% if paginator.previous_page %}
+    <span style="margin: 0 0.8em">
+      <a href="{{ paginator.previous_page_path }}" class="button">
+        <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-left-circle-line"></sl-icon>
+        Previous
+      </a>
+    </span>
+  {% end %}
+  {% if paginator.next_page %}
+    <span style="margin: 0 0.8em">
+      <a href="{{ paginator.next_page_path }}" class="button">
+        Next Page
+        <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+      </a>
+    </span>
+  {% end %}
+</p>
