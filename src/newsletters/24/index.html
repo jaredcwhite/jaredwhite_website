@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mark Up This! Issue #24: The Year of the Personal Cloud</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" value="light dark" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      html, #body {
+        font-size: 17px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 1.45;
+        background: white;
+        color: #221F11;
+      }
+      
+      body {
+        padding: 0;
+        margin: 15px;
+      }
+
+      * {
+        line-height: inherit;
+      }
+
+      div.center-block {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px #fab26b dotted;
+        margin-left: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+
+      h1, h2, h3, h4 {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 1.2em;
+        color: #f7693e;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+      }
+
+      cite {
+        font-style: normal;
+      }
+
+      a {
+        color: #18704c !important;
+        text-decoration: none;
+      }
+
+      .quote {
+        border-left: 5px solid #bdddcd;
+        padding-left: 14px;
+        color: #332f1a;
+        margin-bottom: 1.7rem;
+      }
+
+      .quote h2 a {
+        color: #1b3427 !important;
+        text-decoration: underline;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+
+      .button {
+        margin-top: 1.5em;
+        margin-bottom: 2.5em;
+      }
+
+      .button a {
+        background: #18704c;
+        padding: 9px 13px;
+        border-radius: 3px;
+        color: white !important;
+        font-size: 0.85em;
+      }
+
+      .previewtext {
+        color: #a98;
+        font-size: 0.75em;
+      }
+
+      .logo {
+        margin-top: 2em;
+      }
+      .avatar, .title {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .avatar img {
+        border-radius: 50px;
+        width: 100px;
+      }
+      @media (max-width: 399px) {
+        .avatar img {
+          width: 80px;
+        }
+      }
+      .title {
+        margin-left: 1em;
+      }
+      .title h1 {
+        margin-top: 0.5em;
+        font-size: 1.7em;
+        margin-bottom: 0.3em;
+        color: #18704c;
+      }
+      .title h1 span {
+        font-weight: normal;
+        color: #5edda9;
+      }
+      .title h2 {
+        font-size: 1.05em;
+        color: #765;
+        font-weight: normal;
+        margin-top: 0;
+      }
+
+      .picture {
+        margin-bottom: 1em;
+      }
+      .picture img {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .outro {
+        font-style: italic;
+      }
+      
+      .links {
+        font-size: 0.9em;
+        margin-bottom: 2.5em;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html, #body {
+          background: #1e1e1e !important;
+          color: #eeeeee !important;
+        }
+
+        a {
+          color: #40d699 !important;
+        }
+
+        .previewtext {
+          color: #7d6f61 !important;
+        }
+
+        .title h1 {
+          color: #d4e9df !important;
+        }
+        .title h1 span {
+          color: #274b39 !important;
+        }
+        .title h2 {
+          color: #cbc297 !important;
+        }
+
+        .quote {
+          border-left: 5px solid #274b39 !important;
+          padding-left: 14px !important;
+          color: #d4e9df !important;
+          margin-bottom: 1.7rem !important;
+        }
+
+        .quote h2 a {
+          color: #cbc297 !important;
+          text-decoration: underline !important;
+        }
+
+        .button a {
+          color: white !important;
+        }
+
+        #canspamBarWrapper {
+          background-color: #000000 !important;
+          color: #888888 !important;
+          border-top: none !important;
+        }
+        #canspamBarWrapper td {
+          color: #888888 !important; 
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="body">
+      <div class="previewtext center-block">
+        <p>How I kicked Dropbox, Google Analytics, and Facebook to the curb and took control over my internet. <a href="https://jaredwhite.com/newsletters/24">View newsletter on the web.</a><br/><a href="https://jaredwhite.com/newsletters" style="font-weight:bold">Just looking? Check out other issues and subscribe!</a></p>
+      </div>
+
+      <hr style="margin-top: 1.25em" />
+
+      <div class="header center-block">
+        <div class="logo">
+          <div class="avatar"><img src="https://jaredwhite.com/assets/jared-white-2020.jpg" alt="" /></div>
+          <div class="title">
+            <h1><span>&lt;</span>Mark Up This!<span>&gt;</span></h1>
+            <h2>a Newsletter by Jared White</h2>
+          </div>
+        </div>
+
+        <h3>Issue #24: The Year of the Personal Cloud</h3>
+      </div>
+
+      <div class="content center-block">
+
+        <div class="copy">
+          <p>You know, I was all set to write a snarky opening to talk about how I’d had enough, how a man’s got to take a stand, how the best time to start using your own self-hosted internet services is NOW…</p>
+
+<p>…and then I got side-tracked and read <a href="https://www.newyorker.com/culture/personal-history/emilia-clarke-a-battle-for-my-life-brain-aneurysm-surgery-game-of-thrones">Emilia Clarke’s harrowing first-person account of surviving not one, but <em>two</em> brain aneurysms</a>. (Yes, that Emilia Clarke, as in the “Mother of Dragons” on Game of Thrones.)</p>
+
+<p>Whoa. Just set this newsletter aside and <strong>go read her story already.</strong> Can’t top that.</p>
+
+<p>…done?</p>
+
+<p>OK, so today I have new episode of <em>The Jared White Show</em> for your listening pleasure:</p>
+
+<p>🎙 <strong><a href="https://jaredwhite.com/podcast/27/">The Year of the Personal Cloud</a></strong></p>
+
+<p>It’s a detailed account of which services I’ve started using for things like file syncing and sharing, website analytics, code repositories, photo galleries, etc., instead of the big commercial services everyone just uses by default. (Because nobody ever got fired by recommending Google, AMIRITE?!)</p>
+
+<p>You know, it’s a funny thing. In the late 90s and early 2000s, installing software on a server somewhere to use for various online tasks was pretty widespread. There was a PHP package (whether paid or open source) for <em>everything</em>. I remember the first time Basecamp launched in 2004, and I was <strong>shocked</strong> that it was only available by paying a monthly fee to access it on 37signals’ own servers. It was an early SaaS (Software-as-a-Service) product, and I thought that was bonkers. <em>Why would anyone pay for an internet service they can’t host themselves?</em></p>
+
+<p>Clearly, the correct answer turned out to be: f’n everybody who uses the g** d*** internet. 😱</p>
+
+<p>Yet here we are, 15 years later, and I think maybe, just maybe a few of us have awakened from the nightmare which Facebook and Google have wrought, and we’ve realized that using <em>libre</em> (free) software and self-hosted internet services is actually a viable path forward afterall. You don’t have to be stuck with Google Drive, or Dropbox, or whatever. You don’t have to be stuck with posting baby pictures on Facebook. <strong>There are other ways.</strong></p>
+
+<p>(And I talk about some of these other ways on my podcast. Worth a listen! 😜)</p>
+
+        </div>
+
+        <hr />
+
+        <div class="items">
+          <h3>Items I’ve Posted Recently…</h3>
+          <br/>
+
+          
+          
+
+          
+            
+              So much of internet discourse ends up:
+
+* I believe in Position A! You people are wrong!
+* I believe in Position B! You people are wrong!
+* Well, I believe in the One True Position, which of course is C. You people are both wrong!
+
+I wish more people would instead speak up and say:
+
+* I appreciate interesting observations from people who believe Positions A, B, C, and beyond. Let's celebrate this conversation and sharing of ideas!
+
+(And if you disagree with me, you are, of course, WRONG! 🤣)
+            
+            <hr />
+          
+            
+              <div class="quote">
+  <h2><cite><a href="https://appleinsider.com/articles/19/03/18/ipad-ipad-air-ipad-mini-ipad-pro-how-to-choose-the-best-ipad-for-your-needs-and-budget" target="_blank">iPad, iPad Air, iPad mini, iPad Pro: How to choose the best iPad for your needs and budget</a></cite></h2>
+
+  <p>Apple has introduced new versions of the iPad Air and the iPad mini, plus it’s removed one of the iPad Pros. This leaves the lineup ranging from $329 to $999 for the just the base models, but it’s also made the buying decision a little more involved. AppleInsider explains how to balance getting the most features for your budget.</p>
+
+</div>
+
+This is an excellent overview of the current state of Apple's iPad lineup, now that there's a refreshed iPad mini along with a resurrected iPad Air (!) with a larger 10.5" screen which makes it feel more akin to the previous-generation 10.5" iPad Pro.
+
+Both of the new models feature laminated True Tone displays, which is awesome, and they also support the Apple Pencil (1st-gen). Having Pencil support now in the iPad mini is actually a great update for people who are fans of the tiny form factor for note-taking on the go. I also applaud Apple for not skimping on the base storage. 64GB is a great starting size for the iPad.
+
+I feel like it's weird the now-very-out-of-date entry-level iPad is still a thing. I would have expected it to get a price drop or something. At this point, I couldn't in all good conscience recommend anyone buy it, unless it's for bulk purposes such as in the education sector. Otherwise, either the new iPad Air or iPad mini would be a fantastic tablet to get if you don't need the extra power, size, and utility of the iPad Pro.
+            
+            <hr />
+          
+        </div>
+
+        <div class="outro">
+          
+            <p>Happy Spring everybody! Put your phone down or your tablet away or whatever and go enjoy some warmer (hopefully) weather. Why am I even still typing this?! GAAA! I’m outta here baby. See y’all next week. PEACE ✌️</p>
+
+          
+        </div>
+
+        <div class="button">
+          <a href="https://jaredwhite.com/newsletters/">Visit Newsletter Archive</a>
+        </div>
+        
+        <div class="links">
+          <strong>Connect on:</strong> <a href="https://twitter.com/jaredcwhite">Twitter</a> / <a href="https://www.youtube.com/channel/UCx90UL8AZfxSbBbFQ7L2t5w">YouTube</a> / <a href="https://instagram.com/essentiallifejared">Instagram</a>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

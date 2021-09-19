@@ -1,6 +1,3 @@
-require "bridgetown-core/rack/roda"
-require "bridgetown-core/rack/routes"
-
 # Roda is a simple Rack-based framework with a flexible architecture based
 # on the concept of a routing tree. Bridgetown uses it for its development
 # server, but you can also run it in production for fast, dynamic applications.
@@ -8,9 +5,11 @@ require "bridgetown-core/rack/routes"
 # Learn more at: http://roda.jeremyevans.net
 
 class RodaApp < Bridgetown::Rack::Roda
+  # Add Roda configuration here if needed
+
   route do
-    if defined?(RodaRoutes) # see config/roda_routes.rb.sample
-      RodaRoutes.merge self
-    end
+    # Load all the files in server/routes
+    # see hello.rb.sample
+    Bridgetown::Rack::Routes.start! self
   end
 end

@@ -5,7 +5,14 @@
     {% if resource.data.subtitle %}
       <h3>{{ resource.data.subtitle }}</h3>
     {% end %}
-    {%@ CategoryIndicatorComponent category: resource.data.category %}
+
+    <layout-flex style="display:flex; align-items:center; justify-content:space-between">
+      {%@ CategoryIndicatorComponent category: resource.data.category %}
+
+      <p id="tag-cloud" style="text-align:right; padding-left:1rem; margin-right:-0.3rem">
+        {{ resource.data.tags | map: ->(tag) { "##{tag}" } | join: " " | hashtags }}
+      </p>
+    </layout-flex>
   {% end %}
 
   {%@ FeaturedImageComponent resource: resource %}
@@ -15,7 +22,7 @@
   {% else %}
     <p>{{ resource.data.subtitle }}</p>
 
-    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
     <p>{{ "Read Essay" + icon | link_to: resource.relative_url, class: "button" }}</p>
   {% end %}
 

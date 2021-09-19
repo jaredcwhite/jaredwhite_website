@@ -3,40 +3,40 @@ en:
     articles:
       name: Essay
       name_plural: Essays
-      icon: document/article
+      icon: document/article-line
     pictures:
       name: Photo
       name_plural: Photos
-      icon: media/image
+      icon: media/image-line
     links:
       name: Link
       name_plural: Links
-      icon: business/links
+      icon: business/links-line
     thoughts:
       name: Thought
       name_plural: Thoughts
-      icon: communication/chat-1
+      icon: communication/chat-1-line
     videos:
       name: Video
       name_plural: Videos
-      icon: media/movie
+      icon: media/movie-line
   destinations:
     home:
       name: Home
-      icon: buildings/home
+      icon: buildings/home-line
     about:
       name: About
-      icon: user/user-5
+      icon: user/user-5-line
     membership:
       name: Membership
-      icon: finance/bank-card
+      icon: finance/bank-card-line
     now:
       name: Now Page
       then: Then
-      icon: map/map-pin-time
+      icon: map/map-pin-time-line
     projects:
       name: Projects
-      icon: business/stack
+      icon: business/stack-line
     podcast:
       name: Podcast
-      icon: media/mic
+      icon: media/mic-line

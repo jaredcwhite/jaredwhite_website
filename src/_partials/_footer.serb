@@ -1,5 +1,5 @@
 <footer>
-  <figure style="margin: 0 -1rem 3rem">
+  <figure>
     {% if resource.data.title[0].downcase < "h" %}
       <img loading="lazy" alt="wide landscape photo" src="/images/background-portland-naito-pkwy.jpg" />
       <figcaption>Looking North Over Naito Parkway in Portland, Oregon</figcaption>

@@ -1,7 +1,7 @@
 <published-date>
   <a href="{{ resource.absolute_url }}">
     <p>
-      <sl-icon library="remixicon" name="system/time"></sl-icon>
+      <sl-icon library="remixicon" name="system/time-line"></sl-icon>
       <time
         datetime="{{ resource.data.date | strftime: "%Y-%m-%d %H:%M" }}"
         title="{{ resource.data.date | strftime: "%A, %B %-d, %Y, %-I:%M %p Pacific Time" }}"

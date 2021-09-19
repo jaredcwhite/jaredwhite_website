@@ -16,8 +16,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #
 # Happy Bridgetowning!
 
-gem "bridgetown", "~> 0.21.2", github: "bridgetownrb/bridgetown", branch: "support-rake-and-rack"
-gem "bridgetown-core", "~> 0.21.2", github: "bridgetownrb/bridgetown", branch: "support-rake-and-rack"
+gem "bridgetown", "~> 0.21.4", github: "bridgetownrb/bridgetown", branch: "bridgetown-file-routes"
+gem "bridgetown-core", "~> 0.21.4", github: "bridgetownrb/bridgetown", branch: "bridgetown-file-routes"
+gem "bridgetown-routes", "~> 0.21.4", github: "bridgetownrb/bridgetown", branch: "bridgetown-file-routes"
 
 # Puma is a Rack-compatible server
 # (you can optionally limit this to the "development" group)

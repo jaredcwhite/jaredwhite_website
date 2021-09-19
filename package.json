@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "sync": "node sync.js",
     "webpack-build": "webpack --mode production",
     "webpack-dev": "webpack --mode development -w"
   },

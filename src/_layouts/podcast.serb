@@ -20,5 +20,5 @@ layout: default
   {% end %}
 </resources-feed>
 
-{% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+{% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
 <p class="text-center">{{ "More Episodes This Way" + icon | link_to: "/podcast", class: "button" }}</p>

@@ -5,8 +5,8 @@ front_matter do
   icon true
   translate_title true
   prototype({
-    term: "category",
-    collection: "posts"
+    term: :category,
+    collection: :posts
   })
 end
 %}~~~

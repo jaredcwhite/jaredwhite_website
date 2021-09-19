@@ -21,6 +21,6 @@ layout: default
 </resources-feed>
 
 {% left_icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="{{ t("categories.#{resource.data.category}.icon") }}"></sl-icon> {% end %}
-{% right_icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle"></sl-icon>{% end %}
+{% right_icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
 {% plural_name = t("categories.#{resource.data.category}.name_plural") %}
 <p class="text-center">{{ left_icon + "More #{plural_name} This Way" + right_icon | link_to: "/browse/#{resource.data.category}", class: "button" }}</p>

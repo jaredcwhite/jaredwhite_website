@@ -64,12 +64,6 @@ They look dreamy.
 
 ----
 
-## Tweets
+## Tweets <sl-icon library="remixicon" name="logos/twitter-line"></sl-icon>
 
 Not sure about this one
-
-----
-
-## Search
-
-Or this one either…

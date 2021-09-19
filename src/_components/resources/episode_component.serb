@@ -5,7 +5,7 @@
     <h3>{{ resource.site.metadata.podcast_title }}
       <sl-icon
         library="remixicon"
-        name="media/headphone"
+        name="media/headphone-line"
         style="margin-left:2px; vertical-align:-0.09em; color:var(--secondary)"
       ></sl-icon>
       Episode {{ resource.data.number }}
@@ -45,7 +45,7 @@
   {% else %}
     <p>{{ resource.data.description }}</p>
 
-    {% icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="media/headphone"></sl-icon> {% end %}
+    {% icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="media/headphone-line"></sl-icon> {% end %}
     <p>{{ icon + "Listen to Episode #{resource.data.number}" | link_to: resource.relative_url, class: "button" }}</p>
   {% end %}
 

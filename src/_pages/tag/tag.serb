@@ -21,6 +21,18 @@ prototype:
   </ul>
 {% end %}
 
+<category-indicator>
+  <a href="/tags">
+    <p>
+      <sl-icon
+        library="remixicon"
+        name="editor/hashtag"
+      ></sl-icon>
+      Hashtag
+    </p>
+  </a>
+</category-indicator>
+
 <resources-feed>
   {% paginator.resources.each do |resource| %}
     {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3, show_thumbnail: true %}
