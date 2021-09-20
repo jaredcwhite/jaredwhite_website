@@ -8,7 +8,7 @@ layout: default
 
 I’m Jared, an _award-winning_ essayist, **Rubyist**, and podcaster who’s been commenting on and building for the web since Mosaic was a thing. (Yup, it’s true! 😆)
 
-In my spare time I travel around **Portland** 🌲 and the Pacific Northwest and shoot cinematic-yet-quirky vlogs. 📹 📺 In addition, I compose and produce 80s-flavored retro electronica. 🎹 🎶
+In my spare time I travel around **Portland** 🌲 and the Pacific Northwest and shoot cinematic-yet-quirky vlogs. 📹 📺 &nbsp;In addition, I compose and produce 80s-flavored retro electronica. 🎹 🎶
 
 This is my **home base** on the internet. I hope you enjoy browsing around! 📍
 

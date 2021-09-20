@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {% page_title = capture do %}{{ title | strip_html | strip_newlines }}{% end %}
 {%
-  page_title = translate_title(page_title) if page_title.include? "categories."
+  page_title = translate_title(page_title) if should_translate_title
 %}
 <title>{% if page_title != "Index" %}{{ page_title }} | {{ site.metadata.title }}{% else %}{{ site.metadata.title }}: {{ site.metadata.short_tagline | strip_html }}{% end %}</title>
 
