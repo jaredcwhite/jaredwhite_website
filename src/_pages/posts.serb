@@ -1,0 +1,16 @@
+---
+layout: page
+title: Posts Archive
+paginate:
+  collection: posts
+---
+
+{% if paginator.total_pages > 1 and paginator.previous_page %}{%@ "pagination" %}{% end %}
+
+<resources-feed>
+  {% paginator.resources.each do |resource| %}
+    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3, show_thumbnail: true %}
+  {% end %}
+</resources-feed>
+
+{% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}

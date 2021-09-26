@@ -7,3 +7,7 @@ services:
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+    routes:
+      - type: redirect
+        source: /page/*
+        destination: /posts/page/*

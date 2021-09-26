@@ -1,2 +1,2 @@
 {% title_html = capture do %}<{{ @h_level }}>{{ @title }}</{{ @h_level }}>{% end %}
-{% if @h_level == :h3 %}<a href="{{ @url }}" style="text-decoration:none">{{ title_html }}</a>{% else %}{{ title_html }} {% end %}
+{% if @h_level == :h3 %}<a href="{{ @url }}" style="text-decoration-color:var(--grey-outlined)">{{ title_html }}</a>{% else %}{{ title_html }} {% end %}

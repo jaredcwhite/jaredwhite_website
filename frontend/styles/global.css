@@ -289,9 +289,14 @@ footer {
   text-align: center;
   font-size: 85%;
   font-weight: bold;
+  color: var(--footer-text-color);
 
   & figure {
     margin: 0 -1rem 3rem;
+
+    & figcaption {
+      font-size: 110%;
+    }
   }
 }
 

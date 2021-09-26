@@ -15,9 +15,18 @@
     </flex-row>
   {% end %}
 
-  {%@ FeaturedImageComponent resource: resource %}
+  {% if resource.data.cloudinary_id %}
+    {%@ FeaturedImageComponent resource: resource %}
+  {% end %}
 
   {% if h_level == :h2 %}
+    {% if resource.date.to_date < (Date.today - (4 * 365)) %}
+      <p style="font-size:110%; margin-bottom:3rem">
+        <sl-icon library="remixicon" name="system/alert-line" style="color:var(--secondary)"></sl-icon>
+        <strong>This essay is over four years old. It's possible my views have changed since I first wrote this, but I choose to leave it online nevertheless.</strong> <em>Cheers, Jared</em>
+      </p>
+    {% end %}
+
     <article-content>{{ resource.content }}</article-content>
   {% else %}
     <p>{{ resource.data.subtitle }}</p>

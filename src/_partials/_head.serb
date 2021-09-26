@@ -25,7 +25,5 @@
 {%= live_reload_dev_js %}
 
 {% unless Bridgetown.env.development? %}
-<!-- Fathom - beautiful, simple website analytics -->
-<script src="https://cdn.usefathom.com/script.js" site="KWTXZZSH" defer></script>
-<!-- / Fathom -->
+<script defer data-domain="jaredwhite.com" src="https://plausible.io/js/plausible.js"></script>
 {% end %}

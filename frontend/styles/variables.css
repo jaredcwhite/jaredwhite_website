@@ -58,6 +58,8 @@
     --content-scaling: 90%;
   }
 
+  --footer-text-color: var(--portrait-border-color);
+
   --card-border-color: var(--heading-text-color);
   --portrait-border-color: #8f8c80;
 }
@@ -73,6 +75,8 @@ body.dark-mode {
   --field-outlined: #777;
 
   --heading-text-color: #fff;
+
+  --footer-text-color: var(--field-outlined);
 
   --card-border-color: #344941;
   --portrait-border-color: var(--secondary);
