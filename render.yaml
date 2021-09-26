@@ -14,3 +14,6 @@ services:
       - type: redirect
         source: /assets/*
         destination: /images/archived/*
+      - type: redirect
+        source: /videos/
+        destination: /browse/videos/
