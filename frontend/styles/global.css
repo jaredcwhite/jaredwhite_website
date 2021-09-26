@@ -17,6 +17,7 @@ body {
   color: var(--text-color);
   font-family: var(--body-font);
   line-height: var(--line-height);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -117,6 +118,7 @@ button, input[type=button], input[type=submit], a.button {
   padding: 9px 14px;
   margin: 0;
   border-radius: 2px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a.button {
@@ -181,6 +183,10 @@ main {
         font-size: 1.4rem;
       }
     }
+  }
+
+  @media (max-width: 600px) {
+    overflow-x: hidden;
   }
 }
 

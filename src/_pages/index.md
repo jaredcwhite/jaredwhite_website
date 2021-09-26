@@ -94,6 +94,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 ----
 
 ## Popular Essays <sl-icon library="remixicon" name="{{ "categories.articles.icon" | t }}"></sl-icon>
+{:style="white-space:nowrap"}
 
 <resources-feed skip-last-hr>
   {% collections.posts.resources.select { |r| r.data.favorite }.each do |resource| %}

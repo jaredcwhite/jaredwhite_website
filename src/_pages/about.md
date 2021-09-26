@@ -4,7 +4,7 @@ title: About Me
 subtitle: I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
 ---
 
-![black and white photo of Jared White](/images/jaredwhite-in-bw.jpg){:style="width:350px; border-radius:3px"}
+![black and white photo of Jared White](/images/jaredwhite-in-bw.jpg){:style="width:350px; border-radius:3px; box-shadow:0px 10px 20px rgba(0,0,0,0.1)"}
 
 **Height:** 5'10.5"  
 **Hair Color:** Brown (not gray, I swear! 🤨)  
@@ -26,6 +26,11 @@ subtitle: I write about topics that I care about and believe are important. I tr
 **Favorite Activity:** Hiking through the great Pacific Northwest!
 
 ### Hello
+
+<p style="font-size:110%">
+  <sl-icon library="remixicon" name="system/alert-line" style="color:var(--secondary)"></sl-icon>
+  <strong>9/25/21: I'm still in the process of rewriting my bio after the new site launch. Updates are forthcoming!</strong>
+</p>
 
 I’m Jared White, and this is my website on the internet. I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
 

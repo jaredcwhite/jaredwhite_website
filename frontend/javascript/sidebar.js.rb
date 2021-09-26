@@ -13,7 +13,7 @@ window.add_event_listener :DOMContentLoaded do
 
   document.body.add_event_listener :click do |e|
     sidebar = document.query_selector "responsive-sidebar"
-    if sidebar.get_attribute(:open) === "" && !e.target.closest("responsive-sidebar")
+    if sidebar.get_attribute(:open) === "" && !e.target.closest("responsive-sidebar") && !e.target.closest("back-to-top")
       sidebar.remove_attribute :open
       document.query_selector("main-content").remove_attribute :underneath
     end
