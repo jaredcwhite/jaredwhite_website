@@ -1,0 +1,15 @@
+{% if post.cloudinary_id %}<img alt="" src="{{ post.cloudinary_id | cloudinary_url:'w_1200,c_limit,q_65' }}">{% endif %}
+
+<h2>{{ post.subtitle }}</h2>
+
+{{ post.content }}
+
+{% if post.tags %}
+  <br/>
+  <p>
+    {% for tag in post.tags %}
+      <a class="article hashtag" href="/tag/{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </p>
+{% endif %}
+

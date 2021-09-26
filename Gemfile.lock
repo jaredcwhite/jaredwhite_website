@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: f45eadaaf92283cda9119304ae11e3db7a0a04ee
+  revision: 49eb74988b74d3ddf8b270379ecac7b674efa2db
   branch: bridgetown-file-routes
   specs:
     bridgetown (0.21.4)
@@ -94,13 +94,14 @@ GEM
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    localhost (1.1.9)
     minitest (5.14.4)
     multipart-post (2.1.1)
     nio4r (2.5.8)
     parser (3.0.2.0)
       ast (~> 2.4.1)
     public_suffix (4.0.6)
-    puma (5.4.0)
+    puma (5.5.0)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-indifferent (1.2.0)
@@ -143,6 +144,7 @@ DEPENDENCIES
   bridgetown (~> 0.21.4)!
   bridgetown-core (~> 0.21.4)!
   bridgetown-routes (~> 0.21.4)!
+  localhost (~> 1.1)
   puma (~> 5.2)
   ruby2js (>= 3.5)
   serbea (~> 0.12)

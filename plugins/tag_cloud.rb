@@ -1,4 +1,4 @@
-# Simplified code pulled from jekyll-tagging gem
+# Simplified code based on original concepts in jekyll-tagging gem
 class Tagger < Bridgetown::Generator
   def generate(site)
     number_of_levels = 5

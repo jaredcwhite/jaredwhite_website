@@ -1,0 +1,7 @@
+<blockquote>
+  <h2><cite><a href="{{ post.link_url }}">{{ post.link_title }}</a></cite></h2>
+
+  {{ post.link_excerpt | markdownify }}
+</blockquote>
+
+{{ post.content | hashtags }}

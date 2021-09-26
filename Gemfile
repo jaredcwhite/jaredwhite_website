@@ -27,3 +27,5 @@ gem "puma", "~> 5.2"
 gem "serbea", "~> 0.12", group: :bridgetown_plugins
 
 gem "ruby2js", ">= 3.5"
+
+gem "localhost", "~> 1.1"

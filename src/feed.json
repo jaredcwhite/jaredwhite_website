@@ -1,0 +1,47 @@
+---
+layout: null
+template_engine: liquid
+
+#  thanks to Alexandre Vallières-Lagacé
+#   copied from repo; see https://github.com/vallieres/jekyll-json-feed
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.metadata.title | xml_escape }}",
+    "home_page_url": "{{ "/" | absolute_url }}",
+    "feed_url": "{{ "/feed.json" | absolute_url }}",
+    "description": {{ site.metadata.tagline | jsonify }},
+    "favicon": "{{ "/favicon.ico" | absolute_url }}",
+    "expired": false,
+    "items": [
+    {% for post in collections.posts.resources limit:20 %}
+      {% capture page_content %}
+        {% if post.category == 'thoughts' %}
+          {% render "feed_post_types/thought", site: site, post: post %}
+        {% elsif post.category == 'pictures' %}
+          {% render "feed_post_types/picture", site: site, post: post %}
+        {% elsif post.category == 'links' %}
+          {% render "feed_post_types/link", site: site, post: post %}
+        {% elsif post.category == 'videos' %}
+          {% render "feed_post_types/video", site: site, post: post %}
+        {% else %}
+          {% render "feed_post_types/article", site: site, post: post %}
+        {% endif %}
+      {% endcapture %}
+        {
+            "id": "{{ post.id }}",
+            "title": {{ post.feed_title | strip | jsonify }},
+            "summary": {% if post.data.subtitle %}{{ post.data.subtitle | jsonify }}{% else %}{{ page_content | strip_html | strip_newlines | strip | jsonify }}{% endif %},
+            "content_text": {{ page_content | strip_html | strip_newlines | strip | jsonify }},
+            "content_html": {{ page_content | strip_newlines | strip | jsonify }},
+            "url": "{{ post.absolute_url }}",
+            {% if post.data.cloudinary_id %}"image": "{{ post.data.cloudinary_id | cloudinary_url:'a_exif,c_limit,h_4000,q_75,w_2048' }}",{% endif %}
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "date_modified": "{{ post.date | date_to_xmlschema }}",
+            "author": {
+                "name": "Jared White"
+            }
+        }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+    ]
+}

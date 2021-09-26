@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {%@ "head", title: resource.data.title %}
+    {%@ "head", title: resource.data.feed_title %}
   </head>
   <body class="{{ resource.data.layout }} category-{{ resource.data.category || "none" }}">
     <main>

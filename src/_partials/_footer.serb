@@ -13,7 +13,7 @@
   </figure>
 
   {%= markdownify do %}
-    Write me: [{{ site.metadata.email }}](mailto:{{ site.metadata.email }})
+    Write me: {{ site.metadata.email | obfuscate_link }}
 
     Copyright © 2012-{{ site.time | strftime: "%Y" }} Jared White
   {% end %}

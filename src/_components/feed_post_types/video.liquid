@@ -1,0 +1,3 @@
+{% if post.data.cloudinary_id %}<img alt="" src="{{ post.data.cloudinary_id | cloudinary_url:'w_1200,c_limit,q_65' }}">{% endif %}
+<p>{{ post.data.description }}</p>
+<p><a href="{{ post.absolute_url }}">Watch the Video Here</a></p>

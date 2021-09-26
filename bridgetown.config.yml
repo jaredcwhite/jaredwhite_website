@@ -1,6 +1,9 @@
 url: "https://jaredwhite.com"
 timezone: America/Los_Angeles
 
+development:
+  bind: "ssl://0.0.0.0:4000"
+
 permalink: simple
 content_engine: resource
 template_engine: serbea

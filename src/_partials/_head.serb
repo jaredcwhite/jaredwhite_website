@@ -11,7 +11,14 @@
 %}
 <title>{% if page_title != "Index" %}{{ page_title }} | {{ site.metadata.title }}{% else %}{{ site.metadata.title }}: {{ site.metadata.short_tagline | strip_html }}{% end %}</title>
 
-<meta name="description" content="{{ site.metadata.description }}" />
+{% if page_title == "Index" %}
+  <meta name="google-site-verification" content="pYA_JJDJUgWs862mXC9tmlAYACXm1IPL9Ps1zk-UDO8" />
+  <meta name="p:domain_verify" content="7329ff40a69a24a5bf73f53f29300fc2"/>
+{% end %}
+
+{% liquid_render "layout/opengraph", site: site, page: page, page_title: page_title %}
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.metadata.title }}" href="{{ site.url }}/feed.xml" />
 
 <link rel="stylesheet" href="{%= webpack_path :css %}" />
 <script src="{%= webpack_path :js %}" defer></script>

@@ -1,0 +1,39 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ site.metadata.title | xml_escape }}</title>
+    <description>{% if site.metadata.tagline %}{{ site.description | xml_escape }}{% endif %}</description>
+    <link>{{ site.url }}</link>
+    <image>
+      <link>{{ site.url }}</link>
+      <title>{{ site.metadata.title | xml_escape }}</title>
+      <url>{{ site.metadata.profile_avatar | prepend: '/assets/' | absolute_url }}</url>
+    </image>
+    <atom:link href="{{ "feed.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
+    {% for post in collections.posts.resources limit:40 %}
+      {% capture page_content %}
+        {% if post.category == 'thoughts' %}
+          {% render "feed_post_types/thought", site: site, post: post %}
+        {% elsif post.category == 'pictures' %}
+          {% render "feed_post_types/picture", site: site, post: post %}
+        {% elsif post.category == 'links' %}
+          {% render "feed_post_types/link", site: site, post: post %}
+        {% elsif post.category == 'videos' %}
+          {% render "feed_post_types/video", site: site, post: post %}
+        {% else %}
+          {% render "feed_post_types/article", site: site, post: post %}
+        {% endif %}
+      {% endcapture %}
+      <item>
+        <title>{{ post.feed_title | strip | xml_escape }}</title>
+        <description>{{ page_content | xml_escape }}</description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ post.absolute_url }}</link>
+        <dc:creator>Jared White</dc:creator>
+        <guid isPermaLink="true">{{ post.absolute_url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

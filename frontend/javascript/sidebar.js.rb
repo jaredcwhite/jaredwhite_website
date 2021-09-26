@@ -10,6 +10,7 @@ window.add_event_listener :DOMContentLoaded do
       document.query_selector("main-content").set_attribute :underneath, ""
     end
   end
+
   document.body.add_event_listener :click do |e|
     sidebar = document.query_selector "responsive-sidebar"
     if sidebar.get_attribute(:open) === "" && !e.target.closest("responsive-sidebar")
