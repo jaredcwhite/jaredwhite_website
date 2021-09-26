@@ -34,9 +34,11 @@ back-to-top {
   width: 45px;
   height: 45px;
 
+  translate: 5px 0px;
   transition: all 0.3s;
 
   &[active] {
+    translate: 0px 0px;
     opacity: 1;
     pointer-events: auto;
   }
