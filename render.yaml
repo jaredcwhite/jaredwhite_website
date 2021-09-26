@@ -11,3 +11,6 @@ services:
       - type: redirect
         source: /page/*
         destination: /posts/page/*
+      - type: redirect
+        source: /assets/*
+        destination: /images/archived/*
