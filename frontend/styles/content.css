@@ -34,7 +34,7 @@ back-to-top {
   width: 45px;
   height: 45px;
 
-  translate: 5px 0px;
+  translate: 10px 0px;
   transition: all 0.3s;
 
   &[active] {
