@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+subtitle: I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
 ---
 
 ![black and white photo of Jared White](/images/jaredwhite-in-bw.jpg){:style="width:350px; border-radius:3px"}
@@ -24,8 +25,6 @@ title: About Me
 **Weird Skill:** I can play the Scottish Border Bagpipes  
 **Favorite Activity:** Hiking through the great Pacific Northwest!
 
----
-
 ### Hello
 
 I’m Jared White, and this is my website on the internet. I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
@@ -42,6 +41,14 @@ What are some of the topics I write about? Generally you’ll see me covering:
 - Anything else that strikes my fancy
 
 My tagline <strike>says</strike> once said that I’m a writer, musician, open web advocate, programmer, designer, and sci-fi nerd. Let’s unpack that a bit, shall we?
+
+----
+
+<a-card>
+  {%@ "newsletter_preamble", hide_photo: true %}
+  {%@ "newsletter_form" %}
+</a-card>
+
 
 ### Writer
 

@@ -15,6 +15,12 @@ newsletter:
   name: Creator Class 
   url: https://www.getrevue.co/profile/creatorclass
 
+social:
+  twitter: jaredcwhite
+  youtube_channel: UCx90UL8AZfxSbBbFQ7L2t5w
+  tumblr: jaredcwhite
+  github: jaredcwhite
+
 # Podcast Setup #
 podcast_title: Fresh Fusion
 podcast_description: A weekly show where we discuss the business, the art, the ethics of content creation on the open web. Hosted by Jared White.

@@ -59,6 +59,7 @@
   }
 
   --card-border-color: var(--heading-text-color);
+  --portrait-border-color: var(--primary-light);
 }
 
 body.dark-mode {
@@ -74,4 +75,5 @@ body.dark-mode {
   --heading-text-color: #fff;
 
   --card-border-color: #344941;
+  --portrait-border-color: var(--secondary);
 }

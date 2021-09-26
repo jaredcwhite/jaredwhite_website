@@ -32,6 +32,29 @@ blockquote, a-card, .featured-image > img {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
 
+a-card figure {
+  float: right;
+  margin-top: -1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+
+  & > img {
+    width: 260px;
+    height: 275px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 50%;
+    border: 7px solid var(--portrait-border-color);
+  }
+
+  @media (max-width: 700px) {
+    float: none;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
 resources-feed {
   &[skip-last-hr] {
     & hr:last-of-type {

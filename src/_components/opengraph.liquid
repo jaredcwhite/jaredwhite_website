@@ -1,0 +1,30 @@
+{% if page.data.title == 'Index' %}
+  <meta name="description" content="{{ site.metadata.tagline | strip_html | strip_newlines | escape }}" />
+  <meta property="og:title" content="{{ site.metadata.title | strip_html | strip_newlines | escape }}: {{ site.metadata.tagline | strip_html | strip_newlines | escape }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.metadata.title }}" />
+  <meta property="og:description" content="{{ site.metadata.tagline | strip_html | strip_newlines | escape }}" />
+{% else %}
+  <meta name="description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
+  <meta property="og:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.absolute_url }}" />
+  <meta property="og:site_name" content="{{ site.metadata.title }}" />
+  <meta property="og:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
+  {% if page.data.cloudinary_id %}
+    <meta property="og:image" content="{{ page.data.cloudinary_id | cloudinary_url:'a_exif,c_fill,g_face,h_700,q_50,w_700' }}" />
+  {% elsif page.enclosure_mp3_url %}
+    <meta property="og:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@{{ site.metadata.social.twitter }}" />
+  <meta name="twitter:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
+  <meta name="twitter:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
+  {% if page.data.cloudinary_id %}
+    <meta name="twitter:image" content="{{ page.data.cloudinary_id | cloudinary_url:'a_exif,c_fill,g_face,h_700,q_50,w_700' }}" />
+  {% elsif page.data.enclosure_mp3_url %}
+    <meta property="twitter:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
+  {% endif %}
+{% endif %}

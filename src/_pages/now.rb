@@ -3,7 +3,8 @@
   layout: :now,
   title: I18n.t("destinations.now.name"),
   # BUG…this shouldn't be necessary:
-  permalink: "/now.html"
+#  permalink: "/now.html",
+  template_engine: "ruby"
 }
 ###
 

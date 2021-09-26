@@ -36,16 +36,16 @@
     <h2>Follow</h2>
 
     <ul>
-      <li><a href="https://twitter.com/jaredcwhite">
+      <li><a href="https://twitter.com/{{ site.metadata.social.twitter }}">
         <sl-icon library="remixicon" name="logos/twitter-fill" style="margin-right:8px"></sl-icon>Twitter
       </a></li>
-      <li><a href="https://www.youtube.com/channel/UCx90UL8AZfxSbBbFQ7L2t5w">
+      <li><a href="https://www.youtube.com/channel/{{ site.metadata.social.youtube_channel }}">
         <sl-icon library="remixicon" name="logos/youtube-fill" style="margin-right:8px"></sl-icon>YouTube
       </a></li>
-      <li><a href="https://jaredcwhite.tumblr.com">
+      <li><a href="https://{{ site.metadata.social.tumblr }}.tumblr.com">
         <sl-icon library="remixicon" name="logos/tumblr-fill" style="margin-right:8px"></sl-icon>Tumblr
       </a></li>
-      <li><a href="https://github.com/jaredcwhite">
+      <li><a href="https://github.com/{{ site.metadata.social.github }}">
         <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
       </a></li>
     </ul>

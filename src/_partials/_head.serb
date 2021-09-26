@@ -16,10 +16,16 @@
   <meta name="p:domain_verify" content="7329ff40a69a24a5bf73f53f29300fc2"/>
 {% end %}
 
-{% liquid_render "layout/opengraph", site: site, page: page, page_title: page_title %}
+{%= liquid_render "opengraph", site: Bridgetown::Drops::SiteDrop.new(site), page: page, page_title: page_title %}
 
-<link rel="alternate" type="application/rss+xml" title="{{ site.metadata.title }}" href="{{ site.url }}/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.metadata.title }}" href="{{ "feed.xml" | absolute_url }}" />
 
 <link rel="stylesheet" href="{%= webpack_path :css %}" />
 <script src="{%= webpack_path :js %}" defer></script>
 {%= live_reload_dev_js %}
+
+{% unless Bridgetown.env.development? %}
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="https://cdn.usefathom.com/script.js" site="KWTXZZSH" defer></script>
+<!-- / Fathom -->
+{% end %}
