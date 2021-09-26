@@ -4,7 +4,10 @@
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
   {% if resource.data.link_url %}
-    <a href="{{ resource.data.link_url }}" style="text-decoration:none" target="_blank"><blockquote>
+    <a href="{{ resource.data.link_url }}"
+      style="color:var(--heading-text-color); text-underline-offset:0.3em; text-decoration-style:dotted"
+      target="_blank"
+    ><blockquote>
       {{ resource.data.link_excerpt | markdownify }}
     </blockquote></a>
   {% end %}

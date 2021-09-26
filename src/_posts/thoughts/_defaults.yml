@@ -1,1 +1,1 @@
-permalink: /thoughts/:ymd/:slug.*
+permalink: /:ymd/:slug.*

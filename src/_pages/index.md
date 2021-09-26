@@ -8,7 +8,7 @@ layout: default
 
 I’m Jared, an _award-winning_ essayist, **Rubyist**, and podcaster who’s been commenting on and building for the web since Mosaic was a thing. (Yup, it’s true! 😆)
 
-In my spare time I travel around **Portland** 🌲 and the Pacific Northwest and shoot cinematic-yet-quirky vlogs. 📹 📺
+In my spare time I travel around **Portland** 🌲 and the Pacific Northwest and shoot cinematic-yet-quirky vlogs. 📹 📺 &nbsp;In addition, I compose and produce 80s-flavored retro electronica. 🎹 🎶
 
 This is my **home base** on the internet. I hope you enjoy browsing around! 📍
 
@@ -21,7 +21,7 @@ This is my **home base** on the internet. I hope you enjoy browsing around! 📍
 ## Things I've Made <sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}"></sl-icon>
 {:style="white-space:nowrap"}
 
-It would seem I'm always but a step away from reaching for an endeavor to occupy my time with at any given moment. Besides what's obviously available on this website…from Bridgetown, a Ruby-powered site generator, to Yarred, my musical alter-ego, there's something for…well…somebody.
+It would seem I'm always but one step away from reaching for an endeavor to occupy my time with at any given moment. Besides what's obviously available on this website…from Bridgetown, a Ruby-powered site generator, to Yarred, my musical alter-ego, there's something for…well…somebody.
 
 **[Welcome to the Jaredverse!](/projects)**
 
