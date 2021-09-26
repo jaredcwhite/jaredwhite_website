@@ -59,7 +59,7 @@
   }
 
   --card-border-color: var(--heading-text-color);
-  --portrait-border-color: var(--primary-light);
+  --portrait-border-color: #8f8c80;
 }
 
 body.dark-mode {
