@@ -18,4 +18,5 @@ Cloudinary.config({
   "secure" => true
 })
 
-Liquid::Template.register_filter(MySite::CloudinaryFilter)
+Liquid::Template.register_filter MySite::CloudinaryFilter
+Bridgetown::RubyTemplateView::Helpers.include MySite::CloudinaryFilter

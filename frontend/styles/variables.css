@@ -44,6 +44,7 @@
   --outlined: white;
   --grey-outlined: #eee;
   --field-outlined: #ccc;
+  --field-background: white;
 
   --heading-font: "Tiempos Fine", serif;
   --heading-text-color: black;
@@ -73,6 +74,7 @@ body.dark-mode {
   --outlined: #191816;
   --grey-outlined: #404040;
   --field-outlined: #777;
+  --field-background: var(--body-background);
 
   --heading-text-color: #fff;
 

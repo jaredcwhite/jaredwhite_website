@@ -20,7 +20,9 @@ layout: default
   <article>
     {%= markdownify do %}
 
-  Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing **Now** pages](https://nownownow.com/about){:target="_blank"} to their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
+      {% if is_entry_now %}
+        > Derek Sivers [kicked off a movement](https://sive.rs/nowff){:target="_blank"} of people [publishing Now pages](https://nownownow.com/about){:target="_blank"} on their websites to share what they're focused on _right now_, and I think that's a cool idea, so here's mine!
+      {% end %}
 
     {% end %}
 
@@ -32,7 +34,7 @@ layout: default
 ----
 
 {:.text-center}
-**Last Updated on {{ now_entry.date | strftime: "%B %-d, %Y" }}**
+**Posted on {{ now_entry.date | strftime: "%B %-d, %Y" }}**
     {% end %}
   {% end %}
 
@@ -43,7 +45,10 @@ layout: default
       <ul>
         {% collections.now_entries.resources.each do |entry| %}
           {% next if entry == now_entry %}
-          <li>{{ entry.date | strftime: "%B %-d, %Y" | link_to: entry.relative_url }}</li>
+          <li>
+            {{ entry.date | strftime: "%B %-d, %Y" | link_to: entry.relative_url }}
+            {{ "(current)" if entry == collections.now_entries.resources.first }}
+          </li>
         {% end %}
       </ul>
     </a-card>

@@ -1,7 +1,7 @@
 <article>
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
-  <article-content>{{ resource.content | hashtags }}</article-content>
+  {{ resource.content | hashtags }}
 
   {%@ PublishedDateComponent resource: resource %}
 </article>
