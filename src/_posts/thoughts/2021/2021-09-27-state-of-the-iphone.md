@@ -7,7 +7,7 @@ tags: Apple iPhone iPadmini
 
 I stopped by my local #Apple store yesterday to take a look at the new #iPhone as well #iPadmini models.
 
-I was fairly surprised that the first impressions I'd had of the devices soely from watching the announcement keynote and glancing at marketing materials carried over intact to my hands-on trial.
+I was fairly surprised that the first impressions I'd had of the devices solely from watching the announcement keynote and glancing at marketing materials carried over intact to my hands-on trial.
 
 I just don't like any of the non-pro iPhone colors this year. And that's disappointing because the rumor mill seems convinced that this is the last year for an iPhone mini form factor. And being a mini enthusiast, it sucks I have no interest in purchasing this year's mini.
 
