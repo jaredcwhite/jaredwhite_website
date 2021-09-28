@@ -5,6 +5,10 @@
   </head>
   <body class="{{ resource.data.layout }} category-{{ resource.data.category || "none" }}">
     <main>
+      <switch-theme light-icon="sun-line" dark-icon="moon-line">
+        <sl-icon library="remixicon" name="weather/sun-line" label="Toggle Color Scheme"></sl-icon>
+      </switch-theme>
+
       <header style="width:100%">
         <a href="/" style="text-decoration:none">
           <h1 style="white-space: nowrap">

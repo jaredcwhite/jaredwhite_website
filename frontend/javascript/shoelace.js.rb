@@ -1,4 +1,4 @@
-import SlIcon, from: "@shoelace-style/shoelace/dist/components/icon/icon.js"
+import "@shoelace-style/shoelace/dist/components/icon/icon.js"
 import [ register_icon_library ], from: "@shoelace-style/shoelace/dist/utilities/icon-library.js"
 
 # Register icons from the Remix collection (https://remixicon.com) for use by Shoelace

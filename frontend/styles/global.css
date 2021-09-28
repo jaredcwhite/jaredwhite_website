@@ -18,6 +18,10 @@ body {
   font-family: var(--body-font);
   line-height: var(--line-height);
   overflow-x: hidden;
+
+  &.mode-transitionable {
+    transition: color 0.2s, background 0.2s;
+  }
 }
 
 h1 {
@@ -338,5 +342,28 @@ flex-cell {
 
   &:last-of-type {
     padding-right: 0;
+  }
+}
+
+
+/* Inspired by Shoelace's website */
+switch-theme {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  z-index: 30;
+  cursor: pointer;
+  color: var(--primary);
+
+  sl-icon {
+    font-size: 1.1rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  switch-theme {
+    top: 16.6rem;
+    right: 0.6rem;
   }
 }

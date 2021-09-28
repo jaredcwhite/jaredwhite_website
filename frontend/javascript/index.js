@@ -1,4 +1,5 @@
 // Stylesheet entrypoint
+import "@shoelace-style/shoelace/dist/themes/base.css"
 import "index.css"
 
 import smoothscroll from "smoothscroll-polyfill"
