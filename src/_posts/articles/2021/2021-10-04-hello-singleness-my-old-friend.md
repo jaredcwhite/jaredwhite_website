@@ -8,10 +8,10 @@ cloudinary_id: mthood_adoleh
 tags: marriage divorce family
 ---
 
-“I climb to greet the war in which I have no heart but only
-That one dark I owe my light,
-Call for confessor and wiser mirror but there is none
-To glow after the god stoning night
+“I climb to greet the war in which I have no heart but only  
+That one dark I owe my light,  
+Call for confessor and wiser mirror but there is none  
+To glow after the god stoning night  
 And I am struck as lonely as a holy marker by the sun”
 
 _Dylan Thomas_
@@ -43,3 +43,7 @@ All that to say, I _want_ to remain open to the possibility of leaving singlenes
 Thus concludes my little update on what’s been going on behind the scenes. As far as what comes next—well, if there were ever the perfect moment to trot out the following phrase to wrap up an essay, is it now:
 
 **To Be Continued…**
+
+<br/>
+
+_Photo credit: [Zach Lezniewicz on Unsplash](https://unsplash.com/photos/H1coe5Fpe1M)_
