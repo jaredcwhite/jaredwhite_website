@@ -57,7 +57,3 @@ Thankfully, I'm here now (in Portland, Oregon no less!) with an established clie
 But I would have been miserable.
 
 Instead, I feel _alive_.
-
-<br/>
-Stay tuned for next week's installment of _Tales from Decrypt_ where I chronicle everything you **shouldn't** do to treat a problematic client. Hooray!
-{:style="text-align:center"}
