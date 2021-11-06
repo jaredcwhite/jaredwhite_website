@@ -28,7 +28,7 @@ class Tagger < Bridgetown::Generator
   end
 end
 
-class TagCloudTag < Liquid::Tag
+class TagCloud < Liquid::Tag
   def render(context)
     site = context.registers[:site]
 
@@ -45,4 +45,4 @@ class TagCloudTag < Liquid::Tag
   end
 end
 
-Liquid::Template.register_tag("tag_cloud", TagCloudTag)
+Liquid::Template.register_tag("tag_cloud", TagCloud)

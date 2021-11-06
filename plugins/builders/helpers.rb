@@ -1,4 +1,4 @@
-class HelpersBuilder < SiteBuilder
+class Builders::Helpers < SiteBuilder
   def build
     helper "hashtags", :hashtags
     liquid_filter "hashtags", :hashtags

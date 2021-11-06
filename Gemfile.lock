@@ -1,15 +1,26 @@
-GIT
-  remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: 7573363b4f2275b2a99aebcfa405852a906202c4
-  branch: bridgetown-file-routes
+GEM
+  remote: https://rubygems.org/
   specs:
-    bridgetown (0.21.4)
-      bridgetown-builder (= 0.21.4)
-      bridgetown-core (= 0.21.4)
-      bridgetown-paginate (= 0.21.4)
-    bridgetown-builder (0.21.4)
-      bridgetown-core (= 0.21.4)
-    bridgetown-core (0.21.4)
+    activemodel (6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activesupport (6.1.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    amazing_print (1.4.0)
+    ast (2.4.2)
+    aws_cf_signer (0.1.3)
+    bridgetown (1.0.0.alpha8)
+      bridgetown-builder (= 1.0.0.alpha8)
+      bridgetown-core (= 1.0.0.alpha8)
+      bridgetown-paginate (= 1.0.0.alpha8)
+    bridgetown-builder (1.0.0.alpha8)
+      bridgetown-core (= 1.0.0.alpha8)
+    bridgetown-core (1.0.0.alpha8)
       activemodel (~> 6.0)
       activesupport (~> 6.0)
       addressable (~> 2.4)
@@ -33,28 +44,11 @@ GIT
       thor (~> 1.1)
       tilt (~> 2.0)
       webrick (~> 1.7)
-    bridgetown-paginate (0.21.4)
-      bridgetown-core (= 0.21.4)
-    bridgetown-routes (0.21.4)
-      bridgetown-core (= 0.21.4)
+    bridgetown-paginate (1.0.0.alpha8)
+      bridgetown-core (= 1.0.0.alpha8)
+    bridgetown-routes (1.0.0.alpha8)
+      bridgetown-core (= 1.0.0.alpha8)
       roda-route_list (>= 2.1)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    activemodel (6.1.4.1)
-      activesupport (= 6.1.4.1)
-    activesupport (6.1.4.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
-    amazing_print (1.3.0)
-    ast (2.4.2)
-    aws_cf_signer (0.1.3)
     cloudinary (1.21.0)
       aws_cf_signer
       rest-client (>= 2.0.0)
@@ -82,7 +76,7 @@ GEM
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
-    faraday_middleware (1.1.0)
+    faraday_middleware (1.2.0)
       faraday (~> 1.0)
     ffi (1.15.4)
     hash_with_dot_access (1.1.0)
@@ -90,7 +84,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.4)
       domain_name (~> 0.5)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     kramdown (2.3.1)
       rexml
@@ -114,7 +108,7 @@ GEM
     parser (3.0.2.0)
       ast (~> 2.4.1)
     public_suffix (4.0.6)
-    puma (5.5.0)
+    puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-indifferent (1.2.0)
@@ -130,13 +124,13 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.5)
-    roda (3.48.0)
+    roda (3.49.0)
       rack
     roda-route_list (2.1.0)
       roda
     rouge (3.26.1)
     ruby2_keywords (0.0.5)
-    ruby2js (4.1.7)
+    ruby2js (4.2.0)
       parser
       regexp_parser (~> 2.1.1)
     safe_yaml (1.0.5)
@@ -156,20 +150,19 @@ GEM
     unf_ext (0.0.8)
     unicode-display_width (1.8.0)
     webrick (1.7.0)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bridgetown (~> 0.21.4)!
-  bridgetown-core (~> 0.21.4)!
-  bridgetown-routes (~> 0.21.4)!
+  bridgetown (~> 1.0.0.alpha8)
+  bridgetown-routes (~> 1.0.0.alpha8)
   cloudinary (~> 1.21)
   localhost (~> 1.1)
   puma (~> 5.2)
-  ruby2js (>= 3.5)
+  ruby2js (>= 4.2)
   serbea (~> 0.12)
 
 BUNDLED WITH
-   2.2.22
+   2.3.0.dev
