@@ -163,6 +163,3 @@ DEPENDENCIES
   puma (~> 5.2)
   ruby2js (>= 4.2)
   serbea (~> 0.12)
-
-BUNDLED WITH
-   2.3.0.dev
