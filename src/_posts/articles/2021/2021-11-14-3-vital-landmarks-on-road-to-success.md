@@ -68,7 +68,7 @@ Or in hippie terms, you gotta go where the love is man. **Find the love.**
 
 You’re likely familar with this concept. It’s all about the relationship between _depth_ of knowledge and _breadth_ of knowledge.
 
-> “ The vertical bar on the letter T represents the depth of related skills and expertise in a single field, whereas the horizontal bar is the ability to collaborate across disciplines with experts in other areas and to apply knowledge in areas of expertise other than one's own.” –[Wikipedia](https://en.wikipedia.org/wiki/T-shaped_skills)
+> “The vertical bar on the letter T represents the depth of related skills and expertise in a single field, whereas the horizontal bar is the ability to collaborate across disciplines with experts in other areas and to apply knowledge in areas of expertise other than one's own.” –[Wikipedia](https://en.wikipedia.org/wiki/T-shaped_skills)
 
 You could be a software engineer with a broad amount of knowledge about the field in general, but have a deep well of knowledge in a particular technology or technique. You could be an artist with a broad amount of knowledge about a wide variety of media and traditions, but specialize in one distinct form of art.
 
@@ -82,6 +82,10 @@ So I encourage you to embrace the “t-shaped skills” paradigm. It’s OK to h
 
 ### It All Blends Together
 
-**Intrinsic motivation**, **value creation**, and **t-shaped skills** aren’t just three separate concepts. They all feed off each other to become a collective “force multiplier” in your life. As you practice becoming intrinsically motivated, you begin to shift your focus away from “how come nobody loves my art?!” to “how am I creating value for people through my art?” Then in the effort to provide greater value for people, you identify those areas where you’ll need to specialize and increase your depth of knowledge. And the more you get really, really skilled in those areas, you’ll revel in the satisfaction of providing value to people as you share your expertise and your creativity…which in turns makes it easier to stay motivated. It’s a virtuous circle.
+**Intrinsic motivation**, **value creation**, and **t-shaped skills** aren’t just three separate concepts. They all feed off each other to become a collective “force multiplier” in your life. As you practice becoming intrinsically motivated, you begin to shift your focus away from “how come nobody loves my art?!” to “how am I creating value for people through my art?” Then in the effort to provide greater value for people, you identify those areas where you’ll need to specialize and increase your depth of knowledge. And the more you get really, really skilled in those areas, you’ll revel in the satisfaction of providing value to people as you share your expertise and your creativity…which in turns makes it easier to stay motivated. **It’s a virtuous circle.**
 
 Don’t be surprised if it takes time for this process to kick into high gear. After all, it’s taken me years—decades even—to feel like I’m not simply spinning my wheels and waiting for something to happen. Give your efforts some breathing room and get ready to experiment. _A lot_. Patience may be a virtue, but **showing up every day ready to be the best creative version of yourself is a potent force for change**. And as long as you are able to recognize and acknowledge the three landmarks along the road to success, **you’ll know if you’re on the right track**.
+
+<br/>
+
+_Photo credit: [Chong Wei on Unsplash](https://unsplash.com/photos/kxMI09hoUT8)_
