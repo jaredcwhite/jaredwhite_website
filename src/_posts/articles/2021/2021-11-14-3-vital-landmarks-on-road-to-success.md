@@ -8,9 +8,9 @@ cloudinary_id: three-sisters_kynosn
 tags: creativity lifehacks
 ---
 
-There is an infinite variety of paths to success. There is a myriad of definitions of even what success is. Here is my definition: _I enjoy utilizing the skills with which I am imbued, and there is every reason to believe I can continue to pursue my craft into the future_.
+There is an infinite variety of paths to success. There is a myriad of definitions of even what success is. Here is my definition: _I enjoy utilizing the skills with which I am imbued, and there is every reason to believe I can continue to pursue my craft long into the future_.
 
-How can you orient your lifestyle so that you’re empowered to pursue that which you most enjoy doing? Well, leaving aside your various hobbies (of course there’s nothing wrong with having a hobby!), you won’t be able to keep doing what you enjoy doing unless you’re making money at it. Alas, monetizing skills is often relegated to the realm of “find a job and get yourself hired”—but as we all know, being employed and excelling in your craft are sometimes worlds apart. The top performers in their field seem to “create” their ideal jobout of thin air, but that’s certainly not the case once you scratch the surface.
+How can you orient your lifestyle so that you’re empowered to pursue that which you most enjoy doing? Well, leaving aside your various hobbies (of course there’s nothing wrong with having a hobby!), you won’t be able to keep doing what you enjoy doing unless you’re making money at it. Alas, monetizing skills is often relegated to the realm of “find a job and get yourself hired”—but as we all know, being employed and excelling in your craft are sometimes worlds apart. The top performers in their field seem to “create” their ideal job out of thin air, but that’s certainly not the case once you scratch the surface.
 
 In my experience—and through much trial and error over the years—the path to monetizing your vocation seems to require three vital landmarks in order to achieve lasting success. They are:
 
@@ -30,7 +30,7 @@ Yet the valuable lesson I came to learn during that dreadful time was how to bec
 
 The reason why learning how to become intrinsically motivated is so important to success is this: people erroneously assume it takes outside forces to become successful. Some guru must give you the keys to the kingdom. Some head honcho must bless you with accolades. Some gatekeeper must place you in the spotlight. Some BFF must cheer you up when you’re down in the dumps.
 
-**No, no, a thousand times no!** Everything you need to become successful…_you already possess within yourself_. I know that sounds like a ridiculous cliché, but I whole-heartedly believe it’s entirely true.
+**No, no, a thousand times no!** Everything you need to become successful…_you already possess within yourself_. I know that sounds like a ridiculous cliché, but I wholeheartedly believe it’s entirely true.
 
 **You can’t rely on anyone praising you.**
 
@@ -66,7 +66,7 @@ Or in hippie terms, you gotta go where the love is man. **Find the love.**
 
 ### 3. T-Shaped Skills
 
-You’re likely familar with this concept. It’s all about the relationship between _depth_ of knowledge and _breadth_ of knowledge.
+You’re likely familiar with this concept. It’s all about the relationship between _depth_ of knowledge and _breadth_ of knowledge.
 
 > “The vertical bar on the letter T represents the depth of related skills and expertise in a single field, whereas the horizontal bar is the ability to collaborate across disciplines with experts in other areas and to apply knowledge in areas of expertise other than one's own.” –[Wikipedia](https://en.wikipedia.org/wiki/T-shaped_skills)
 
@@ -78,7 +78,7 @@ Unfortunately, society doesn’t typically reward those who are—pardon the pre
 
 But I’ve finally figured it out. And the answer is: **I cheat**. I’m still a multipotentialite, but I’ve learned to put a bit more muscle behind a narrow scope of endeavor _at any given time_. Try to get really good at this _one_ thing, or try to become “known” for that _one_ thing, right now. Note that I’m not saying I limit myself solely to that. And I’m not saying it has to be set in stone forever. **It’s just for a season. And you’ll know when it’s time to shift gears. You begin to develop an instinct for it**.
 
-So I encourage you to embrace the “t-shaped skills” paradigm. It’s OK to have a multiplicity of interests, and it’s only natural to hesitate letting any particular pursuit suffer much at the hands of all the others. BUT you do need to focus extra hard on a particular vocation, a particular technique, a particular marketable skill—and yes, become known as the “domain expert” in that unique area of speciality. That is the base formula for a lasting career.
+So I encourage you to embrace the “t-shaped skills” paradigm. It’s OK to have a multiplicity of interests, and it’s only natural to hesitate letting any particular pursuit suffer much at the hands of all the others. BUT you do need to focus extra hard on a particular vocation, a particular technique, a particular marketable skill—and yes, become known as the “domain expert” in that unique area of specialty. That is the base formula for a lasting career.
 
 ### It All Blends Together
 
