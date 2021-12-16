@@ -5,8 +5,8 @@ layout: default
 {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource %}
 
 <a-card>
-  {%@ "newsletter_preamble" %}
-  {%@ "newsletter_form" %}
+  {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+  {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
 </a-card>
 
 <br/>

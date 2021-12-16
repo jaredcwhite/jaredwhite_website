@@ -11,7 +11,7 @@
     {%@ FeaturedImageComponent resource: resource %}
   {% end %}
 
-  {% if h_level == :h2%}
+  {% if h_level == :h2 %}
     {{ resource.content | hashtags }}
   {% else %}
     <p>{{ resource.summary }}</p>
