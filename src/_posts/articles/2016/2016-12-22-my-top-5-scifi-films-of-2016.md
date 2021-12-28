@@ -4,7 +4,7 @@ subtitle: It's never been a better time to be a geek and a film buff. Here are m
 cloudinary_id: awesome_movie_nokl5q
 category: articles
 original_source: pygmy-nuthatch
-tags: scifi
+tags: scifi movies
 ---
 
 This year has been a banner year for Sci-Fi and Superhero blockbusters. Some of my favorite movies of all time in this genre have come out, one after another, and it's challenging to pick and rank the winners. But I'm not one to give up a fight, so here is my ranked Top 5 list of the best Sci-Fi movies of the year, with a couple of surprises which I'll explain as I go.
