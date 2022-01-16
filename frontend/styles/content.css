@@ -120,7 +120,7 @@ article-content > p:first-of-type:first-letter {
   color: var(--heading-text-color);
 }
 
-body.post {
+body.post:not(.category-pictures) {
   & .featured-image {
     margin-bottom: 3rem;
   }

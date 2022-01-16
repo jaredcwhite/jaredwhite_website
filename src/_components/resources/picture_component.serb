@@ -5,6 +5,13 @@
 
   {{ resource.content | hashtags }}
 
+  <p style="text-align:center; margin-top:3rem">
+    <a href="{{ resource.data.cloudinary_id | cloudinary_url }}" class="button" style="font-size:80%">
+      <sl-icon library="remixicon" name="system/download-2-fill"></sl-icon>
+      High-Resolution Image
+    </a>
+  </p>
+
   {%@ PublishedDateComponent resource: resource %}
 </article>
 

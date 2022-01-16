@@ -298,6 +298,10 @@ footer {
   & figure {
     margin: 0 -1rem 3rem;
 
+    & img {
+      width: 100%;
+    }
+
     & figcaption {
       font-size: 110%;
     }
