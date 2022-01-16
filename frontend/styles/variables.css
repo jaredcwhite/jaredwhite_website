@@ -43,6 +43,7 @@
   --secondary: #f7693e;
   --outlined: white;
   --grey-outlined: #eee;
+  --color-quoted: #e2dfdd;
   --field-outlined: #ccc;
   --field-background: white;
 
@@ -73,6 +74,7 @@ body.dark-mode {
   --primary-light: #5e736a;
   --outlined: #191816;
   --grey-outlined: #404040;
+  --color-quoted: #44413b;
   --field-outlined: #777;
   --field-background: var(--body-background);
 

@@ -69,6 +69,26 @@ blockquote, a-card, .featured-image > img {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
 
+blockquote.link-excerpt {
+  padding-top: 1.75em;
+  padding-bottom: 1.33em;
+
+  &, & p {
+    position: relative;
+  }
+
+  & ui-label {
+    font-family: var(--heading-font);
+    text-decoration: none;
+    line-height: 1em;
+    color: var(--color-quoted);
+    font-size: 8rem;
+    position: absolute;
+    top: 0;
+    left: 6px;
+  }
+}
+
 a-card figure {
   float: right;
   margin-top: -1rem;

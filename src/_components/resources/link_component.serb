@@ -7,8 +7,10 @@
     <a href="{{ resource.data.link_url }}"
       style="color:var(--heading-text-color); text-underline-offset:0.3em; text-decoration-style:dotted"
       target="_blank"
-    ><blockquote>
+    ><blockquote class="link-excerpt">
+      <ui-label>“</ui-label>
       {{ resource.data.link_excerpt | markdownify }}
+      <sl-icon library="remixicon" name="system/external-link-fill" style="margin-top:0.75em; color:var(--primary)"></sl-icon>
     </blockquote></a>
   {% end %}
 
