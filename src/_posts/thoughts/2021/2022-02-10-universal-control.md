@@ -1,5 +1,5 @@
 ---
-date: '2021-09-27T08:06:00-07:00'
+date: 'Thu, 10 Feb 2022 19:51:54 -0800'
 published: true
 category: thoughts
 tags: Apple iPadPro macOS
