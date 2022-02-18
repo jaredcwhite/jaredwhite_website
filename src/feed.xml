@@ -5,12 +5,12 @@ template_engine: liquid
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>{{ site.metadata.title | xml_escape }}</title>
-    <description>{% if site.metadata.tagline %}{{ site.description | xml_escape }}{% endif %}</description>
+    <description>{{ site.metadata.short_tagline | xml_escape }}</description>
     <link>{{ site.url }}</link>
     <image>
       <link>{{ site.url }}</link>
       <title>{{ site.metadata.title | xml_escape }}</title>
-      <url>{{ site.metadata.profile_avatar | prepend: '/assets/' | absolute_url }}</url>
+      <url>{{ '/images/jared-white-2020.jpg' | absolute_url }}</url>
     </image>
     <atom:link href="{{ "feed.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in collections.posts.resources limit:40 %}

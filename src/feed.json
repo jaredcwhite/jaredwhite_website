@@ -10,7 +10,7 @@ template_engine: liquid
     "title": "{{ site.metadata.title | xml_escape }}",
     "home_page_url": "{{ "/" | absolute_url }}",
     "feed_url": "{{ "/feed.json" | absolute_url }}",
-    "description": {{ site.metadata.tagline | jsonify }},
+    "description": {{ site.metadata.short_tagline | jsonify }},
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
     "items": [
