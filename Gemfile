@@ -16,12 +16,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #
 # Happy Bridgetowning!
 
-gem "bridgetown", "~> 1.0.0.beta3"
-gem "bridgetown-routes", "~> 1.0.0.beta3"
+gem "bridgetown", "~> 1.0.0"
+gem "bridgetown-routes", "~> 1.0.0"
 
 # Puma is a Rack-compatible server
 # (you can optionally limit this to the "development" group)
-gem "puma", "~> 5.2"
+gem "puma", "~> 5.6"
 
 gem "ruby2js", ">= 4.2"
 
