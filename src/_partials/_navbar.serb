@@ -42,17 +42,14 @@
       <li><a href="https://www.youtube.com/channel/{{ site.metadata.social.youtube_channel }}">
         <sl-icon library="remixicon" name="logos/youtube-fill" style="margin-right:8px"></sl-icon>YouTube
       </a></li>
-      <li><a href="https://{{ site.metadata.social.tumblr }}.tumblr.com">
-        <sl-icon library="remixicon" name="logos/tumblr-fill" style="margin-right:8px"></sl-icon>Tumblr
-      </a></li>
       <li><a href="https://github.com/{{ site.metadata.social.github }}">
         <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
       </a></li>
     </ul>
 
-    <h2>Tumblr Photos</h2>
+    <h2>Photos on Glass</h2>
 
-    <tumblr-photos src="https://jwadmin.whitefusion.studio/tumblr/photos"></tumblr-photos>
+    <glass-photos src="https://jwadmin.whitefusion.studio/glass/photos"></glass-photos>
 
     <h2>Popular Hashtags</h2>
 
