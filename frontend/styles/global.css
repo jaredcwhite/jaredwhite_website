@@ -286,6 +286,9 @@ article {
   & p, & ul, & ol, & blockquote {
     font-size: var(--content-scaling);
   }
+  & strong, & b {
+    color: var(--strong-color);
+  }
 }
 
 footer {
