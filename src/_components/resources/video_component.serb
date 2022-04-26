@@ -12,7 +12,7 @@
   {% end %}
 
   {% if h_level == :h2 %}
-    {{ resource.content | hashtags }}
+    {{ resource.content | markdownify | hashtags }}
   {% else %}
     <p>{{ resource.summary }}</p>
 

@@ -14,7 +14,7 @@
     </blockquote></a>
   {% end %}
 
-  {{ resource.content | hashtags }}
+  {{ resource.content | markdownify | hashtags }}
 
   {%@ PublishedDateComponent resource: resource %}
 </article>

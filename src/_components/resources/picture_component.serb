@@ -3,7 +3,7 @@
 
   {%@ FeaturedImageComponent resource: resource %}
 
-  {{ resource.content | hashtags }}
+  {{ resource.content | markdownify | hashtags }}
 
   <p style="text-align:center; margin-top:3rem">
     <a href="{{ resource.data.cloudinary_id | cloudinary_url }}" class="button" style="font-size:80%">
