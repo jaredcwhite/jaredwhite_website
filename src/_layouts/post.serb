@@ -17,7 +17,7 @@ layout: default
 <resources-feed>
   {% site.categories[resource.data.category][0..8].each do |post| %}
     {% next if post == resource %}
-    {%= markdownify do %}{%@ Resources::BaseComponent.component_for_resource(post) resource: post, h_level: :h3, show_thumbnail: true %}{% end %}
+    {%@ Resources::BaseComponent.component_for_resource(post) resource: post, h_level: :h3, show_thumbnail: true %}
   {% end %}
 </resources-feed>
 
