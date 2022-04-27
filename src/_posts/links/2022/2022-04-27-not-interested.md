@@ -8,7 +8,7 @@ link_excerpt: |
   The "free speech" argument is toxic garbage that horrible people use to justify being horrible people.
 
   "Free speech" means you don't go to jail for being an asshole, it doesn't mean others have to put up with you. If you're going to put up with assholes, I'm not interested. 
-tags: quote
+tags: Twitter
 ---
 
 This excellent tweet by [Hector Martin](https://twitter.com/marcan42) sums up the bewildering lack of understanding many people—including the (likely) new owner of #Twitter, Elon Musk!—seem to have around the moderation of online speech.
