@@ -2,6 +2,7 @@
 date: '2021-11-14T21:41:30-08:00'
 published: true
 category: articles
+favorite: true
 title: The Three Vital Landmarks Along the Road to Success
 subtitle: There was a time not long ago when my life was in a major upheaval. Signs of online success were slim to none. I wasn’t sure if anyone out there would really care if I were suddenly Thanos-snapped out of existence. Yet the valuable lesson I came to learn during that dreadful time was how to become intrinsically motivated, the significance of value creation, and the trick of cultivating T-shaped skills.
 cloudinary_id: three-sisters_kynosn

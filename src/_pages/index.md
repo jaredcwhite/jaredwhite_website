@@ -26,20 +26,16 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 ----
 
-## Podcast <sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}"></sl-icon>
-
-<a-card style="margin-bottom:3rem">
-  {%@ "podcast_subscriptions" %}
-</a-card>
+## Newest Posts <sl-icon library="remixicon" name="{{ "categories.links.icon" | t }}"></sl-icon>
 
 <resources-feed skip-last-hr>
-  {% collections.podcast.resources.first.tap do |resource| %}
-    {%@ Resources::EpisodeComponent resource: resource, h_level: :h3 %}
+  {% collections.posts.resources.reject { |r| %w(pictures videos).include?(r.data.category) }[0...4].each do |resource| %}
+    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
   {% end %}
 </resources-feed>
 
-<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/podcast">
-  More Episodes This Way
+<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/articles">
+  More Essays This Way
   <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
 </a></p>
 
@@ -67,16 +63,20 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 ----
 
-## Newest Posts <sl-icon library="remixicon" name="{{ "categories.links.icon" | t }}"></sl-icon>
+## Podcast <sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}"></sl-icon>
+
+<a-card style="margin-bottom:3rem">
+  {%@ "podcast_subscriptions" %}
+</a-card>
 
 <resources-feed skip-last-hr>
-  {% collections.posts.resources.reject { |r| %w(pictures videos).include?(r.data.category) }[0...4].each do |resource| %}
-    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
+  {% collections.podcast.resources.first.tap do |resource| %}
+    {%@ Resources::EpisodeComponent resource: resource, h_level: :h3 %}
   {% end %}
 </resources-feed>
 
-<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/articles">
-  More Essays This Way
+<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/podcast">
+  More Episodes This Way
   <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
 </a></p>
 
