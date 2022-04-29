@@ -1,4 +1,8 @@
 <article>
+  {% if resource.has_model_title? %}
+    {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
+  {% end %}
+
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
   {{ resource.content | markdownify | hashtags }}

@@ -6,7 +6,7 @@ module ResourceFeedExtension
 
     case resource.data.category
     when "thoughts"
-      "Thought for #{formatted_date(resource.date)}"
+      resource.has_model_title? ? resource.data.title : "Thought for #{formatted_date(resource.date)}"
     when "pictures"
       "Picture for #{formatted_date(resource.date)}"
     when "links"
@@ -33,6 +33,10 @@ module ResourceFeedExtension
   end
 
   module LiquidResource
+    def has_model_title?
+      @obj.has_model_title?
+    end
+
     def has_feed_title
       ResourceFeedExtension::CATEGORY_TYPES.include? data.category
     end
@@ -47,6 +51,10 @@ module ResourceFeedExtension
   end
 
   module RubyResource
+    def has_model_title?
+      model.attributes.key?(:title)
+    end
+
     def feed_title?
       ResourceFeedExtension::CATEGORY_TYPES.include? data.category
     end
