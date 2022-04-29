@@ -34,8 +34,8 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
   {% end %}
 </resources-feed>
 
-<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/articles">
-  More Essays This Way
+<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/posts">
+  More Posts This Way
   <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
 </a></p>
 
