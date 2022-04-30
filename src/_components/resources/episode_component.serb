@@ -2,7 +2,7 @@
   {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
 
   {% if h_level == :h2 %}
-    <h3>{{ resource.site.metadata.podcast_title }}
+    <h3 style="margin-bottom:-0.5rem">{{ resource.site.metadata.podcast_title }}
       <sl-icon
         library="remixicon"
         name="media/headphone-line"
@@ -11,17 +11,7 @@
       Episode {{ resource.data.number }}
     </h3>
 
-    <category-indicator>
-      <a href="/podcast">
-        <p style="margin-top:2.5rem">
-          <sl-icon
-            library="remixicon"
-            name="{{ "destinations.podcast.icon" | t }}"
-          ></sl-icon>
-          {{ "labels.podcast_episode" | t }}
-        </p>
-      </a>
-    </category-indicator>
+    {%@ CategoryIndicatorComponent destination: "podcast" %}
 
     <flex-row style="align-items:center; margin-bottom:2.5em">
       <flex-cell>

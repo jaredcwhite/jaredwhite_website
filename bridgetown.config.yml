@@ -22,6 +22,9 @@ collections:
     output: false
     sort_by: order
     sort_direction: ascending
+  broadcasts:
+    output: true
+    sort_direction: descending
 
 pagination:
   enabled: true

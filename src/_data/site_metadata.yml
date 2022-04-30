@@ -13,7 +13,8 @@ description: >-
 
 newsletter:
   name: Creator Class 
-  url: https://www.getrevue.co/profile/creatorclass
+  url: /creator-class
+  tagline: The challenges and rewards of being an indie content creator building an audience one connection at a time.
 
 social:
   twitter: jaredcwhite

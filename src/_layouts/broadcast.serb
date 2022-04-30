@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<h2>
+  Issue #{{ resource.data.number }}: {{ resource.data.title }}
+</h2>
+
+{%@ CategoryIndicatorComponent destination: "creator_class" %}
+
+<p>{{ site.metadata.newsletter.tagline }}</p>
+
+<hr />
+
+<article>
+  {{ content }}
+</article>
+
+<hr />
+
+<a-card>
+  {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+  {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
+</a-card>
+
+<br/>
+<hr />
+
+{% left_icon = capture do %}<sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="{{ t("destinations.creator_class.icon") }}"></sl-icon> {% end %}
+{% right_icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
+{% plural_name = t("destinations.creator_class.name_plural") %}
+{% link = t("destinations.creator_class.link") %}
+<p class="text-center">{{ left_icon + "More #{plural_name} This Way" + right_icon | link_to: "/#{link}", class: "button" }}</p>

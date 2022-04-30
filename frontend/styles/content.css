@@ -235,3 +235,8 @@ img.podcast-cover {
     font-size: 1.7em;
   }
 }
+
+.email-button {
+  font-weight: bold;
+  font-size: inherit !important;
+}

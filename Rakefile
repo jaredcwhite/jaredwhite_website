@@ -45,5 +45,39 @@ end
 #   end
 # end
 
+task :import_convertkit => :environment do
+  site # init
+
+  broadcasts_count = site.collections.broadcasts.read.resources.count
+
+  previous_issues = 11 + broadcasts_count
+
+  api_secret = ENV["CONVERTKIT_API"]
+
+  broadcasts = Faraday
+    .get("https://api.convertkit.com/v3/broadcasts?api_secret=#{api_secret}")
+    .body
+    .then { JSON.parse(_1, symbolize_names: true) }
+
+  broadcasts[:broadcasts].each do |broadcast|
+    id = broadcast[:id]
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:broadcasts, "_broadcasts/#{id}.html")
+
+    unless origin.exists?
+      puts "* CREATING #{id}"
+      item = Faraday
+        .get("https://api.convertkit.com/v3/broadcasts/#{id}?api_secret=#{api_secret}")
+        .body
+        .then { JSON.parse(_1, symbolize_names: true)[:broadcast] }
+
+      model = Bridgetown::Model::Base.new(number: previous_issues + 1, title: item[:subject], date: item[:created_at])
+      model.content = item[:content].gsub(/\<(\/?)h2\>/, "<\\1h3>").gsub("<hr/><p>​</p>", "<hr/>")
+      model.origin = origin
+      model.save
+    end
+  end
+end
+
 # Run rake without specifying any command to execute a deploy build by default.
 task default: :deploy

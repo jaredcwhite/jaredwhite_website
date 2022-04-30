@@ -34,12 +34,19 @@ en:
       name: Now Page
       then: Then
       icon: map/map-pin-time-line
+    creator_class:
+      name: Creator Class
+      name_plural: Creator Class
+      icon: business/mail-send-line
+      link: creator-class
     projects:
       name: Projects
       name_plural: Projects
       icon: business/stack-line
     podcast:
-      name: Podcast
+      name: Podcast Episode
+      name_plural: Podcast
       icon: media/mic-line
+      link: podcast
   labels:
     podcast_episode: Podcast Episode

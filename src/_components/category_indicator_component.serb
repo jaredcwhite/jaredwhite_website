@@ -1,4 +1,5 @@
 <category-indicator>
+  {% if @category %}
   <a href="/browse/{{ @category }}">
     <p>
       <sl-icon
@@ -8,4 +9,15 @@
       {{ "categories.#{@category}.name" | t }}
     </p>
   </a>
+  {% else %}
+  <a href="/{{ "destinations.#{@destination}.link" | t }}">
+    <p>
+      <sl-icon
+        library="remixicon"
+        name="{{ "destinations.#{@destination}.icon" | t }}"
+      ></sl-icon>
+      {{ "destinations.#{@destination}.name" | t }}
+    </p>
+  </a>
+  {% end %}
 </category-indicator>

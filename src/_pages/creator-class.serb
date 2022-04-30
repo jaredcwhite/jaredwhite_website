@@ -1,0 +1,38 @@
+---
+layout: page
+title: destinations.creator_class.name_plural
+icon: true
+translate_title: true
+paginate:
+  collection: broadcasts
+---
+
+<p>{{ site.metadata.newsletter.tagline }}</p>
+
+<hr />
+
+{% if paginator.total_pages > 1 and paginator.previous_page %}{%@ "pagination" %}{% end %}
+
+<resources-feed>
+  {% paginator.resources.each do |resource| %}
+    {%@ TitleComponent title: "\##{resource.data.number}: #{resource.data.title}", url: resource.relative_url, h_level: :h3 %}
+  {% end %}
+  {% if paginator.resources.count.zero? %}
+    <p><em>Brand-new issues are on their way! Meanwhile, check out the links below for past issues.</em></p>
+  {% end %}
+</resources-feed>
+
+{% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}
+
+<hr />
+
+<a-card>
+  {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+  {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
+</a-card>
+
+<hr />
+
+<p>Past archived issues of Creator Class can be <a href="https://www.getrevue.co/profile/creatorclass" target="_blank">read here on Revue</a>.</p>
+
+<p>And an even earlier era of newsletters can be <a href="/newsletters">found here</a>.</p>

@@ -39,7 +39,7 @@ layout: default
   {% end %}
 
   {% if collections.now_entries.resources.length > 1 %}
-    <a-card style="margin-top:5rem">
+    <a-card style="margin-top:4rem">
       <h3>“Now Page” Archive</h3>
 
       <ul>
@@ -53,6 +53,13 @@ layout: default
       </ul>
     </a-card>
   {% end %}
+
+  <hr />
+
+  <a-card>
+    {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+    {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
+  </a-card>
 {% else %}
   {%= site.resources.find {|r| r.relative_url.start_with?("/404") }.content %}
 {% end %}
