@@ -5,6 +5,10 @@
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:site_name" content="{{ site.metadata.title }}" />
   <meta property="og:description" content="{{ site.metadata.tagline | strip_html | strip_newlines | escape }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="{{ '/images/jared-white-2020.jpg' | absolute_url }}" />
+  <meta content="576" property="og:image:width" />
+  <meta content="576" property="og:image:height" />
 {% else %}
   <meta name="description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
   <meta property="og:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
@@ -16,10 +20,16 @@
     <meta property="og:image" content="{{ page.data.cloudinary_id | cloudinary_url:'a_exif,c_fill,g_face,h_700,q_50,w_700' }}" />
   {% elsif page.enclosure_mp3_url %}
     <meta property="og:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
+  {% else %}
+    <meta property="og:image" content="{{ '/images/jared-white-2020.jpg' | absolute_url }}" />
+    <meta content="576" property="og:image:width" />
+    <meta content="576" property="og:image:height" />
   {% endif %}
 
   {% if page.data.category == "pictures" or page.data.category == "articles" %}
     <meta name="twitter:card" content="summary_large_image" />
+  {% else %}
+    <meta name="twitter:card" content="summary" />
   {% endif %}
   <meta name="twitter:site" content="@{{ site.metadata.social.twitter }}" />
   <meta name="twitter:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
