@@ -18,9 +18,9 @@
     <meta property="og:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
   {% endif %}
 
-  {% unless page.data.category == "thoughts" %}
+  {% if page.data.category == "pictures" or page.data.category == "articles" %}
     <meta name="twitter:card" content="summary_large_image" />
-  {% endunless %}
+  {% endif %}
   <meta name="twitter:site" content="@{{ site.metadata.social.twitter }}" />
   <meta name="twitter:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
   <meta name="twitter:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
