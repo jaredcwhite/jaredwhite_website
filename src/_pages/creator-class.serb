@@ -7,7 +7,7 @@ paginate:
   collection: broadcasts
 ---
 
-<p>{{ site.metadata.newsletter.tagline }}</p>
+<p style="font-weight:bold">{{ site.metadata.newsletter.tagline }}</p>
 
 <hr />
 
