@@ -71,7 +71,7 @@ task :import_convertkit => :environment do
         .body
         .then { JSON.parse(_1, symbolize_names: true)[:broadcast] }
 
-      model = Bridgetown::Model::Base.new(number: previous_issues + 1, title: item[:subject], date: item[:created_at])
+      model = Bridgetown::Model::Base.new(number: previous_issues + 1, title: item[:subject], subtitle: "Issue description goes here.", date: item[:created_at])
       model.content = item[:content].gsub(/\<(\/?)h2\>/, "<\\1h3>").gsub("<p>​</p>", "")
       model.origin = origin
       model.save
