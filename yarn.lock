@@ -64,10 +64,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
   integrity sha512-VZMYa7+fXHdwIq1TDhSXoVmSPEGM/aa+6Aiq3nVVJ9bXr24zScr+NlKFKC3iPljA7ho/GAZr+d2jOf5GIRC30Q==
 
-"@ruby2js/ruby2js@>= 0.0.3":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@ruby2js/ruby2js/-/ruby2js-0.2.0.tgz#671be38fc773b85c70f804de94d2f537ae2b4609"
-  integrity sha512-dTDEA6Hl/M35VRW2qBOgE6jOUp/h4jn0Ci6lTcP1Z1OJT9tSkpwdw/jVgKajpYVKrPeF4n6XW9q9DuEBm1m3ng==
+"@ruby2js/ruby2js@5.0.1", "@ruby2js/ruby2js@>= 0.0.3":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@ruby2js/ruby2js/-/ruby2js-5.0.1.tgz#80e0ac745b1aaae34e0870f74369b5352b017da7"
+  integrity sha512-SPL5JFLNyytSZESSnLcFHkLrJkfwEajKGYb3YJJbtNtupCmBgMlYUCIft3RzDYwqlht0owfO9In2SsLxVSZ8LQ==
 
 "@ruby2js/webpack-loader@^2.0.2":
   version "2.0.2"

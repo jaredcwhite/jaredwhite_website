@@ -16,6 +16,8 @@ layout: default
   {{ content }}
 </article>
 
+{%@ PublishedDateComponent resource: resource %}
+
 <hr />
 
 <a-card>

@@ -34,6 +34,7 @@ class GlassPhotos < HTMLElement
               <img
                 src="#{photo['photo_url']}"
                 loading="lazy"
+                alt="photo thumbnail"
               />
             </a>
           HTML

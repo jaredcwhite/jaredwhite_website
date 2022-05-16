@@ -23,7 +23,7 @@ gem "bridgetown-routes", "~> 1.0.0"
 # (you can optionally limit this to the "development" group)
 gem "puma", "~> 5.6"
 
-gem "ruby2js", ">= 4.2"
+gem "ruby2js", ">= 5.0"
 
 gem "localhost", "~> 1.1"
 

@@ -16,15 +16,13 @@ paginate:
 <resources-feed>
   {% paginator.resources.each do |resource| %}
     {%@ TitleComponent title: "\##{resource.data.number}: #{resource.data.title}", url: resource.relative_url, h_level: :h3 %}
-  {% end %}
-  {% if paginator.resources.count.zero? %}
-    <p><em>Brand-new issues are on their way! Meanwhile, check out the links below for past issues.</em></p>
+    <p>{{ resource.data.subtitle }}</p>
+    {%@ PublishedDateComponent resource: resource %}
+    <hr />
   {% end %}
 </resources-feed>
 
 {% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}
-
-<hr />
 
 <a-card>
   {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}

@@ -29,5 +29,8 @@
     "@ruby2js/webpack-loader": "^2.0.2",
     "@shoelace-style/shoelace": "^2.0.0-beta.47",
     "smoothscroll-polyfill": "^0.4.4"
+  },
+  "resolutions": {
+    "@ruby2js/ruby2js": "5.0.1"
   }
 }
