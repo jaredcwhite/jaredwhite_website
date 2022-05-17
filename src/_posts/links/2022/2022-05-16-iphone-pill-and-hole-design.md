@@ -19,4 +19,4 @@ So I've been sad hearing the rumor mill pontificate that the mini size will be g
 
 The pill-and-hole design brings us _much_ closer to perfection. There's no visual interruption along the edges of the display. It feels much more symmetrical, especially in landscape orientation. Obviously I can't come to a final conclusion without seeing the final product in the flesh (assuming the rumors are true), but I'm far more impressed by the mockups so far than with the iPhone X-era notch.
 
-If that's the new design language of the iPhone 14 Pro, I'm afraid I'll have to kiss my mini goodbye and embrace the bigger size once again. The pill-and-hole styling is simply irresistible.
+If that's the new design language of the iPhone 14 Pro, I'm afraid I'll have to kiss my mini goodbye and embrace the bigger size once again. **The pill-and-hole styling is simply irresistible.**
