@@ -7,7 +7,7 @@ link_url: https://www.macrumors.com/2022/04/28/iphone-14-pro-display-panels-leak
 link_excerpt: |
   Front glass panels for all four iPhone 14 models have allegedly surfaced on Chinese social media website Weibo, as shared on Twitter by @SaranByte and reported by 9to5Mac. The panels reveal not only the rumored pill-and-hole design for the iPhone 14 Pro and iPhone 14 Pro Max, but also slightly thinner bezels and a taller aspect ratio for those models.
 
-  ![iPhone 14 Panels](iphone-14-front-glass-display-panels.jpeg)
+  ![iPhone 14 Panels](https://jaredwhite.com/links/20220516/iphone-14-front-glass-display-panels.jpeg)
 
   As expected, the image also shows that the standard iPhone 14 and iPhone 14 Max models will retain the same notch as iPhone 13 models.
 tags: Apple iPhone
