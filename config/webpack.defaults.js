@@ -6,7 +6,7 @@
 // when an update is applied hence we strongly recommend adding overrides to
 // `webpack.config.js` instead of editing this file.
 //
-// Shipped with Bridgetown v1.0.0.alpha11
+// Shipped with Bridgetown v1.1.0.beta2
 
 const path = require("path");
 const rootDir = path.resolve(__dirname, "..")
@@ -41,7 +41,9 @@ const cssRules = {
     {
       loader: "css-loader",
       options: {
-        url: url => !url.startsWith('/'),
+        url: {
+          filter: url => !url.startsWith('/')
+        },
         importLoaders: 1
       }
     }
@@ -49,7 +51,14 @@ const cssRules = {
   mode: 'postcss',
 
   postcss: () => {
-    cssRules.use.push("postcss-loader")
+    cssRules.use.push({
+      loader: "postcss-loader",
+      options: {
+        postcssOptions: {
+          config: "postcss.config.js"
+        }
+      }
+    })
     return { test: cssRules.test, use: cssRules.use }
   },
 
@@ -72,22 +81,18 @@ const cssRules = {
 
 const fontsRule = {
   test: /\.woff2?$|\.ttf$|\.eot$/,
-  loader: "file-loader",
-  options: {
-    name: "[name]-[contenthash].[ext]",
-    outputPath: "../fonts",
-    publicPath: "../fonts",
-  },
+  type: "asset/resource",
+  generator: {
+    filename: "../fonts/[name]-[hash][ext][query]"
+  }
 }
 
 const imagesRule = {
   test: /\.png?$|\.gif$|\.jpg$|\.svg$/,
-  loader: "file-loader",
-  options: {
-    name: "[path][name]-[contenthash].[ext]",
-    outputPath: "../",
-    publicPath: "../",
-  },
+  type: "asset/resource",
+  generator: {
+    filename: "../[path][name]-[hash][ext][query]"
+  }
 }
 
 // Default configuration object
