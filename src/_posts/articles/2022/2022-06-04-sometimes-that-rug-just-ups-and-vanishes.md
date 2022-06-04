@@ -7,7 +7,7 @@ date: 'Sat, 04 Jun 2022 16:38:56 -0700'
 tags: creativity remotework
 ---
 
-Sufferin' succotash, did that rug ever get pulled out from under me. Time, money, and planning—years in the making—_gone_, in a snap. In case you're wondering, I had been expecting to attend a major tech conference in Portland, Oregon as well as host an event which people from all around the world had signed up for. Then suddenly…
+Sufferin' succotash, did that rug ever get pulled out from under me. Time, money, and planning—years in the making—_gone_, in a snap. In case you were wondering, I had been expecting to attend a major tech conference in Portland, Oregon as well as host an event which people from all around the world had signed up for. Then suddenly…
 
 **BAM!** I got Covid. 😭
 
