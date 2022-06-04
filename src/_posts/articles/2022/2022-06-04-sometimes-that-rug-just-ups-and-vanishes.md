@@ -42,3 +42,4 @@ While what happened to me last month was a major blow, I hope it can at least se
 ----
 
 _Photo credit: [Jessica Knowlden on Unsplash](https://unsplash.com/photos/uUySeXRQqA4)_
+{:style="text-align:center"}
