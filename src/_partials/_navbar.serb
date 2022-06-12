@@ -45,6 +45,9 @@
       <li><a href="https://twitter.com/{{ site.metadata.social.twitter }}">
         <sl-icon library="remixicon" name="logos/twitter-fill" style="margin-right:8px"></sl-icon>Twitter
       </a></li>
+      <li><a href="/feed.xml">
+        <sl-icon library="remixicon" name="device/rss-fill" style="margin-right:8px"></sl-icon>News Feed
+      </a></li>
       <li><a href="https://www.youtube.com/channel/{{ site.metadata.social.youtube_channel }}">
         <sl-icon library="remixicon" name="logos/youtube-fill" style="margin-right:8px"></sl-icon>YouTube
       </a></li>
