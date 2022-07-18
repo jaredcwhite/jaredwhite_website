@@ -12,10 +12,10 @@ subtitle: I write about topics that I care about and believe are important. I tr
 **Favorite Color:** Red/Orange  
 **Favorite Band:** Tangerine Dream  
 **Favorite Movie:** It's a tie… _Back to the Future_ + _The Matrix_  
-**Favorite TV Show:** _Mad Men_  
+**Favorite TV Show:** It's a tie… _Mad Men_ + _Sense8_  
 **Favorite Comedy Show:** [Portlandia](/articles/what-its-like-to-live-in-portlandia)  
 **Favorite City:** Portland, OR  
-**Favorite Coffee:** [Sisters Coffee Co.](https://www.sisterscoffee.com){:target="_blank"}  
+**Favorite Coffee:** [Rose City Coffee Co.](https://www.rosecitycoffeecompany.com){:target="_blank"}  
 **Computer Gear:** Mac mini M1 + LG 4K Display & iPad Pro on the go  
 **Vlogging Gear:** Nikon Z fc + Sennheiser MKE 200 microphone  
 **Favorite Programming Language**: Ruby  
