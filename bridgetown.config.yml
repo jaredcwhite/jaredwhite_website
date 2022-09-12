@@ -1,8 +1,11 @@
 url: "https://jaredwhite.com"
 timezone: America/Los_Angeles
 
+#development:
+#  bind: "ssl://0.0.0.0:4000"
+
 development:
-  bind: "ssl://0.0.0.0:4000"
+  bind: "tcp://0.0.0.0:4002"
 
 permalink: simple
 content_engine: resource

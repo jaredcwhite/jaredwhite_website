@@ -25,6 +25,6 @@ gem "puma", "~> 5.6"
 
 gem "ruby2js", ">= 5.0"
 
-gem "localhost", "~> 1.1"
+#gem "localhost", "~> 1.1"
 
 gem "cloudinary", "~> 1.21"
