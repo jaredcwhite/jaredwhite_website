@@ -48,21 +48,6 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 ----
 
-## Photos <sl-icon library="remixicon" name="{{ "categories.pictures.icon" | t }}"></sl-icon>
-
-<resources-feed skip-last-hr>
-  {% collections.posts.resources.select { |r| r.data.category == "pictures" }[0...3].each do |resource| %}
-    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
-  {% end %}
-</resources-feed>
-
-<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/pictures">
-  More Photos This Way
-  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
-</a></p>
-
-----
-
 ## Podcast <sl-icon library="remixicon" name="{{ "destinations.podcast.icon" | t }}"></sl-icon>
 
 <a-card style="margin-bottom:3rem">
@@ -77,6 +62,21 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/podcast">
   More Episodes This Way
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+</a></p>
+
+----
+
+## Photos <sl-icon library="remixicon" name="{{ "categories.pictures.icon" | t }}"></sl-icon>
+
+<resources-feed skip-last-hr>
+  {% collections.posts.resources.select { |r| r.data.category == "pictures" }[0...3].each do |resource| %}
+    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
+  {% end %}
+</resources-feed>
+
+<p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/pictures">
+  More Photos This Way
   <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
 </a></p>
 
