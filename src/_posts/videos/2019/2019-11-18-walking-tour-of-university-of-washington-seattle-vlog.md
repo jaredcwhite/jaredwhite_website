@@ -8,7 +8,7 @@ description: On my last day in Seattle, I strolled across the campus of Universi
   amazing architecture and dream-like walking paths, plus additional thoughts on the
   nearby shopping district of University Village.
 cloudinary_id: u_dub_gucrdi
-vimeo_id: 373966493
+youtube_id: 12ja7BweEbE
 tags: seattle washingtonexplored vlog
 newsletter: 37
 ---

@@ -8,7 +8,7 @@ cloudinary_id: Vlog_022_sivsl1
 tags: seattle washingtonexplored vlog
 ---
 
-Howdy! Welcome to part TWO of a two-part vlog of our summer vacay up in Seattle. Many grand vistas and lots of fun exploration to be had! [Missed part one?](/videos/20210830/seattle-travel-vlog-part-1)
+Howdy! Welcome to part TWO of a two-part vlog of our summer vacay up in #Seattle. Many grand vistas and lots of fun exploration to be had! [Missed part one?](/videos/20210830/seattle-travel-vlog-part-1)
 
 ### Gear List
 

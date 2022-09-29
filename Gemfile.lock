@@ -140,6 +140,8 @@ GEM
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
     webrick (1.7.0)
+    yt (0.33.4)
+      activesupport
     zeitwerk (2.6.0)
 
 PLATFORMS
@@ -150,3 +152,7 @@ DEPENDENCIES
   cloudinary (~> 1.21)
   puma (~> 5.6)
   ruby2js (>= 5.0)
+  yt (~> 0.33.4)
+
+BUNDLED WITH
+   2.3.7

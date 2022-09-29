@@ -7,7 +7,7 @@ description: Holiday fun in the Columbia Gorge & McMinnville. Oregon is beautifu
   almost any time of year, but in the late fall/beginning of winter it is particularly
   striking. I also talk about the future of the channel and what's next in 2020!
 cloudinary_id: F956AE82-6865-4306-ACA7-A2818759B165_oneclk
-vimeo_id: 381256385
+youtube_id: 3JVf2_DI0PE
 tags: oregonexplored vlog
 newsletter: 40
 ---
