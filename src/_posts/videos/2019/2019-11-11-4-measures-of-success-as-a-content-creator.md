@@ -9,7 +9,7 @@ description: 'Top vloggers who have reached the pinnacles of their career tell u
   over? How do we know we''re crushing it as content creators? What should success
   look like?'
 cloudinary_id: 4_Measures_of_Success_thumbnail_jocwf0
-vimeo_id: 372407111
+youtube_id: 8Y7gsXAG4lw
 tags: seattle washingtonexplored vlog
 newsletter: 37
 ---

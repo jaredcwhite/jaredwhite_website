@@ -45,37 +45,77 @@ end
 #   end
 # end
 
-task :import_convertkit => :environment do
-  site # init
+namespace :import do
+  task :convertkit => :environment do
+    # CONVERTKIT_API=yAo... bin/bt import:convertkit
 
-  broadcasts_count = site.collections.broadcasts.read.resources.count
+    site # init
 
-  previous_issues = 11 + broadcasts_count
+    broadcasts_count = site.collections.broadcasts.read.resources.count
 
-  api_secret = ENV["CONVERTKIT_API"]
+    previous_issues = 11 + broadcasts_count
 
-  broadcasts = Faraday
-    .get("https://api.convertkit.com/v3/broadcasts?api_secret=#{api_secret}")
-    .body
-    .then { JSON.parse(_1, symbolize_names: true) }
+    api_secret = ENV["CONVERTKIT_API"]
 
-  broadcasts[:broadcasts].each do |broadcast|
-    id = broadcast[:id]
+    broadcasts = Faraday
+      .get("https://api.convertkit.com/v3/broadcasts?api_secret=#{api_secret}")
+      .body
+      .then { JSON.parse(_1, symbolize_names: true) }
 
-    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:broadcasts, "_broadcasts/#{id}.html")
+    broadcasts[:broadcasts].each do |broadcast|
+      id = broadcast[:id]
 
-    unless origin.exists?
-      puts "* CREATING #{id}"
-      item = Faraday
-        .get("https://api.convertkit.com/v3/broadcasts/#{id}?api_secret=#{api_secret}")
-        .body
-        .then { JSON.parse(_1, symbolize_names: true)[:broadcast] }
+      origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:broadcasts, "_broadcasts/#{id}.html")
 
-      model = Bridgetown::Model::Base.new(number: previous_issues + 1, title: item[:subject], subtitle: "Issue description goes here.", date: item[:created_at])
-      model.content = item[:content].gsub(/\<(\/?)h2\>/, "<\\1h3>").gsub("<p>​</p>", "")
-      model.origin = origin
-      model.save
+      unless origin.exists?
+        puts "* CREATING #{id}"
+        item = Faraday
+          .get("https://api.convertkit.com/v3/broadcasts/#{id}?api_secret=#{api_secret}")
+          .body
+          .then { JSON.parse(_1, symbolize_names: true)[:broadcast] }
+
+        model = Bridgetown::Model::Base.new(number: previous_issues + 1, title: item[:subject], subtitle: "Issue description goes here.", date: item[:created_at])
+        model.content = item[:content].gsub(/\<(\/?)h2\>/, "<\\1h3>").gsub("<p>​</p>", "")
+        model.origin = origin
+        model.save
+      end
     end
+  end
+
+  task :youtube, [:url] => :environment do |task, args|
+    # CONVERTKIT_API=Alz... bin/bt import:youtube[https://www.youtube.com/watch?v=8TIiLAYnj3A]
+
+    require "yt"
+
+    Yt.configure do |config|
+      config.log_level = :debug
+      config.api_key = ENV["YOUTUBE_API"]
+    end
+
+    site # init
+
+    args.url
+
+    yt_url = Yt::URL.new args.url
+
+    video = yt_url.resource
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/videos/#{video.published_at.strftime("%Y")}/#{video.published_at.strftime("%Y-%m-%d")}-#{Bridgetown::Utils.slugify(video.title, mode: "ascii")}.md")
+
+    model = Bridgetown::Model::Base.new(
+      published: true,
+      category: :videos,
+      title: video.title,
+      description: video.description.split(/\n/)[0],
+      date: video.published_at,
+      youtube_id: video.id,
+      tags: "portland oregonexplored vlog" #default
+    )
+    model.content = video.description.gsub(/(\n)/, "  \\1")
+    model.origin = origin
+    model.save
+
+    puts "Done! Saved in: #{origin.relative_path}"
   end
 end
 

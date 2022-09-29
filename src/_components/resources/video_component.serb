@@ -14,7 +14,7 @@
   {% if h_level == :h2 %}
     {{ resource.content | markdownify | hashtags }}
   {% else %}
-    <p>{{ resource.summary }}</p>
+    <p>{{ resource.data.description || resource.summary }}</p>
 
     {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
     <p>{{ "Watch Video" + icon | link_to: resource.relative_url, class: "button" }}</p>
