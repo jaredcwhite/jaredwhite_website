@@ -3,7 +3,7 @@ date: 'Fri, 16 Sep 2022 16:47:27 -0700'
 title: From iPhone mini to iPhone Pro
 published: true
 category: thoughts
-tags: Apple iPhone
+tags: Apple iPhone iPhonePro
 ---
 
 <figure>
@@ -21,4 +21,4 @@ Nevertheless, time marches one and new iPhone models come out packed with new fe
 
 OK, maybe that last one isn't a "feature", but I definitely love this color. I got to hold one at my local #Apple store and generally see the Dynamic Island at work, and it's fantastic. It's what the design should have been from the beginning. Farewell notch…hopefully forever.
 
-I've heard some grumblings about the overall lack of progress in the standard iPhone lineup this year, and I get that. But for me it's not an issue, because there's no way I would _ever_ upgrade from an iPhone mini to one of the standard iPhones. If I'm forced to leave the world of the mini behind, I'm going Pro. No question about it.
+I've heard some grumblings about the overall lack of progress in the standard iPhone lineup this year, and I get that. But for me it's not an issue, because there's no way I would _ever_ upgrade from an iPhone mini to one of the standard iPhones. If I'm forced to leave the world of the mini behind, I'm going #iPhonePro. No question about it.
