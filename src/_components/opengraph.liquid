@@ -18,6 +18,8 @@
   <meta property="og:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
   {% if page.data.cloudinary_id %}
     <meta property="og:image" content="{{ page.data.cloudinary_id | cloudinary_url:'a_exif,c_fill,g_face,h_700,q_50,w_700' }}" />
+  {% elsif page.data.thumbnail_url %}
+    <meta property="og:image" content="{{ page.data.thumbnail_url }}" />
   {% elsif page.enclosure_mp3_url %}
     <meta property="og:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
   {% else %}
@@ -36,6 +38,8 @@
   <meta name="twitter:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
   {% if page.data.cloudinary_id %}
     <meta name="twitter:image" content="{{ page.data.cloudinary_id | cloudinary_url:'a_exif,c_fill,g_face,h_700,q_50,w_700' }}" />
+  {% elsif page.data.thumbnail_url %}
+    <meta property="twitter:image" content="{{ page.data.thumbnail_url }}" />
   {% elsif page.data.enclosure_mp3_url %}
     <meta property="twitter:image" content="{{ site.metadata.podcast_cover_img | absolute_url }}" />
   {% endif %}
