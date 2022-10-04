@@ -53,9 +53,19 @@
       </a></li>
     </ul>
 
-    <h2>Photos on Glass</h2>
+    <h2>Recent Photos</h2>
 
-    <glass-photos src="https://jwadmin.whitefusion.studio/glass/photos"></glass-photos>
+    <glass-photos>
+      {% collections.posts.resources.select { _1.data.category == "pictures" && _1.data.glass_url }[..5].each do |photo| %}
+        <a href="{{ photo.relative_url }}" target="_blank">
+          <img
+            src="{{ photo.data.thumbnail_url }}"
+            loading="lazy"
+            alt="photo thumbnail"
+          />
+        </a>
+      {% end %}
+    </glass-photos>
 
     <h2>Popular Hashtags</h2>
 

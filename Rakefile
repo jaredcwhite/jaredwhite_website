@@ -94,8 +94,6 @@ namespace :import do
 
     site # init
 
-    args.url
-
     yt_url = Yt::URL.new args.url
 
     video = yt_url.resource
@@ -112,6 +110,50 @@ namespace :import do
       tags: "portland oregonexplored vlog" #default
     )
     model.content = video.description.gsub(/(\n)/, "  \\1")
+    model.origin = origin
+    model.save
+
+    puts "Done! Saved in: #{origin.relative_path}"
+  end
+
+  task :glass, [:url] => :environment do |task, args|
+    # bin/bt import:glass[url]
+
+    require "faraday"
+    require "faraday/encoding"
+    require "nokogiri"
+
+    site # init
+
+    conn = Faraday.new do |connection|
+      connection.response :encoding  # use Faraday::Encoding middleware
+      connection.adapter Faraday.default_adapter # net/http
+    end
+    
+    body = conn.get(args.url).body
+    doc = Nokogiri::HTML5(body)
+
+    description = doc.at_css(".postInfo p").content + "\n#portland #oregonexplored #nikonzfc"
+    timestamp = doc.at_css("script#__NEXT_DATA__").content.match(/"created_at":"(.*?)"/)[1]
+    published_at = Date.parse(timestamp)
+    slug = description.split[..5]
+    img = doc.at_css("*[class^=ImageContainer_imageContent] img")
+    image_url = img["data-srcset"].match(/, (.*?) 2048w,/)[1]
+    thumbnail_url = doc.at_css("script#__NEXT_DATA__").content.match(/image640x640":"(.*?)"/)[1].gsub("\\u0026", "&")
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/pictures/#{published_at.strftime("%Y")}/#{published_at.strftime("%Y-%m-%d")}-#{Bridgetown::Utils.slugify(slug, mode: "ascii")}.md")
+
+    model = Bridgetown::Model::Base.new(
+      published: true,
+      category: :pictures,
+      image_details: doc.css(".postInfo li").map(&:content)[-2..],
+      date: timestamp,
+      image: image_url,
+      thumbnail_url:,
+      glass_url: args.url,
+      tags: "portland oregonexplored nikonzfc" #default
+    )
+    model.content = description.gsub(/(\n)/, "  \\1")
     model.origin = origin
     model.save
 
