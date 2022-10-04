@@ -240,3 +240,24 @@ img.podcast-cover {
   font-weight: bold;
   font-size: inherit !important;
 }
+
+glass-photos {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 15px;
+  align-items: center;
+}
+
+glass-photos img {
+  object-fit: cover;
+  width: 100%;
+  height: 6.5rem;
+}
+
+glass-photos a {
+  transform: translateY(0px);
+  transition: transform 0.33s;
+}
+glass-photos a:hover {
+  transform: translateY(-7px);
+}

@@ -7,7 +7,6 @@ import smoothscroll from "smoothscroll-polyfill"
 smoothscroll.polyfill()
 
 // Ruby2JS scripts
-import "./glass_photos.js.rb"
 import "./shoelace.js.rb"
 import "./dark_mode.js.rb"
 import "./sidebar.js.rb"

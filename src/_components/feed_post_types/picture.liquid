@@ -1,2 +1,6 @@
+{%- if post.data.cloudinary_id -%}
 <img alt="" src="{{ post.data.cloudinary_id | cloudinary_url:'w_2048,c_limit,q_65' }}">
+{%- else -%}
+<img alt="" src="{{ post.data.image }}">
+{%- endif -%}
 {{ post.content | hashtags }}

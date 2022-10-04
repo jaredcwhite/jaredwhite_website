@@ -30,3 +30,7 @@ gem "ruby2js", ">= 5.0"
 gem "cloudinary", "~> 1.21"
 
 gem "yt", "~> 0.33.4"
+
+gem "faraday-encoding", "~> 0.0.5"
+
+gem "nokogiri", "~> 1.13"
