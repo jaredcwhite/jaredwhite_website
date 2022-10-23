@@ -83,7 +83,7 @@ namespace :import do
   end
 
   task :youtube, [:url] => :environment do |task, args|
-    # CONVERTKIT_API=Alz... bin/bt import:youtube[https://www.youtube.com/watch?v=8TIiLAYnj3A]
+    # YOUTUBE_API=Alz... bin/bt import:youtube[https://www.youtube.com/watch?v=8TIiLAYnj3A]
 
     require "yt"
 
