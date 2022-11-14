@@ -9,7 +9,10 @@ paginate:
 
 <p style="font-weight:bold">{{ site.metadata.newsletter.tagline }}</p>
 
-<hr />
+<a-card style="margin-block: 3rem">
+  {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
+  {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
+</a-card>
 
 {% if paginator.total_pages > 1 and paginator.previous_page %}{%@ "pagination" %}{% end %}
 
@@ -23,13 +26,6 @@ paginate:
 </resources-feed>
 
 {% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}
-
-<a-card>
-  {%= site.data.cached_newsletter_preamble ||= render("newsletter_preamble") %}
-  {%= site.data.cached_newsletter_form ||= render("newsletter_form") %}
-</a-card>
-
-<hr />
 
 <p>Past archived issues of Creator Class can be <a href="https://www.getrevue.co/profile/creatorclass" target="_blank">read here on Revue</a>.</p>
 
