@@ -28,6 +28,33 @@
     {% end %}
 
     <article-content>{{ resource.content }}</article-content>
+
+    <style>
+    @import url(https://fonts.bunny.net/css?family=gelasio:400,400i,700,700i);
+
+    article-content {
+      font-family: 'Gelasio', serif;
+    }
+    article-content h3, article-content blockquote {
+      font-family: var(--body-font);
+    }
+    article-content > p {
+      --line-height: 1.75;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 1024px) {
+      article-content {
+        --content-scaling: 105%;
+      }
+      article-content blockquote {
+        --content-scaling: 100%;
+      }
+    }
+    article-content>p:first-of-type:first-letter {
+      margin-top: 0px;
+    }
+    </style>
   {% else %}
     <p>{{ resource.data.subtitle }}</p>
 
