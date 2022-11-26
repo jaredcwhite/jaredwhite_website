@@ -1,5 +1,6 @@
 ---
 category: videos
+published: false
 vimeo_id: 342068054
 title: The Jared White Show — Episode 34
 description: Well this is something I've never done before! My video show Essential

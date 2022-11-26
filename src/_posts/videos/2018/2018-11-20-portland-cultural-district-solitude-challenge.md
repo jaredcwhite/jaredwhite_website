@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 340014144
+youtube_id: t8kRx8YaaT0
 title: Portland's Cultural District // SOLITUDE CHALLENGE
 description: Theaters, urban parks, old churches, classic 19th and early 20th-century architecture — Portland's Cultural District has it all.
 date: '2018-11-20T10:33:04-08:00'

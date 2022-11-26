@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 340012205
+youtube_id: qKoiKiqrlfU
 title: fear of failure // YES to essentialism
 description: Do you ever feel like a failure? Ever worry you're not measuring up, that "they" are always more successful than you are?
 date: '2018-11-01T12:05:04-08:00'

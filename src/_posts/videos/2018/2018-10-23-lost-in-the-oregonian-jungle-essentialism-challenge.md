@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 339278190
+youtube_id: 91CT4ylc2uQ
 title: LOST in the Oregonian JUNGLE // Essentialism Challenge
 description: One minute, I was strolling through the quaint neighborhoods and gentle parks of west Hillsboro…next thing you know, I'm totally LOST in the the woods! Do I ever make it out alive???
 date: '2018-10-23T09:45:04-08:00'

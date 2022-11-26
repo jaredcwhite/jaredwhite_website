@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 341830401
+youtube_id: c4JK6QY0vus
 title: Seattle Road Trip // Bothell + Gasworks Park
 description: I did something totally stupid…I accidentally erased my iMac hard drive which had a full edit of this video. Luckily I recovered the raw footage, so this is my SECOND attempt at putting a vlog episode together. I visited Bothell, WA — the place my mom wrote a piece of Celtic music for entitled “The Woods of Bothell” — as well as the way cool Gasworks Park in Seattle.
 date: '2019-03-25T10:07:31-07:00'

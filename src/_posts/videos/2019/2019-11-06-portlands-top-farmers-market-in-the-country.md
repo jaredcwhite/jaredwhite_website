@@ -8,7 +8,7 @@ description: Well OK, it's one of the top "pop up" markets (meaning everyone com
   I think that's pretty awesome. Plus lots of great scenes of traversing downtown
   Portland in the fall!
 cloudinary_id: 11-02_Farmers_Market_ubjt0d
-vimeo_id: 371327789
+youtube_id: eI3zzHsc2vE
 newsletter: 36
 tags: portland oregonexplored vlog
 ---

@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 367325791
+youtube_id: vDa10BKSCDw
 title: Backlash Against The Tech Backlash
 description: "We shouldn't feel guilty about the technology choices that we make. Just be mindful of what those choices are."
 date: '2019-10-18T12:07:00-07:00'

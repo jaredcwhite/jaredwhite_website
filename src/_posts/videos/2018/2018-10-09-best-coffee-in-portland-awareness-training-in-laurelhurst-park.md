@@ -1,6 +1,6 @@
 ---
 category: videos
-vimeo_id: 339277046
+youtube_id: 9M_evmY-9TU
 title: BEST COFFEE in Portland // AWARENESS Training in Laurelhurst Park
 description: Yes, Portland has some of the best coffee around. It's sort of our thing.
 date: '2018-10-09T08:35:04-08:00'
