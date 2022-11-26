@@ -52,6 +52,14 @@
         --content-scaling: 100%;
       }
     }
+    @media (max-width: 500px) {
+      article-content {
+        --content-scaling: 95%;
+      }
+      article-content blockquote {
+        --content-scaling: 90%;
+      }
+    }
     article-content>p:first-of-type:first-letter {
       margin-top: 0px;
     }
