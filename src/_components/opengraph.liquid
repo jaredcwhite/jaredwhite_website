@@ -33,7 +33,6 @@
   {% else %}
     <meta name="twitter:card" content="summary" />
   {% endif %}
-  <meta name="twitter:site" content="@{{ site.metadata.social.twitter }}" />
   <meta name="twitter:title" content="{{ page_title | strip | strip_html | strip_newlines | escape }}" />
   <meta name="twitter:description" content="{{ page.graph_description | strip_html | strip_newlines | escape }}" />
   {% if page.data.cloudinary_id %}
