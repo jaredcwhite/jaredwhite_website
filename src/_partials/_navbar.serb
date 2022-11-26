@@ -42,7 +42,7 @@
       <li><a href="https://github.com/{{ site.metadata.social.github }}">
         <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
       </a></li>
-      <li><a href="https://glass.com/{{ site.metadata.social.glass }}">
+      <li><a href="https://glass.photo/{{ site.metadata.social.glass }}">
         <sl-icon library="remixicon" name="media/camera-lens-fill" style="margin-right:8px"></sl-icon>Glass
       </a></li>
       <li><a href="https://www.youtube.com/{{ site.metadata.social.youtube_channel }}">
