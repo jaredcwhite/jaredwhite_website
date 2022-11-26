@@ -29,7 +29,7 @@
 
     <h2>Subscribe</h2>
 
-    <p>Fresh insight in your inbox twice a month with the <strong><a href="{{ site.metadata.newsletter.url }}">{{ site.metadata.newsletter.name }}</a></strong> newsletter.</p>
+    <p>Fresh, piquant creative insight in your email inbox with the <strong><a href="{{ site.metadata.newsletter.url }}">{{ site.metadata.newsletter.name }}</a></strong> newsletter.</p>
 
     {%@ "newsletter_form" %}
 
