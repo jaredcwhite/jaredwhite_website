@@ -10,7 +10,7 @@ template_engine: liquid
     <image>
       <link>{{ site.url }}</link>
       <title>{{ site.metadata.title | xml_escape }}</title>
-      <url>{{ '/images/jared-white-2020.jpg' | absolute_url }}</url>
+      <url>{{ '/images/jared-white-2022.jpg' | absolute_url }}</url>
     </image>
     <atom:link href="{{ "feed.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in collections.posts.resources limit:40 %}

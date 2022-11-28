@@ -61,7 +61,7 @@
       }
     }
     article-content>p:first-of-type:first-letter {
-      margin-top: 0px;
+      margin-top: 0.05em;
     }
     </style>
   {% else %}

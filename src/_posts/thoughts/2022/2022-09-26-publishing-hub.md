@@ -18,7 +18,7 @@ I tried **POSSE** in a previous incarnation of this site. _I ended up not liking
 
 What I want to do is the exact opposite! IndieWeb also provides a term for this: [Publish Elsewhere, Syndicate (to your) Own Site](https://indieweb.org/PESOS) (or **PESOS**). They don't recommend it, and the wiki page enumerates some of the reasons why. But I have come to realize I prefer **PESOS** for a lot of the content I produce, because it's generally _way_ easier and the UX is _way_ better.
 
-* I _like_ "microblogging" on Twitter.
+* I _like_ "microblogging" on Twitter. \[11-2022 update: er, not anymore! 🤪\]
 * I _like_ posting videos on YouTube.
 * I _like_ writing newsletter issues in [ConvertKit](https://convertkit.com).
 * I _like_ uploading podcast episodes to [Buzzsprout](https://buzzsprout.com). (I don't for this site, but I do use it for the [Fullstack Ruby](https://www.fullstackruby.dev/topics/podcast) podcast.)

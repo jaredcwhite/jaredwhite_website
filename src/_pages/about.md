@@ -27,20 +27,14 @@ subtitle: I write about topics that I care about and believe are important. I tr
 
 ### Hello
 
-<p style="font-size:110%">
-  <sl-icon library="remixicon" name="system/alert-line" style="color:var(--secondary)"></sl-icon>
-  <strong>9/25/21: I'm still in the process of rewriting my bio after the new site launch. Updates are forthcoming!</strong>
-</p>
-
 I’m Jared White, and this is my website on the internet. I write about topics that I care about and believe are important. I try to bring my authentic voice every time I set out to type, and I strive to share a viewpoint that gets you thinking and inspired to dig deeper.
 
 What are some of the topics I write about? Generally you’ll see me covering:
 
 - The Open Web and the Future of News and Social Media
+- Mindfulness & Spirituality
 - Geek Culture (Indie Art, Sci-Fi, etc.)
 - Apple Devices & Ecosystem
-- The Philosophy of Essentialism
-- Mindfulness & Spirituality
 - Creative Computing Tools
 - Exploring the Pacific Northwest
 - Anything else that strikes my fancy
@@ -99,7 +93,7 @@ Over the past 10 years, I've developed a signature sound with influences ranging
 
 In 2010, Wired Magazine famously published an article titled _The Web is Dead. Long Live the Internet_ in which the authors describe a world where we've all succumbed to using proprietary apps and closed platforms to read news and communicate online, and the web itself has devolved into a dumb transport layer for all these apps. Who needs private servers, open source code, domains, URLs, or HTML? We'll all be quite happy using Facebook and Google and The New York Times and the like for darn near everything.
 
-Now here we are in 2021 and, thankfully, I don't see the dying embers of a forgotten web lying around me. **Quite the contrary**—I see a bigger backlash against proprietary platforms and closed content networks than I have in nearly a decade! News outlets are doubling down on paywalls and establishing vital relationships with readers directly using, you guessed it, the open web...and even—**gasp!**—email newsletters.
+Now here we are in 2022 and, thankfully, I don't see the dying embers of a forgotten web lying around me. **Quite the contrary**—I see a bigger backlash against proprietary platforms and closed content networks than I have in nearly a decade! News outlets are doubling down on paywalls and establishing vital relationships with readers directly using, you guessed it, the open web...and even—**gasp!**—email newsletters.
 
 As someone who came of age at the dawn of the web, and whose entire career was made possible by the open web, I am a fierce advocate for keeping the web vibrant, lively, diverse, free "as in speech", and completely and radically open. The greatness of the web, the sheer genius of it, is it's a content and application platform which allows _anyone_ to join in and participate—no gatekeepers, no approval processes, no commercial stipulations. The only "limits" are what is considered legal by local/national governments. There has never been and perhaps never will be anything else like the world-wide web in human history.
 
@@ -120,6 +114,11 @@ Eventually my interest in designing websites grew into an interest in building s
 Beyond programming, I've always maintained a love for graphics design and typography, so I seek out projects where I can make a difference visually as well as at the code level. And if I have the opportunity to write and edit content also, so much the better!
 
 ### Sci-Fi Nerd
+
+<p style="font-size:110%">
+  <sl-icon library="remixicon" name="system/alert-line" style="color:var(--secondary)"></sl-icon>
+  <strong>Oops, this section’s a little out of date! 😅</strong>
+</p>
 
 I never really got into comics as a kid, but I've always had a thing for science fiction and was a big-time Trekkie growing up. (Captain Jean-Luc Picard continues to be an influential figure in my life!) Over the past decade or so, as sci-fi has taken over the world of movies and TV shows and online streaming services have exploded, I must admit I have gotten completely sucked into this universe of superheroes and spaceships.
 
