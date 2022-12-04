@@ -6,6 +6,7 @@ title: "Resilience / ☕️ Coffee with Kids / \U0001F332 Molalla River
 description: Welcome back to my YouTube channel! Kickstarting the next vlog series…a casual record of my life in Portland, Oregon on a regular basis and finding a path forward after a very difficult last two years. In the back half of the episode, I explore the Molalla River Recreation Area!
 date: 2022-07-29 14:14:47.000000000 Z
 youtube_id: 8TIiLAYnj3A
+bunny_id: 091dda32-9a28-43fb-9fe7-296201d6cbaa
 cloudinary_id: Vlog_023_whqlco
 tags: portland oregonexplored vlog
 ---

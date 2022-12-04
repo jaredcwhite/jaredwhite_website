@@ -4,6 +4,7 @@ category: videos
 title: she touched a Starfish ⭐️ ⚓️ SEATTLE Road Trip 🛣
 description: The official debut of my kids on Essential Life! 🥳👏 (also apologies for some of the shaky footage here and there…they were also my cinematography assistants! 😉) This is part ONE of a two-part vlog of our summer vacay up in Seattle. We were tickled pink with our GORGEOUS hotel room and got to see many incredible sights along the way. Enjoy!
 youtube_id: vGctiMpA2Fw
+bunny_id: 6f6a176d-61c4-4b29-abf6-61b0e435479b
 cloudinary_id: Vlog_021_rj4fic
 tags: seattle washingtonexplored vlog
 ---

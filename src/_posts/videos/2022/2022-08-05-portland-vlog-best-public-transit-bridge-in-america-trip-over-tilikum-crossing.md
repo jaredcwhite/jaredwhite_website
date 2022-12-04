@@ -11,6 +11,7 @@ description: Portland boasts many fine bridges which span the Willamette River, 
   not automobiles.
 date: 2022-08-05 13:49:50.000000000 Z
 youtube_id: aiyxsEAEP4g
+bunny_id: dc9dc85c-e204-456f-a1a5-e6c65abb38ec
 cloudinary_id: Vlog_024_ibgojd
 tags: portland oregonexplored vlog
 ---

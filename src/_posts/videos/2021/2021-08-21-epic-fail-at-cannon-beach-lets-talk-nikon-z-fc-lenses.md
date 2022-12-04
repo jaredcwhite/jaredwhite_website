@@ -4,6 +4,7 @@ category: videos
 title: Epic FAIL 😱 at Cannon Beach 📷 Let's Talk Nikon Z fc Lenses
 description: I'm back baby! 😎 First new vlog in a whole year! And with a new camera in tow shooting 4K…life just doesn't get any better than that. 😉 Stay tuned for a brand new episode every week! 🙌
 youtube_id: KeEcHyP1bqw
+bunny_id: f1db7d19-6782-4606-8cc2-25d4eb257cc1
 cloudinary_id: Vlog_020_bhtkim
 tags: oregonexplored vlog
 ---

@@ -4,6 +4,7 @@ category: videos
 title: Fountains! 💦 Trolls! 👹 Burgers! 🍔 SEATTLE Road Trip 🛣
 description: Howdy! Welcome to part TWO of a two-part vlog of our summer vacay up in Seattle. Many grand vistas and lots of fun exploration to be had!
 youtube_id: dG-Hwjdtgh0
+bunny_id: 98c61643-af15-47c0-b92c-9aab9f0dd892
 cloudinary_id: Vlog_022_sivsl1
 tags: seattle washingtonexplored vlog
 ---

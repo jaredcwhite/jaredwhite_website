@@ -6,7 +6,37 @@
   {% if resource.data.vimeo_id && !show_thumbnail %}
     <responsive-embed><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
   {% elsif resource.data.youtube_id && !show_thumbnail %}
-    <responsive-embed><iframe src="https://www.youtube-nocookie.com/embed/{{ resource.data.youtube_id }}?rel=0" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
+    <sl-tab-group style="--sl-font-sans: var(--body-font); --sl-color-gray-600: var(--primary-light); --tabs-border-color: var(--primary-light); --sl-color-primary-500: var(--secondary)">
+      {% if resource.data.bunny_id %}
+        <sl-tab slot="nav" panel="bunny">Bunny</sl-tab>
+      {% end %}
+      <sl-tab slot="nav" panel="youtube">YouTube</sl-tab>
+
+      {% if resource.data.bunny_id %}
+        <sl-tab-panel name="bunny">
+          <responsive-embed>
+            <iframe src="https://iframe.mediadelivery.net/embed/71584/{{ resource.data.bunny_id }}?autoplay=false&preload=false" loading="lazy" width="1280" height="720" style="border: none;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="true"></iframe>
+          </responsive-embed>
+        </sl-tab-panel>
+      {% end %}
+      <sl-tab-panel name="youtube">
+        <responsive-embed><iframe src="https://www.youtube-nocookie.com/embed/{{ resource.data.youtube_id }}?rel=0" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
+      </sl-tab-panel>
+    </sl-tab-group>
+    <style>
+      sl-tab-group::part(tabs) {
+        border-bottom-width: 1px;
+      }
+
+      sl-tab-panel::part(base) {
+        padding-inline: 0;
+        padding-block-end: 0;
+      }
+
+      sl-tab::part(base) {
+        padding: .75rem;
+      }
+    </style>
   {% elsif resource.data.cloudinary_id %}
     {%@ FeaturedImageComponent resource: resource %}
   {% end %}

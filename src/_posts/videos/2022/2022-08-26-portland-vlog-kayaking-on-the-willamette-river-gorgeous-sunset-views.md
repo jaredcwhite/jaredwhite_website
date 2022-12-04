@@ -7,6 +7,7 @@ description: I had a FANTASTIC time boating out on the river…my first time eve
   kids and I got to see overlooking Portland's South Waterfront. Breathtaking!
 date: 2022-08-26 13:00:39.000000000 Z
 youtube_id: zonfplkrxtI
+bunny_id: 2d8cf39e-780a-4adf-aa02-cd7cd728981c
 cloudinary_id: Vlog_025_qbphgc
 tags: portland oregonexplored vlog
 ---
