@@ -86,7 +86,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <resources-feed skip-last-hr>
   {% collections.posts.resources.select { |r| r.data.category == "videos" }[0...2].each do |resource| %}
-    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3 %}
+    {%@ Resources::BaseComponent.component_for_resource(resource) resource: resource, h_level: :h3, show_thumbnail: true %}
   {% end %}
 </resources-feed>
 
