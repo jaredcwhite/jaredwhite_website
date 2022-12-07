@@ -133,7 +133,7 @@ namespace :import do
     body = conn.get(args.url).body
     doc = Nokogiri::HTML5(body)
 
-    description = doc.at_css(".postInfo p").content + "\n#portland #oregonexplored #nikonzfc"
+    description = doc.at_css(".postInfo p").content + "\n#portland #oregonexplored #iPhonePro"
     timestamp = doc.at_css("script#__NEXT_DATA__").content.match(/"created_at":"(.*?)"/)[1]
     published_at = Date.parse(timestamp)
     slug = description.split[..5]
@@ -151,7 +151,7 @@ namespace :import do
       image: image_url,
       thumbnail_url:,
       glass_url: args.url,
-      tags: "portland oregonexplored nikonzfc" #default
+      tags: "portland oregonexplored iPhonePro" #default
     )
     model.content = description.gsub(/(\n)/, "  \\1")
     model.origin = origin
