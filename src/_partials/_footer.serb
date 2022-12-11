@@ -12,7 +12,7 @@
     {% end %}
   </figure>
 
-  <p>Write Me: {{ site.metadata.email | obfuscate_link }}</p>
+  <p>Write to Me: {{ site.metadata.email | obfuscate_link }}</p>
 
   <p>Writing and Personal Photography Copyright © 2012-{{ site.time | strftime: "%Y" }} Jared White</p>
 

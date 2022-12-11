@@ -2,6 +2,7 @@ class SiteBuilder < Bridgetown::Builder
   # write builders which subclass SiteBuilder in plugins/builders
 end
 
+# TODO: remove when merged into next Bridgetown beta
 Bridgetown::StaticFile.class_eval do
   alias_method :date, :modified_time
 
