@@ -138,6 +138,8 @@ GEM
     roda (3.62.0)
       rack
     rouge (3.30.0)
+    rss (0.2.9)
+      rexml
     rubocop (1.40.0)
       json (~> 2.3)
       parallel (~> 1.10)
@@ -200,6 +202,7 @@ DEPENDENCIES
   faraday-encoding (~> 0.0.5)
   nokogiri (~> 1.13)
   puma (~> 5.6)
+  rss (~> 0.2.9)
   ruby2js (>= 5.0)
   solargraph (~> 0.47.2)
   yt (~> 0.33.4)

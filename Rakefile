@@ -159,6 +159,46 @@ namespace :import do
 
     puts "Done! Saved in: #{origin.relative_path}"
   end
+
+  task :feedbin => :environment do
+    require "rss"
+
+    site
+    helpers = Bridgetown::RubyTemplateView::Helpers.new(nil, site)
+
+    rss = Faraday.get("https://feedbin.com/starred/77f395c150643002f81012f9aecea283.xml").body
+    feed = RSS::Parser.parse(rss)
+
+    puts "Which article would you like to link to?"
+    puts
+    feed.items[0...5].each_with_index do |item, index|
+      puts "#{index + 1}. #{item.title}"
+    end
+    puts
+    putc ">"
+    putc " "
+
+    answer = STDIN.gets.chomp.to_i
+
+    item = feed.items[answer - 1]
+    today = DateTime.now
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/links/#{today.strftime("%Y")}/#{today.strftime("%Y-%m-%d")}-#{Bridgetown::Utils.slugify(item.title, mode: "ascii")}.md")
+
+    model = Bridgetown::Model::Base.new(
+      published: true,
+      category: :links,
+      title: item.title,
+      link_url: item.link,
+      link_excerpt: helpers.strip_html(item.description).strip.truncate_words(200),
+      date: today
+    )
+    model.content = "Commentary goes here."
+    model.origin = origin
+    model.save
+
+    puts "Done! Saved in: #{origin.relative_path}"
+  end
 end
 
 # Run rake without specifying any command to execute a deploy build by default.

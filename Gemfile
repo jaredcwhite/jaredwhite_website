@@ -36,3 +36,5 @@ gem "faraday-encoding", "~> 0.0.5"
 gem "nokogiri", "~> 1.13"
 
 gem "solargraph", "~> 0.47.2"
+
+gem "rss", "~> 0.2.9"
