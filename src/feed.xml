@@ -14,7 +14,7 @@ template_engine: liquid
     </image>
     <atom:link href="{{ "feed.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in collections.posts.resources limit:40 %}
-      {% capture page_content %}
+      {%- capture page_content %}
         {% if post.category == 'thoughts' %}
           {% render "feed_post_types/thought", site: site, post: post %}
         {% elsif post.category == 'pictures' %}
@@ -26,9 +26,10 @@ template_engine: liquid
         {% else %}
           {% render "feed_post_types/article", site: site, post: post %}
         {% endif %}
-      {% endcapture %}
+      {%- endcapture %}
+      {%- assign post_title = post.feed_title %}
       <item>
-        <title>{{ post.feed_title | strip | xml_escape }}</title>
+        {% if post_title %}<title>{{ post.feed_title | strip | xml_escape }}</title>{% endif %}
         <description>{{ page_content | xml_escape }}</description>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>{{ post.absolute_url }}</link>

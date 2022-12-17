@@ -6,9 +6,9 @@ module ResourceFeedExtension
 
     case resource.data.category
     when "thoughts"
-      resource.has_model_title? ? resource.data.title : "Thought for #{formatted_date(resource.date)}"
+      resource.has_model_title? ? resource.data.title : nil
     when "pictures"
-      "Picture for #{formatted_date(resource.date)}"
+      nil
     when "links"
       "Link: #{resource.data.title}"
     when "videos"

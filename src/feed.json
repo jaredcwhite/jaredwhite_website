@@ -14,8 +14,8 @@ template_engine: liquid
     "favicon": "{{ "/favicon.ico" | absolute_url }}",
     "expired": false,
     "items": [
-    {% for post in collections.posts.resources limit:20 %}
-      {% capture page_content %}
+    {% for post in collections.posts.resources limit:40 %}
+      {%- capture page_content %}
         {% if post.category == 'thoughts' %}
           {% render "feed_post_types/thought", site: site, post: post %}
         {% elsif post.category == 'pictures' %}
@@ -27,10 +27,11 @@ template_engine: liquid
         {% else %}
           {% render "feed_post_types/article", site: site, post: post %}
         {% endif %}
-      {% endcapture %}
+      {%- endcapture %}
+      {%- assign post_title = post.feed_title %}
         {
             "id": "{{ post.id }}",
-            "title": {{ post.feed_title | strip | jsonify }},
+            {% if post_title %}"title": {{ post.feed_title | strip | jsonify }},{% endif %}
             "summary": {% if post.data.subtitle %}{{ post.data.subtitle | jsonify }}{% else %}{{ page_content | strip_html | strip_newlines | strip | jsonify }}{% endif %},
             "content_text": {{ page_content | strip_html | strip_newlines | strip | jsonify }},
             "content_html": {{ page_content | strip_newlines | strip | jsonify }},
