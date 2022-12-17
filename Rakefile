@@ -201,5 +201,26 @@ namespace :import do
   end
 end
 
+namespace :write do
+  task :thought => :environment do
+    site
+    today = DateTime.now
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/thoughts/#{today.strftime("%Y")}/#{today.strftime("%Y-%m-%d")}-new-thought.md")
+
+    model = Bridgetown::Model::Base.new(
+      published: true,
+      category: :thoughts,
+      date: today,
+      tags: "tag"
+    )
+    model.content = "Write your post here."
+    model.origin = origin
+    model.save
+
+    puts "Done! Saved in: #{origin.relative_path}"
+  end
+end
+
 # Run rake without specifying any command to execute a deploy build by default.
 task default: :deploy
