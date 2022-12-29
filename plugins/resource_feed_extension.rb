@@ -1,14 +1,20 @@
+# TODO: refactor all this stuff!
+
 module ResourceFeedExtension
   CATEGORY_TYPES = %w(thoughts pictures links videos)
 
-  def self.title_for_resource(resource)
+  def self.title_for_resource(resource, for_html: false) # rubocop:disable Metrics
     return resource.data.title if resource.is_a?(Bridgetown::GeneratedPage)
 
     case resource.data.category
     when "thoughts"
-      resource.has_model_title? ? resource.data.title : nil
+      if resource.has_model_title?
+        resource.data.title
+      else
+        for_html ? resource.summary.truncate_words(15) : nil
+      end
     when "pictures"
-      nil
+      for_html ? "Picture: #{resource.summary.truncate_words(15)}" : nil
     when "links"
       "Link: #{resource.data.title}"
     when "videos"
@@ -45,6 +51,10 @@ module ResourceFeedExtension
       ResourceFeedExtension.title_for_resource self
     end
 
+    def html_title
+      ResourceFeedExtension.title_for_resource self, for_html: true
+    end
+
     def graph_description
       ResourceFeedExtension.graph_description_for_resource self
     end
@@ -63,6 +73,10 @@ module ResourceFeedExtension
       ResourceFeedExtension.title_for_resource self
     end
 
+    def html_title
+      ResourceFeedExtension.title_for_resource self, for_html: true
+    end
+
     def graph_description
       ResourceFeedExtension.graph_description_for_resource self
     end
@@ -75,6 +89,10 @@ Bridgetown::Resource.register_extension ResourceFeedExtension
 Bridgetown::GeneratedPage.class_eval do
   def feed_title
     ResourceFeedExtension.title_for_resource self
+  end
+
+  def html_title
+    ResourceFeedExtension.title_for_resource self, for_html: true
   end
 
   def graph_description

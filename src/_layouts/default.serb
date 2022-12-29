@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    {%@ "head", title: resource.feed_title, should_translate_title: resource.data.translate_title %}
+    {%@ "head", title: resource.html_title, should_translate_title: resource.data.translate_title %}
   </head>
   <body class="{{ resource.data.layout }} category-{{ resource.data.category || "none" }}">
     <main>
