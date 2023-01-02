@@ -19,17 +19,26 @@ collections:
     output: false # we'll just reference them from an archive page, but the actual issues are legacy static files
     sort_direction: descending
   podcast:
+    title: "Podcast"
     output: true
     sort_direction: descending
   projects:
+    title: "Projects"
     output: false
     sort_by: order
     sort_direction: ascending
   broadcasts:
+    title: "ConvertKit Newsletters"
     output: true
     sort_direction: descending
+  posts:
+    title: "Posts"
 
 pagination:
   enabled: true
   title: ":title (pg. :num)"
   per_page: 15
+
+autoload_paths:
+  - path: models
+    eager: true

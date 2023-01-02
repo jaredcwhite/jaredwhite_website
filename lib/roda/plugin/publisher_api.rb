@@ -1,6 +1,12 @@
 class Roda
   module RodaPlugins
     module PublisherApi
+      def self.klass_for_collection_label(label)
+        Bridgetown::Model::Base.descendants.find do |klass|
+          klass.will_load_id?("repo://#{label}.collection")
+        end
+      end
+
       module RequestMethods
         def publisher_api
           r = self
@@ -21,6 +27,7 @@ class Roda
                 end
 
                 r.on String do |collection_name|
+                  # @type [Bridgetown::Collection]
                   collection = bridgetown_site.collections[collection_name.to_sym]
 
                   unless collection.present?
@@ -35,6 +42,9 @@ class Roda
                   {
                     collection: {
                       label: collection.label,
+                      metadata: collection.metadata,
+                      title: collection.metadata.title,
+                      folder_name: collection.folder_name,
                       models: collection.resources.map(&:model).uniq.map do |model|
                         {
                           id: model.id
@@ -46,23 +56,24 @@ class Roda
               end
 
               r.on "models" do
-                r.get "preview", String, String do
-                  item = Bridgetown::Model::Base.find("repo://#{collection}.collection/#{path}")
+                r.get %r{preview/([^/]*)/(.*)}, String, String do |collection, *path|
+                  item = Bridgetown::Model::Base.find("repo://#{collection}.collection/#{path.join("/")}")
   
                   unless item.content.present?
                     response.status = 404
-                    return {
-                      item: nil
-                    }
+                    return "404 Not Found"
                   end
   
-                  {
-                    item: {
-                      id: item.id,
-                      attributes: item.data_attributes,
-                      output: item.render_as_resource.output
-                    }
-                  }
+                  item.render_as_resource.output
+                end
+
+                r.get "new_filename_template", String do |collection|
+                  model_klass = PublisherApi.klass_for_collection_label(collection)
+                  if model_klass.respond_to?(:new_filename_template)
+                    model_klass.new_filename_template(params)
+                  else
+                    "untitled.md"
+                  end
                 end
 
                 r.get %r{([^/]*)/(.*)} do |collection, *path|
