@@ -19,7 +19,9 @@ class Roda
                       collections: bridgetown_site.collections.values.map do |collection|
                         {
                           label: collection.label,
-                          metadata: collection.metadata
+                          metadata: collection.metadata,
+                          title: collection.metadata.title,
+                          folder_name: collection.folder_name
                         }
                       end
                     }
@@ -70,9 +72,13 @@ class Roda
                 r.get "new_filename_template", String do |collection|
                   model_klass = PublisherApi.klass_for_collection_label(collection)
                   if model_klass.respond_to?(:new_filename_template)
-                    model_klass.new_filename_template(params)
+                    {
+                      filename: model_klass.new_filename_template(params)
+                    }
                   else
-                    "untitled.md"
+                    {
+                      filename: "untitled.md"
+                    }
                   end
                 end
 
