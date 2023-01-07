@@ -4,17 +4,12 @@
 #
 # Learn more at: http://roda.jeremyevans.net
 
-require_relative "../lib/roda/plugin/publisher_api"
-
 class RodaApp < Bridgetown::Rack::Roda
   # Add Roda configuration here if needed
 
   plugin :bridgetown_ssr
-  plugin :publisher_api
 
   route do |r|
-    r.publisher_api
-
     r.bridgetown
   end
 end

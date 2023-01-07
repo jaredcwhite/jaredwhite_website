@@ -1,0 +1,30 @@
+<template>
+  <fieldset>
+    <legend>Metadata</legend>
+
+    <bt-field>
+      <sl-select label="Category" name="posts[category]">
+        <sl-option value="thoughts">Thoughts</sl-option>
+        <sl-option value="links">Links</sl-option>
+        <sl-option value="pictures">Photos</sl-option>
+        <sl-option value="articles">Essays</sl-option>
+      </sl-select>
+    </bt-field>
+
+    <bt-field>
+      <sl-input label="Title" name="posts[title]"></sl-input>
+    </bt-field>
+
+    <bt-field>
+      <sl-input label="Tags" name="posts[tags]" placeholder="website writing"></sl-input>
+    </bt-field>
+  </fieldset>
+
+  <fieldset>
+    <legend>Content</legend>
+
+    <bt-field>
+      <sl-textarea label="Body" name="posts[_content_]"></sl-textarea>
+    </bt-field>
+  </fieldset>
+</template>
