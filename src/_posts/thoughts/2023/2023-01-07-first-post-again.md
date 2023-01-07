@@ -1,12 +1,12 @@
 ---
+date: Sat, 07 Jan 2023 07:27:16 -0800
 category: thoughts
 tags: website
-title: ''
 ---
 
 Fun fact: this is the first post I've made in quite some time using a CMS (Content Management System).
 
-_But wait!_ you say. _Your site is built with Bridgetown. Are you saying Bridgetown now has its own CMS?_
+_But wait!_ you say. _Your #website is built with Bridgetown. Are you saying Bridgetown now has its own CMS?_
 
 Well, I could tell you, **but then I'm afraid I'd have to kill you**. 😎
 
