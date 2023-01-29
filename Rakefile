@@ -133,7 +133,7 @@ namespace :import do
     body = conn.get(args.url).body
     doc = Nokogiri::HTML5(body)
 
-    description = doc.at_css(".postInfo p").content + "\n#portland #oregonexplored #iPhonePro"
+    description = doc.at_css(".postInfo p").content + "\n#Portland #OregonExplored #iPhonePro"
     timestamp = doc.at_css("script#__NEXT_DATA__").content.match(/"created_at":"(.*?)"/)[1]
     published_at = Date.parse(timestamp)
     slug = description.split[..5]
