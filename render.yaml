@@ -37,9 +37,9 @@ services:
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
-      - key: REDIS_HOSTPORT
+      - key: REDIS_URL
         fromService:
           type: redis
           name: jaredwhite-redis
-          property: hostport
+          property: connectionString
       - fromGroup: jaredwhite-prod-envs
