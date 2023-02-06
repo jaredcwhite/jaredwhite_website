@@ -26,7 +26,7 @@ services:
         source: /toottown/*
         destination: https://jaredwhite-site-api.onrender.com/toottown/*
   - type: redis
-    name: private redis
+    name: jaredwhite-redis
     plan: free
     ipAllowList: [] # only allow internal connections
   - type: web
@@ -37,4 +37,9 @@ services:
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+      - key: REDIS_HOSTPORT
+        fromService:
+          type: redis
+          name: jaredwhite-redis
+          property: hostport
       - fromGroup: jaredwhite-prod-envs
