@@ -276,6 +276,7 @@ toottown-comment {
   --header-link-color: var(--strong-color);
   padding-block-end: 1.5em;
   border-block-end: solid 3px var(--grey-outlined);
+  font-size: var(--content-scaling);
 }
 
 toottown-comment:last-child {
