@@ -275,7 +275,7 @@ toottown-comment {
   --link-color: var(--primary);
   --header-link-color: var(--strong-color);
   padding-block-end: 1.5em;
-  border-block-end: solid 2px var(--card-border-color);
+  border-block-end: solid 3px var(--grey-outlined);
 }
 
 toottown-comment:last-child {
