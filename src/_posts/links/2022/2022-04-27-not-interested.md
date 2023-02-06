@@ -9,6 +9,7 @@ link_excerpt: |
 
   "Free speech" means you don't go to jail for being an asshole, it doesn't mean others have to put up with you. If you're going to put up with assholes, I'm not interested. 
 tags: Twitter
+comments_hashtag: Twitter
 ---
 
 This excellent tweet by [Hector Martin](https://twitter.com/marcan42) sums up the bewildering lack of understanding many people—including the (likely) new owner of #Twitter, Elon Musk!—seem to have around the moderation of online speech.

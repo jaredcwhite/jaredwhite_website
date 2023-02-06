@@ -53,4 +53,8 @@
   {%@ PublishedDateComponent resource: resource %}
 </article>
 
+{% if h_level == :h2 %}
+  {%@ ToottownComments resource: resource %}
+{% end %}
+
 <hr />

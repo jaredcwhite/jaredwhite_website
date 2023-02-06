@@ -4,9 +4,11 @@ services:
     env: static
     buildCommand: bin/bridgetown deploy
     staticPublishPath: ./output
+    pullRequestPreviewsEnabled: true
     envVars:
       - key: BRIDGETOWN_ENV
         value: production
+      - fromGroup: jaredwhite-prod-envs
     routes:
       - type: redirect
         source: /page/*
@@ -20,3 +22,19 @@ services:
       - type: redirect
         source: /subscribe
         destination: /creator-class
+      - type: rewrite
+        source: /toottown/*
+        destination: https://jaredwhite-site-api.onrender.com/toottown/*
+  - type: redis
+    name: private redis
+    plan: free
+    ipAllowList: [] # only allow internal connections
+  - type: web
+    name: jaredwhite-site-api
+    env: ruby
+    buildCommand: bundle install && yarn install && bin/bridgetown frontend:build
+    startCommand: bin/bridgetown start
+    envVars:
+      - key: BRIDGETOWN_ENV
+        value: production
+      - fromGroup: jaredwhite-prod-envs

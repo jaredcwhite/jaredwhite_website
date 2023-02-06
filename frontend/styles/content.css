@@ -261,3 +261,24 @@ glass-photos a {
 glass-photos a:hover {
   transform: translateY(-7px);
 }
+
+toottown-comments-loader p {
+  font-size: 90%;
+}
+
+toottown-comments:not(:empty) {
+  display: block;
+  margin-inline: min(3lvi, 1.5em);
+}
+
+toottown-comment {
+  --link-color: var(--primary);
+  --header-link-color: var(--strong-color);
+  padding-block-end: 1.5em;
+  border-block-end: solid 2px var(--card-border-color);
+}
+
+toottown-comment:last-child {
+  padding-block-end: 0;
+  border-block-end: none;
+}

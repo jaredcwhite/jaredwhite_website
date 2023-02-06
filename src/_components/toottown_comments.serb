@@ -1,0 +1,22 @@
+<h3 id="comments">Comments</h3>
+
+<toottown-comments-loader
+  href="{%= resource.absolute_url %}"
+  {% if resource.data.comments_hashtag %}
+    comments-hashtag="{%= resource.data.comments_hashtag %}"
+  {% end %}
+>
+  <p><button class="button"><sl-icon library="remixicon" name="communication/chat-smile-2-line"></sl-icon> Load Comments</button></p>
+
+  <template name="loadingPreamble">
+    <sl-icon library="remixicon" name="communication/chat-smile-2-line"></sl-icon>
+    Loading comments…
+  </template>
+  <template name="commentsPreamble">
+    <sl-icon library="remixicon" name="communication/chat-smile-2-line"></sl-icon>
+    You can add your comment by <a target="_blank">replying to this Mastodon toot</a> via your own "fediverse" instance.
+  </template>
+  <template name="noThreadPreamble">No comment thread could be found.</template>
+</toottown-comments-loader>
+
+<toottown-comments></toottown-comments>
