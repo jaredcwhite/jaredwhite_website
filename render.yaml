@@ -25,6 +25,9 @@ services:
       - type: rewrite
         source: /toottown/*
         destination: https://jaredwhite-site-api.onrender.com/toottown/*
+      - type: rewrite
+        source: /publisher_api/*
+        destination: https://jaredwhite-site-api.onrender.com/publisher_api/*
   - type: redis
     name: jaredwhite-redis
     plan: free
