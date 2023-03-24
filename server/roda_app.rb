@@ -5,11 +5,10 @@
 # Learn more at: http://roda.jeremyevans.net
 
 class RodaApp < Bridgetown::Rack::Roda
-  # Add Roda configuration here if needed
+  # Some Roda configuration is handled in the `config/initializers.rb` file.
+  # But you can also add additional Roda configuration here if needed.
 
-  route do
-    # Load all the files in server/routes
-    # see hello.rb.sample
-    Bridgetown::Rack::Routes.start! self
+  route do |r|
+    r.bridgetown
   end
 end
