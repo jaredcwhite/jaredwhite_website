@@ -4,7 +4,7 @@ Bridgetown.configure do |config|
   init :toottown, access_token: ENV.fetch("TOOTTOWN_ACCESS_TOKEN"), instance_url: ENV.fetch("TOOTTOWN_INSTANCE_URL")
 
   config.autoload_paths << {
-    path: "app/models",
+    path: "models",
     eager: true
   }
 end
