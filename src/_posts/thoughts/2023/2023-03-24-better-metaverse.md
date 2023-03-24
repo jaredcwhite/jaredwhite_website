@@ -1,4 +1,5 @@
 ---
+date: Fri, 24 Mar 2023 12:02:42 -0700
 category: thoughts
 tags: metaverse openweb
 title: The Dream of a Better Metaverse
