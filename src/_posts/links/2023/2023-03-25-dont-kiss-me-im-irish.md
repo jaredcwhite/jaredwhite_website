@@ -15,7 +15,7 @@ tags: bigotry
 title: Ke Huy Quan, Ethnic Stereotypes, and Bagpipes
 ---
 
-This was a thought-provoking read by [Walter Chaw](https://decider.com/author/walter-chaw/) about an uncomfortable topic. As the years have gone by, I've (slowly, to my great chagrin) come to realize more and more how ethnic stereotypes in popular media can be so damaging to the targets of such "humor". One aspect of this which hits close to home is my own memory of cringing experiences as a Scottish/Irish-American who once performed Celtic folk music professionally across the United States.
+This was a thought-provoking read by [Walter Chaw](https://decider.com/author/walter-chaw/) about an uncomfortable topic. As the years have gone by, I've (slowly, to my great chagrin) come to realize more and more how ethnic stereotypes in popular media can be so damaging to the targets of such "humor". One aspect of this which hits close to home is my own memory of cringeworthy experiences as a Scottish/Irish-American who once performed Celtic folk music professionally across the United States.
 
 No, **of course** I'm not in any way comparing my experiences directly with those who are Asian-American. Being white-presenting in America, you get to _choose_ when and how you are the butt of ethnic jokes. Others aren't so lucky, to put it mildly. But it was certainly _illuminating_ to see how stereotyping can feel "othering" and disrespectful, or simply how people's ignorance—while perhaps understandable—nevertheless was frustrating. Just a few examples:
 
