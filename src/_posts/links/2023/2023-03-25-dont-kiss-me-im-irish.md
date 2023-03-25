@@ -24,7 +24,7 @@ No, **of course** I'm not in any way comparing my experiences directly with thos
 * Calling our music "Riverdance music" 😡
 * Throughout my teenage years I was regularly misgendered as a girl because I wore my hair long and wore a kilt—which is **NOT** a skirt!
 
-Not to mention all of the kitsch and cultural artifacts we had to contend with…what I might call the "Kiss Me, I'm Irish" set of stereotypes. Dancing red-headed leprechaun with pots of gold at the end of the rainbow and all that. Or worse, drunken Irishmen punching each other out at the pub. Grizzled old Scotsmen with impenetrable accents roaming the moors. Bagpipe jokes…So. Many. Bagpipe jokes.
+Not to mention all of the kitsch and cultural artifacts we had to contend with…what I might call the "Kiss Me, I'm Irish" set of stereotypes. Dancing red-headed leprechauns with pots of gold at the end of the rainbow and all that. Or worse, drunken Irishmen punching each other out at the pub. Grizzled old Scotsmen with impenetrable accents roaming the moors. Bagpipe jokes…So. Many. Bagpipe jokes.
 
 Sure, it's not all terrible, and sometimes genuinely amusing—but as is often the case with these sorts of things, the jokes are funnier when they're offered from people already immersed in the culture. A legitimate Scottish pipes player can make a joke about bagpipes. Some bozo American who thinks "Braveheart" is an accurate historical depiction of Scottish history? Fuck no.
 
