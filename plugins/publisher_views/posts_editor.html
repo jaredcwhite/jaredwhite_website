@@ -49,7 +49,7 @@
     if (e.target.value === "links") {
       const tmpl = document.querySelector("#posts-link-template")
       const fields = tmpl.content.cloneNode(true)
-      tmpl.insertAdjacentElement("afterend", fields)
+      tmpl.insertAdjacentElement("afterend", fields.firstElementChild)
     } else {
       const fields = document.querySelector("#posts-link-fieldset")
       if (fields) fields.remove()
