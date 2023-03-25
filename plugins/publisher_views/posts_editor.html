@@ -34,6 +34,20 @@
     </fieldset>
   </template>
 
+  <template id="posts-essay-template">
+    <fieldset id="posts-essay-fieldset">
+      <legend>Essay</legend>
+
+      <bt-field>
+        <sl-input label="Subtitle" name="posts[subtitle]"></sl-input>
+      </bt-field>
+
+      <bt-field>
+        <sl-input label="Cloudinary ID" name="posts[cloudinary_id]"></sl-input>
+      </bt-field>
+    </fieldset>
+  </template>
+
   <fieldset>
     <legend>Content</legend>
 
@@ -52,6 +66,15 @@
       tmpl.insertAdjacentElement("afterend", fields.firstElementChild)
     } else {
       const fields = document.querySelector("#posts-link-fieldset")
+      if (fields) fields.remove()
+    }
+
+    if (e.target.value === "articles") {
+      const tmpl = document.querySelector("#posts-essay-template")
+      const fields = tmpl.content.cloneNode(true)
+      tmpl.insertAdjacentElement("afterend", fields.firstElementChild)
+    } else {
+      const fields = document.querySelector("#posts-essay-fieldset")
       if (fields) fields.remove()
     }
 
