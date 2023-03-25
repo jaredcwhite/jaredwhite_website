@@ -20,6 +20,20 @@
     </bt-field>
   </fieldset>
 
+  <template id="posts-link-template">
+    <fieldset id="posts-link-fieldset">
+      <legend>Link</legend>
+
+      <bt-field>
+        <sl-input label="URL" name="posts[link_url]"></sl-input>
+      </bt-field>
+
+      <bt-field>
+        <sl-textarea label="Excerpt" name="posts[link_excerpt]"></sl-textarea>
+      </bt-field>
+    </fieldset>
+  </template>
+
   <fieldset>
     <legend>Content</legend>
 
@@ -28,3 +42,17 @@
     </bt-field>
   </fieldset>
 </template>
+
+<script type="module">
+  const categorySelect = document.querySelector(`name="posts[category]"`)
+  categorySelect.addEventListener("sl-change", e => {
+    if (e.target.value === "links") {
+      const tmpl = document.querySelector("#posts-link-template")
+      const fields = tmpl.content.cloneNode(true)
+      tmpl.insertAdjacentElement("afterend", fields)
+    } else {
+      const fields = document.querySelector("#posts-link-fieldset")
+      if (fields) fields.remove()
+    }
+  })
+</script>
