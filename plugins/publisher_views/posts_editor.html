@@ -44,7 +44,7 @@
 </template>
 
 <script type="module">
-  const categorySelect = document.querySelector(`name="posts[category]"`)
+  const categorySelect = document.querySelector(`[name="posts[category]"]`)
   categorySelect.addEventListener("sl-change", e => {
     if (e.target.value === "links") {
       const tmpl = document.querySelector("#posts-link-template")
