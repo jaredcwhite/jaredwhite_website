@@ -3,7 +3,7 @@
     <legend>Metadata</legend>
 
     <bt-field>
-      <sl-select label="Category" name="posts[category]">
+      <sl-select label="Category" name="posts[category]" value="thoughts">
         <sl-option value="thoughts">Thoughts</sl-option>
         <sl-option value="links">Links</sl-option>
         <sl-option value="pictures">Photos</sl-option>
@@ -54,5 +54,10 @@
       const fields = document.querySelector("#posts-link-fieldset")
       if (fields) fields.remove()
     }
+
+    const filename = document.querySelector(`[name="filename"]`)
+    const segments = filename.value.split("/")
+    segments[0] = e.target.value
+    filename.value = segments.join("/")
   })
 </script>
