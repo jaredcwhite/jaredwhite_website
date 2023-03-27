@@ -21,12 +21,19 @@ class PublisherApi::Collections < Bridgetown::Rack::Routes
       r.get "editor_views", String do |collection_name|
         collection = bridgetown_site.collections[collection_name.to_sym]
 
-        unless collection.present? && File.file?(bridgetown_site.in_root_dir("plugins/publisher_views/#{collection.label}_editor.html"))
+        unless collection.present?
           response.status = 404
           next "404 Not Found"
         end
 
-        File.read(bridgetown_site.in_root_dir("plugins/publisher_views/#{collection.label}_editor.html"))
+        begin
+          editor_component = "PublisherViews::#{collection.label.camelize}".constantize
+        rescue NameError
+          response.status = 404
+          next "404 Not Found"
+        end
+
+        editor_component.new(request: r).template
       end
 
       r.on String do |collection_name|
