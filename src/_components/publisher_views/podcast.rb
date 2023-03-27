@@ -1,5 +1,8 @@
 class PublisherViews::Podcast < Bridgetown::Component
-  def initialize(request:)
+  attr_reader :r
 
+  def initialize(request:)
+    @r = request
+    @site = Bridgetown::Current.site
   end
 end

@@ -1,12 +1,6 @@
 class PublisherApi::Models < Bridgetown::Rack::Routes
   priority :low
 
-  def self.klass_for_collection_label(label)
-    Bridgetown::Model::Base.descendants.find do |klass|
-      klass.will_load_id?("repo://#{label}.collection")
-    end
-  end
-
   route do |r|
     r.on "publisher_api/models" do
       r.get %r{preview/([^/]*)/(.*)}, String, String do |collection, *path|
@@ -18,20 +12,6 @@ class PublisherApi::Models < Bridgetown::Rack::Routes
         end
 
         item.render_as_resource.output
-      end
-
-      r.get "new_filename_template", String do |collection|
-        model_klass = self.class.klass_for_collection_label(collection)
-        puts params
-        if model_klass.respond_to?(:new_filename_template)
-          {
-            filename: model_klass.new_filename_template(params)
-          }
-        else
-          {
-            filename: "untitled.md"
-          }
-        end
       end
 
       r.is %r{([^/]*)/(.*)} do |collection, *path|

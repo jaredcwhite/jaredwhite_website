@@ -49,12 +49,20 @@ class PublisherApi::Collections < Bridgetown::Rack::Routes
 
         collection.resources.clear
         collection.read
+        begin
+          editor_component = "PublisherViews::#{collection.label.camelize}".constantize
+          filename = editor_component.new(request: r).new_filename_template
+        rescue NameError
+          filename = "untitled.md"
+        end
+
         {
           collection: {
             label: collection.label,
             metadata: collection.metadata,
             title: collection.metadata.title,
             folder_name: collection.folder_name,
+            new_filename: filename,
             models: collection.resources.map(&:model).uniq.map do |model|
               {
                 id: model.id

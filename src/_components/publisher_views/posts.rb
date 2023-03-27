@@ -1,5 +1,8 @@
 class PublisherViews::Posts < Bridgetown::Component
+  attr_reader :r
+
   def initialize(request:)
+    @r = request
     @site = Bridgetown::Current.site
   end
 
@@ -10,5 +13,11 @@ class PublisherViews::Posts < Bridgetown::Component
     end
 
     site.tags.keys.sort
+  end
+
+  def new_filename_template
+    today = DateTime.now
+    year = today.strftime("%Y")
+    "#{r.params.fetch("category", "thoughts")}/#{year}/#{today.strftime("%Y-%m-%d")}-untitled.md"
   end
 end
