@@ -13,6 +13,7 @@ template_engine: serbea
 
 collections:
   now_entries:
+    title: "Now Pages"
     output: true
     sort_direction: descending
   newsletters:
@@ -33,6 +34,8 @@ collections:
     sort_direction: descending
   posts:
     title: "Posts"
+  pages:
+    title: "Pages"
 
 pagination:
   enabled: true
