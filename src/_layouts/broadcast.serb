@@ -18,6 +18,8 @@ layout: default
 
 {%@ PublishedDateComponent resource: resource %}
 
+{%@ ToottownComments resource: resource %}
+
 <hr />
 
 <a-card>
