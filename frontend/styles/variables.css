@@ -37,10 +37,12 @@
   --line-height: 1.4;
   --content-scaling: 100%;
 
-  --primary: #18704c;
+  --primary: #007c52;
+  --primary: oklch(51.9% 0.155 160.72);
   --primary-button: var(--primary);
   --primary-light: #b1c8bf;
-  --secondary: #f7693e;
+  --secondary: #fd5300;
+  --secondary: oklch(67.1% 0.228 38.475);
   --outlined: white;
   --grey-outlined: #eee;
   --color-quoted: #e2dfdd;
@@ -71,7 +73,8 @@ body.dark-mode {
   --text-color: #c9c9c9;
   --body-background: #211f1e;
 
-  --primary: #63d0a3;
+  --primary: #00de9f;
+  --primary: oklch(80% 0.205 164.09);
   --primary-light: #5e736a;
   --outlined: #191816;
   --grey-outlined: #404040;
