@@ -34,14 +34,17 @@
 
     article-content {
       font-family: 'Gelasio', serif;
+      --line-height: 1.75;
     }
     article-content h3, article-content blockquote {
       font-family: var(--body-font);
     }
     article-content > p {
-      --line-height: 1.75;
       line-height: var(--line-height);
       margin-block-end: 1.3em;
+    }
+    article-content > :is(ul, ol) > li {
+      line-height: var(--line-height);
     }
 
     @media (min-width: 1024px) {

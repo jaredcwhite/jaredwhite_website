@@ -189,6 +189,7 @@ main {
       &::marker {
         color: var(--heading-text-color);
         font-size: 1.4rem;
+        line-height: 1;
       }
     }
   }
