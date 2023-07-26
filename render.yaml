@@ -22,6 +22,9 @@ services:
       - type: redirect
         source: /subscribe
         destination: /creator-class
+      - type: redirect
+        source: /tag/generativeAI/
+        destination: /tag/generativeai/
       - type: rewrite
         source: /toottown/*
         destination: https://jaredwhite-site-api.onrender.com/toottown/*
