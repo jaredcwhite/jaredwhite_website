@@ -20,6 +20,13 @@
         View on Glass
       </a>
     </p>
+  {% elsif resource.data.pixelfed_url %}
+    <p style="text-align:center; margin-top:3rem">
+      <a href="{{ resource.data.pixelfed_url }}" class="button" style="font-size:80%">
+        <sl-icon library="remixicon" name="logos/pixelfed-fill"></sl-icon>
+        View on Pixelfed
+      </a>
+    </p>
   {% else %}
     <p style="text-align:center; margin-top:3rem">
       <a href="{{ resource.data.cloudinary_id | cloudinary_url }}" class="button" style="font-size:80%">

@@ -44,8 +44,8 @@
       <li><a href="https://github.com/{{ site.metadata.social.github }}">
         <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
       </a></li>
-      <li><a href="https://glass.photo/{{ site.metadata.social.glass }}">
-        <sl-icon library="remixicon" name="media/camera-lens-fill" style="margin-right:8px"></sl-icon>Glass
+      <li><a href="https://{{ site.metadata.social.pixelfed }}">
+        <sl-icon library="remixicon" name="logos/pixelfed-fill" style="margin-right:8px"></sl-icon>Pixelfed
       </a></li>
       <li><a href="https://www.youtube.com/{{ site.metadata.social.youtube_channel }}">
         <sl-icon library="remixicon" name="logos/youtube-fill" style="margin-right:8px"></sl-icon>YouTube
@@ -57,9 +57,9 @@
 
     <h2>Recent Photos</h2>
 
-    <glass-photos>
-      {% collections.posts.resources.select { _1.data.category == "pictures" && _1.data.glass_url }[..5].each do |photo| %}
-        <a href="{{ photo.relative_url }}" target="_blank">
+    <recent-photos>
+      {% collections.posts.resources.select { _1.data.category == "pictures" }[..5].each do |photo| %}
+        <a href="{{ photo.relative_url }}">
           <img
             src="{{ photo.data.thumbnail_url }}"
             loading="lazy"
@@ -67,7 +67,7 @@
           />
         </a>
       {% end %}
-    </glass-photos>
+    </recent-photos>
 
     <h2>Popular Hashtags</h2>
 

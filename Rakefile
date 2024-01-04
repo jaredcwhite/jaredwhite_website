@@ -55,7 +55,7 @@ namespace :import do
 
     previous_issues = 11 + broadcasts_count
 
-    api_secret = ENV["CONVERTKIT_API"]
+    api_secret = ENV.fetch("CONVERTKIT_API")
 
     broadcasts = Faraday
       .get("https://api.convertkit.com/v3/broadcasts?api_secret=#{api_secret}")
@@ -158,6 +158,45 @@ namespace :import do
     model.save
 
     puts "Done! Saved in: #{origin.relative_path}"
+  end
+
+  task :pixelfed => :environment do
+    require "nokogiri"
+    require "rss"
+
+    site # init
+
+    feed_url = "https://pixelfed.social/users/essentiallife.atom"
+    feed = RSS::Parser.parse(feed_url)
+
+    feed.entries.each do |entry|
+      parsed_content = Nokogiri::HTML5(entry.content.content)
+      image_url = parsed_content.at_css("img")[:src]
+      thumbnail_url = image_url.sub(".jpg", "_thumb.jpg")
+
+      description = parsed_content.to_str.strip
+      timestamp = entry.updated.content
+      slug = entry.summary.content.split("<br />").first.split(" ")[0..9].join(" ")
+
+      origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/pictures/#{timestamp.strftime("%Y")}/#{timestamp.strftime("%Y-%m-%d")}-#{Bridgetown::Utils.slugify(slug, mode: "ascii")}.md")
+
+      unless origin.exists?
+        model = Bridgetown::Model::Base.new(
+          published: true,
+          category: :pictures,
+          date: timestamp.iso8601,
+          image: image_url,
+          thumbnail_url:,
+          pixelfed_url: entry.id.content,
+          tags: "portland oregonexplored nikonzfc" #default
+        )
+        model.content = description.gsub(/(\n)/, "  \\1")
+        model.origin = origin
+        model.save
+
+        puts "Done! Saved in: #{origin.relative_path}"
+      end
+    end
   end
 
   task :feedbin => :environment do
