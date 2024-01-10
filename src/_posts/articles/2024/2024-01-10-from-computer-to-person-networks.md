@@ -57,7 +57,7 @@ In [ActivityPub will cross the chasm in 2024](https://cdevroe.com/2023/12/19/act
 
 This is exactly right. For a long time, Mastodon=ActivityPub and ActivityPub=Mastodon. Even smart people writing for tech publications would routinely make this honest mistake.
 
-**But the times they are a-changing.** ActivityPub is "eating the internet" and as more and more fediverse services come online, mainstream internet users will take advantage of this new person-based web without even realizing it. (If you want to be mesmerized, [watch this Discourse-Discourse-Mastodon ￼federation demo](https://meta.discourse.org/t/activitypub-plugin/266794/117). Mind-blowing stuff!)
+**But the times they are a-changing.** ActivityPub is "eating the internet" and as more and more fediverse services come online, mainstream internet users will take advantage of this new person-based web without even realizing it. (If you want to be mesmerized, [watch this Discourse-Discourse-Mastodon federation demo](https://meta.discourse.org/t/activitypub-plugin/266794/117). Mind-blowing stuff!)
 
 Such a mass migration won't be easy though. There will be plenty of fits and starts and hiccups along the way. And even though we've been shocked to see THE social media company, Meta, embrace ActivityPub as a key marketing feature of its new social media platform Threads, I suspect many large platform owners will be dragged kicking and screaming into this new web. They don't want a web which features `@person@server.com` at its core. They want _everyone_ to remain `@person@shittymonopolisticsilo.com`.
 
@@ -67,7 +67,7 @@ They want all the attention.
 
 They want all the commerce.
 
-They want all the control.
+**They want all the control.**
 
 But just as the document web was _never_ about centralized control (the opposite in fact!) and we unfortunately got that anyway as a quirk of history, the person web has been designed from the get-go to offer decentralization as a feature not a bug.
 
@@ -87,7 +87,7 @@ That's the beauty of the fediverse. _Every_ single SERVER. _Every_ single SERVIC
 
 It's exponential growth like we haven't seen since the very beginning of the web. And thus _you ain't seen nuthin' yet._
 
-**The migration has only just begun.**
+**The migration has only just begun.** 🚀
 
 <br/>
 
