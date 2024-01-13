@@ -8,7 +8,7 @@
   <br/>
   <p>
     {% for tag in post.tags %}
-      <a class="article hashtag" href="{{ site.url }}/tag/{{ tag }}">#{{ tag }}</a>
+      <a class="article hashtag" href="{{ site.url }}/tag/{{ tag | downcase }}">#{{ tag }}</a>
     {% endfor %}
   </p>
 {% endif %}
