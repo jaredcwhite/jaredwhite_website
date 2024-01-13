@@ -12,4 +12,4 @@ I have So Many Thoughts, as [someone very familiar with this world](https://simp
 
 We need a LOT more "exvangelical" documentaries. We need more people telling their story. We need these stories represented in art, literature, and cinema. Given the #spirituality dimension we see in American #politics today, it has never been more important.￼
 
-(Parting thought: we need to hold media accountable for promoting fundamentalism or at least giving it a pass. The Duggars should _never_ have been given a national mainstream TV platform. TLC/Discovery should be ashamed of themselves.￼)￼
+(Parting thought: we need to hold media accountable for promoting fundamentalism or at least giving it a pass. The Duggars should _never_ have been given a national mainstream TV platform. TLC/Discovery should be ashamed of themselves.)
