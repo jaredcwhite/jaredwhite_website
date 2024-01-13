@@ -245,15 +245,22 @@ namespace :write do
     site
     today = DateTime.now
 
-    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/thoughts/#{today.strftime("%Y")}/#{today.strftime("%Y-%m-%d")}-new-thought.md")
+    puts "What’s your thought?"
+    thought_content = $stdin.gets
+
+    puts "Slug:"
+    slug = $stdin.gets.chomp
+
+    origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/thoughts/#{today.strftime("%Y")}/#{today.strftime("%Y-%m-%d")}-#{slug}.md")
 
     model = Bridgetown::Model::Base.new(
       published: true,
       category: :thoughts,
       date: today,
-      tags: "tag"
+      tags: "tag",
+      mono_styled: true
     )
-    model.content = "Write your post here."
+    model.content = thought_content
     model.origin = origin
     model.save
 

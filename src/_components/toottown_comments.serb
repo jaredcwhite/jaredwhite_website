@@ -1,4 +1,4 @@
-<h3 id="comments">Comments</h3>
+<h3 id="comments" style="border-left-color: var(--card-border-color)">Comments</h3>
 
 <toottown-comments-loader
   href="{%= resource.absolute_url %}"

@@ -1,4 +1,5 @@
-<article>
+{% if resource.data.mono_styled %}<a-card>{% end %}
+<article{% if resource.data.mono_styled %} class="mono-styled"{% end %}>
   {% if resource.has_model_title? %}
     {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
   {% end %}
@@ -9,6 +10,7 @@
 
   {%@ PublishedDateComponent resource: resource %}
 </article>
+{% if resource.data.mono_styled %}</a-card>{% end %}
 
 {% if h_level == :h2 %}
   {%@ ToottownComments resource: resource %}

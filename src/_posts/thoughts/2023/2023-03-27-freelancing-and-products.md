@@ -2,6 +2,7 @@
 category: thoughts
 date: Mon, 27 Mar 2023 08:38:28 -0700
 tags: creativity freelancing portland
+mono_styled: true
 ---
 
 I used to blog a ton about #freelancing and maximizing your productivity and success as a "free agent" — I even tried running a local meetup here in the #Portland area.

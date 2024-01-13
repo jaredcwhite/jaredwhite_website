@@ -140,6 +140,13 @@ article-content > p:first-of-type:first-letter {
   color: var(--heading-text-color);
 }
 
+article.mono-styled {
+  & > :is(p, ul, ol) {
+    font-family: mononoki;
+    font-variant-ligatures: 'ss01';
+  }
+}
+
 body.post:not(.category-pictures) {
   & .featured-image {
     margin-bottom: 3rem;
