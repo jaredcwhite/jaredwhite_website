@@ -9,4 +9,4 @@ tags: portland oregonexplored nikonzfc
 ---
 
 Snow over the weekend, sun on Monday, joy in this photographer's heart!  
-#Portland #PDX #Oregon #NikonZfc
+#Portland #OregonExplored #NikonZfc
