@@ -12,6 +12,17 @@ class Builders::Helpers < SiteBuilder
       "#{Regexp.last_match(1)}<a href=\"#{tag_url_prefix}#{Regexp.last_match(2).downcase}\" class=\"hashtag\">##{Regexp.last_match(2)}</a>"
     end.html_safe
   end
+  
+  def extracted_hashtags(input)
+    s = StringScanner.new(input + " ") # so it can scan until the end
+    tags = []
+    loop do
+      s.scan_until /\s#[a-zA-Z\d-]+/
+      break if s.eos? || s.matched.nil?
+      tags << s.matched.sub(/^\s#/, "").downcase
+    end
+    tags.join " "
+  end
 
   def translate_title(input)
     segments = input.split

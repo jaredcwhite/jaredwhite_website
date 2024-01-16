@@ -188,7 +188,7 @@ namespace :import do
           image: image_url,
           thumbnail_url:,
           pixelfed_url: entry.id.content,
-          tags: "portland oregonexplored nikonzfc" #default
+          tags: Builders::Helpers.new.extracted_hashtags(description),
         )
         model.content = description.gsub(/(\n)/, "  \\1")
         model.origin = origin
@@ -257,7 +257,7 @@ namespace :write do
       published: true,
       category: :thoughts,
       date: today,
-      tags: "tag",
+      tags: Builders::Helpers.new.extracted_hashtags(thought_content),
       mono_styled: true
     )
     model.content = thought_content
