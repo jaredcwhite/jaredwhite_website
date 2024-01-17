@@ -90,8 +90,8 @@ blockquote.link-excerpt {
 }
 
 a-card blockquote {
-  border-left: none !important;
-  border: 1.5px dotted var(--primary-light) !important;
+  border: 1px dotted var(--primary-light) !important;
+  border-radius: 0 !important;
   font-size: 108% !important;
 }
 
