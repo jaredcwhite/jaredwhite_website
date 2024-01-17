@@ -1,6 +1,7 @@
 ---
 published: true
 category: links
+mono_styled: true
 title: Major Tesla Shareholder Thinks Elon Musk Should Be Replaced As CEO
 link_url: https://insideevs.com/news/627130/tesla-shareholder-leo-koguan-wants-elon-out/
 link_excerpt: |

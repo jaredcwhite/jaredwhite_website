@@ -1,4 +1,5 @@
-<article>
+{% if resource.data.mono_styled %}<a-card>{% end %}
+<article{% if resource.data.mono_styled %} class="mono-styled"{% end %}>
   {%@ TitleComponent title: resource.data.title, url: resource.relative_url, h_level: h_level %}
 
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
@@ -18,6 +19,7 @@
 
   {%@ PublishedDateComponent resource: resource %}
 </article>
+{% if resource.data.mono_styled %}</a-card>{% end %}
 
 {% if h_level == :h2 %}
   {%@ ToottownComments resource: resource %}

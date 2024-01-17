@@ -89,6 +89,12 @@ blockquote.link-excerpt {
   }
 }
 
+a-card blockquote {
+  border-left: none !important;
+  border: 1.5px dotted var(--primary-light) !important;
+  font-size: 108% !important;
+}
+
 a-card figure {
   float: right;
   margin-top: -1rem;
