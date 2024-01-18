@@ -227,6 +227,7 @@ namespace :import do
     model = Bridgetown::Model::Base.new(
       published: true,
       category: :links,
+      mono_styled: true,
       title: item.title,
       link_url: item.link,
       link_excerpt: helpers.strip_html(item.description).strip.truncate_words(200),
