@@ -3,7 +3,7 @@
     <p>
       <sl-icon library="remixicon" name="system/time-line"></sl-icon>
       <time
-        datetime="{{ resource.data.date | strftime: "%Y-%m-%d %H:%M" }}"
+        datetime="{{ resource.data.date | iso8601 }}"
         title="{{ resource.data.date | strftime: "%A, %B %-d, %Y at %-I:%M %p Pacific Time" }}"
       >Published on {{ resource.data.date | strftime: "%B %-d, %Y @ %-I%P" }}</time>
     </p>
