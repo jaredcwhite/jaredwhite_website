@@ -265,7 +265,7 @@ namespace :write do
     model.origin = origin
     model.save
 
-    puts "Done! Saved in: #{origin.relative_path}"
+    puts "Done! Saved in: src/#{origin.relative_path}"
   end
 end
 
