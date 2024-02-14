@@ -113,7 +113,7 @@ namespace :import do
     model.origin = origin
     model.save
 
-    puts "Done! Saved in: #{origin.relative_path}"
+    puts "Done! Saved in: src/#{origin.relative_path}"
   end
 
   task :glass, [:url] => :environment do |task, args|
@@ -157,7 +157,7 @@ namespace :import do
     model.origin = origin
     model.save
 
-    puts "Done! Saved in: #{origin.relative_path}"
+    puts "Done! Saved in: src/#{origin.relative_path}"
   end
 
   task :pixelfed => :environment do
@@ -194,7 +194,7 @@ namespace :import do
         model.origin = origin
         model.save
 
-        puts "Done! Saved in: #{origin.relative_path}"
+        puts "Done! Saved in: src/#{origin.relative_path}"
       end
     end
   end
@@ -237,7 +237,43 @@ namespace :import do
     model.origin = origin
     model.save
 
-    puts "Done! Saved in: #{origin.relative_path}"
+    puts "Done! Saved in: src/#{origin.relative_path}"
+  end
+
+  task :makertube => :environment do
+    require "rss"
+
+    site # init
+    helpers = Bridgetown::RubyTemplateView::Helpers.new(nil, site)
+
+    feed_url = "https://makertube.net/feeds/videos.xml?videoChannelId=4323"
+    feed = RSS::Parser.parse(feed_url)
+
+    feed.items.each do |item|
+      description = item.content_encoded
+      timestamp = item.date
+      slug = item.title
+      video_id = item.enclosure.url.split("/")[5]
+
+      origin = Bridgetown::Model::RepoOrigin.new_with_collection_path(:posts, "_posts/videos/#{timestamp.strftime("%Y")}/#{timestamp.strftime("%Y-%m-%d")}-#{Bridgetown::Utils.slugify(slug, mode: "ascii")}.md")
+
+      unless origin.exists?
+        model = Bridgetown::Model::Base.new(
+          published: true,
+          category: :videos,
+          title: item.title,
+          description: helpers.strip_html(description).split("\n")[0],
+          date: timestamp.iso8601,
+          makertube_id: video_id,
+          tags: "portland oregonexplored vlog" #default
+        )
+        model.content = description
+        model.origin = origin
+        model.save
+
+        puts "Done! Saved in: src/#{origin.relative_path}"
+      end
+    end
   end
 end
 

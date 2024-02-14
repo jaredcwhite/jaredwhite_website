@@ -3,14 +3,17 @@
 
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
-  {% if resource.data.vimeo_id && !show_thumbnail %}
-    <responsive-embed><iframe src="https://player.vimeo.com/video/{{ resource.data.vimeo_id }}" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
-  {% elsif resource.data.youtube_id && !show_thumbnail %}
+  {% unless show_thumbnail %}
     <sl-tab-group style="--sl-font-sans: var(--body-font); --sl-color-gray-600: var(--primary-light); --tabs-border-color: var(--primary-light); --sl-color-primary-500: var(--secondary)">
       {% if resource.data.bunny_id %}
         <sl-tab slot="nav" panel="bunny">Bunny</sl-tab>
       {% end %}
-      <sl-tab slot="nav" panel="youtube">YouTube</sl-tab>
+      {% if resource.data.makertube_id %}
+        <sl-tab slot="nav" panel="makertube">MakerTube</sl-tab>
+      {% end %}
+      {% if resource.data.youtube_id %}
+        <sl-tab slot="nav" panel="youtube">YouTube</sl-tab>
+      {% end %}
 
       {% if resource.data.bunny_id %}
         <sl-tab-panel name="bunny">
@@ -19,9 +22,16 @@
           </responsive-embed>
         </sl-tab-panel>
       {% end %}
-      <sl-tab-panel name="youtube">
-        <responsive-embed><iframe src="https://www.youtube-nocookie.com/embed/{{ resource.data.youtube_id }}?rel=0" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
-      </sl-tab-panel>
+      {% if resource.data.youtube_id %}
+        <sl-tab-panel name="youtube">
+          <responsive-embed><iframe src="https://www.youtube-nocookie.com/embed/{{ resource.data.youtube_id }}?rel=0" loading="lazy" width="640" height="564" frameborder="0" allow="fullscreen" allowfullscreen></iframe></responsive-embed>
+        </sl-tab-panel>
+      {% end %}
+      {% if resource.data.makertube_id %}
+        <sl-tab-panel name="makertube">
+          <responsive-embed><iframe width="560" height="315" src="https://makertube.net/videos/embed/{{ resource.data.makertube_id }}?title=0&warningTitle=0" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe></responsive-embed>
+        </sl-tab-panel>
+      {% end %}
     </sl-tab-group>
     <style>
       sl-tab-group::part(tabs) {
@@ -37,8 +47,10 @@
         padding: .75rem;
       }
     </style>
-  {% elsif resource.data.cloudinary_id %}
-    {%@ FeaturedImageComponent resource: resource %}
+  {% else %}
+    {% if resource.data.cloudinary_id %}
+      {%@ FeaturedImageComponent resource: resource %}
+    {% end %}
   {% end %}
 
   {% if h_level == :h2 %}
