@@ -53,7 +53,7 @@ namespace :import do
 
     broadcasts_count = site.collections.broadcasts.read.resources.count
 
-    previous_issues = 11 + broadcasts_count
+    previous_issues = 10 + broadcasts_count
 
     api_secret = ENV.fetch("CONVERTKIT_API")
 
