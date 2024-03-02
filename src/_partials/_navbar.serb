@@ -41,14 +41,17 @@
       <li><a rel="me" href="https://{{ site.metadata.social.mastodon }}">
         <sl-icon library="remixicon" name="logos/mastodon-fill" style="margin-right:8px"></sl-icon>Mastodon
       </a></li>
-      <li><a href="https://github.com/{{ site.metadata.social.github }}">
-        <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
-      </a></li>
       <li><a href="https://{{ site.metadata.social.pixelfed }}">
         <sl-icon library="remixicon" name="logos/pixelfed-fill" style="margin-right:8px"></sl-icon>Pixelfed
       </a></li>
-      <li><a href="https://www.youtube.com/{{ site.metadata.social.youtube_channel }}">
-        <sl-icon library="remixicon" name="logos/youtube-fill" style="margin-right:8px"></sl-icon>YouTube
+      <li><a href="https://flipboard.com/@jaredcwhite/happy-cities-6retv5m2y">
+        <sl-icon library="remixicon" name="buildings/building-fill" style="margin-right:8px"></sl-icon>Flipboard: Happy Cities
+      </a></li>
+      <li><a href="https://makertube.net/c/essentiallifejared/videos">
+        <sl-icon library="remixicon" name="media/clapperboard-fill" style="margin-right:8px"></sl-icon>PeerTube: Essential Life
+      </a></li>
+      <li><a href="https://github.com/{{ site.metadata.social.github }}">
+        <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
       </a></li>
       <li><a href="/feed.xml">
         <sl-icon library="remixicon" name="device/rss-fill" style="margin-right:8px"></sl-icon>News Feed
