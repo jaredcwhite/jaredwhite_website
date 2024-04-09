@@ -36,7 +36,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/posts">
   More Posts This Way
-  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>
 </a></p>
 
 ----
@@ -62,7 +62,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/podcast">
   More Episodes This Way
-  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>
 </a></p>
 
 ----
@@ -77,7 +77,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/pictures">
   More Photos This Way
-  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>
 </a></p>
 
 ----
@@ -92,7 +92,7 @@ It would seem I'm always but one step away from reaching for an endeavor to occu
 
 <p style="text-align:center; margin-bottom:3.5rem"><a class="button" href="/browse/videos">
   More Videos This Way
-  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>
 </a></p>
 
 ----

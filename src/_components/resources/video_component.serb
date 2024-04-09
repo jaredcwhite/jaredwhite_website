@@ -58,7 +58,7 @@
   {% else %}
     <p>{{ resource.data.description || resource.summary }}</p>
 
-    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
+    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>{% end %}
     <p>{{ "Watch Video" + icon | link_to: resource.relative_url, class: "button" }}</p>
   {% end %}
 

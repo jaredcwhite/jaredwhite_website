@@ -33,7 +33,7 @@
     {%@ "footer" %}
     <back-to-top>
       <button>
-        <sl-icon library="remixicon" name="system/arrow-up-line"></sl-icon>
+        <sl-icon library="remixicon" name="arrows/arrow-up-line"></sl-icon>
       </button>
     </back-to-top>
   </body>

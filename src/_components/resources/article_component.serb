@@ -70,7 +70,7 @@
   {% else %}
     <p>{{ resource.data.subtitle }}</p>
 
-    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="system/arrow-right-circle-line"></sl-icon>{% end %}
+    {% icon = capture do %} <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>{% end %}
     <p>{{ "Read Essay" + icon | link_to: resource.relative_url, class: "button" }}</p>
   {% end %}
 
