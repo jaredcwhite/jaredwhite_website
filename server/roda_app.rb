@@ -4,11 +4,10 @@
 #
 # Learn more at: http://roda.jeremyevans.net
 
-class RodaApp < Bridgetown::Rack::Roda
+class RodaApp < Roda
   # Some Roda configuration is handled in the `config/initializers.rb` file.
   # But you can also add additional Roda configuration here if needed.
+  plugin :bridgetown_server
 
-  route do |r|
-    r.bridgetown
-  end
+  route(&:bridgetown)
 end

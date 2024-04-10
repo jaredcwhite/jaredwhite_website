@@ -4,7 +4,7 @@
   {% if h_level == :h2 %}{%@ CategoryIndicatorComponent category: resource.data.category %}{% end %}
 
   {% unless show_thumbnail %}
-    <sl-tab-group style="--sl-font-sans: var(--body-font); --sl-color-gray-600: var(--primary-light); --tabs-border-color: var(--primary-light); --sl-color-primary-500: var(--secondary)">
+    <sl-tab-group style="--sl-font-sans: var(--body-font); --sl-color-neutral-600: var(--primary-light); --track-color: var(--primary-light); --sl-color-primary-600: var(--secondary);">
       {% if resource.data.bunny_id %}
         <sl-tab slot="nav" panel="bunny">Bunny</sl-tab>
       {% end %}

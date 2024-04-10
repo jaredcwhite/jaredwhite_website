@@ -1,10 +1,6 @@
 // Stylesheet entrypoint
-import "@shoelace-style/shoelace/dist/themes/base.css"
-import "index.css"
-
-import smoothscroll from "smoothscroll-polyfill"
-// kick off the polyfill!
-smoothscroll.polyfill()
+import "@shoelace-style/shoelace/dist/themes/light.css"
+import "$styles/index.css"
 
 import "./toottown.js"
 
