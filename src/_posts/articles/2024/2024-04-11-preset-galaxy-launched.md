@@ -80,7 +80,7 @@ Once we'd gotten a fair ways down the path of developing an "MVP" (Minimal Viabl
 
 We opened a [Discord server](https://discord.gg/Y4vae7BYdA) for beta testers to offer their feedback. This was undoubtedly a valuable part of the development process—but perhaps not in the way you might think. Yes, it was worthwhile to uncover and fix bugs caught during this beta phase, but what was even more welcome was the ability to hear from testers their thoughts about the utility of the service. It helped validate the _raison d'être_ of Preset Galaxy and provide us with renewed focus on the core promise for users.
 
-**Finally**, in early 2024, we released **[Preset Galaxy](https://www.presetgalaxycom)** to the public! 🎉 🥳
+**Finally**, in early 2024, we released **[Preset Galaxy](https://www.presetgalaxy.com)** to the public! 🎉 🥳
 
 As anyone who's participated in a new software launch can attest to, this is a moment both **exhilarating** and **terrifying**. Thankfully, the effort we'd put in over a lengthy period of time to ensure platform stability, as well as the private beta test, meant that the public launch went off without a hitch—and it's been relatively smooth sailing (🚀 _smooth flying?_ 🤔) ever since.
 
