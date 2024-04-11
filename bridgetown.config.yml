@@ -39,5 +39,5 @@ collections:
 
 pagination:
   enabled: true
-  title: ":title (pg. :num)"
+  title: ":title (page :num)"
   per_page: 15

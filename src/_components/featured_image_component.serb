@@ -1,4 +1,4 @@
-{%- image_url = resource.data.cloudinary_id ? "https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_65/#{resource.data.cloudinary_id}.jpg" : resource.data.image -%}
+{%- image_url = resource.data.cloudinary_id ? "https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_#{resource.data.cloudinary_quality || 65}/#{resource.data.cloudinary_id}.jpg" : resource.data.image -%}
 <a href="{{ resource.relative_url }}">
   <p class="featured-image">
     <img class="u-photo" src="{%= image_url %}" alt="Photo associated with the resource" loading="lazy" />

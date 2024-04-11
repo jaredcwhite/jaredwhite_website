@@ -1,12 +1,9 @@
 ###ruby
-{
-  layout: :now,
-  title: I18n.t("destinations.now.name"),
-  # BUG…this shouldn't be necessary:
-#  permalink: "/now.html",
-  subtitle: "What I’m focused on right now.",
-  template_engine: "ruby"
-}
+front_matter do
+  layout :now
+  title I18n.t("destinations.now.name")
+  subtitle "What I’m focused on right now."
+end
 ###
 
 # send this off to the layout for processing:

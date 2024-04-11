@@ -2,10 +2,10 @@
 front_matter do
   layout :default
   title ->{ site.metadata.podcast_title }
-  paginate({
-    collection: "podcast",
-    enabled: true
-  })
+  paginate do
+    collection :podcast
+    enabled true
+  end
 end
 %}~~~
 

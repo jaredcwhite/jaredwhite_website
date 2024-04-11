@@ -1,0 +1,11 @@
+require: rubocop-bridgetown
+inherit_gem:
+  rubocop-bridgetown: .rubocop.yml
+
+Lint/MissingSuper:
+  Exclude:
+    - src/_components/**/*.rb
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - src/_pages/**/*.rb

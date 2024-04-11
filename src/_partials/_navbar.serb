@@ -64,14 +64,16 @@
     <h2>Recent Photos</h2>
 
     <recent-photos>
-      {% collections.posts.resources.select { _1.data.category == "pictures" }[..5].each do |photo| %}
-        <a href="{{ photo.relative_url }}">
-          <img
-            src="{{ photo.data.thumbnail_url }}"
-            loading="lazy"
-            alt="photo thumbnail"
-          />
-        </a>
+      {% bypass_tracking do %}
+        {% collections.posts.resources.select { _1.data.category == "pictures" }[..5].each do |photo| %}
+          <a href="{{ photo.relative_url }}">
+            <img
+              src="{{ photo.data.thumbnail_url }}"
+              loading="lazy"
+              alt="photo thumbnail"
+            />
+          </a>
+        {% end %}
       {% end %}
     </recent-photos>
 
