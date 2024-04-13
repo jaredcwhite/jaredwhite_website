@@ -33,7 +33,7 @@
 
     <a href="https://rezmason.github.io/matrix/?effect=image&url={%= data.cloudinary_id ? "https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_#{resource.data.cloudinary_quality || 65}/#{data.cloudinary_id}.jpg" : data.image %}" class="button" target="_blank" style="font-size:80%">
       <sl-icon library="remixicon" name="others/glasses-2-fill"></sl-icon>
-      As Matrix “Digital Rain”
+      Matrix “Digital Rain”
     </a>
   </p>
 
