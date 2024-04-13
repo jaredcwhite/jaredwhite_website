@@ -13,28 +13,29 @@
     </ul>
   {% end %}
 
-  {% if resource.data.glass_url %}
-    <p style="text-align:center; margin-top:3rem">
+  <p style="justify-content: center; text-align: center; margin-top:3rem; display: flex; gap: 1rem">
+    {% if resource.data.glass_url %}
       <a href="{{ resource.data.glass_url }}" class="button" style="font-size:80%">
         <sl-icon library="remixicon" name="media/camera-lens-fill"></sl-icon>
         View on Glass
       </a>
-    </p>
-  {% elsif resource.data.pixelfed_url %}
-    <p style="text-align:center; margin-top:3rem">
+    {% elsif resource.data.pixelfed_url %}
       <a href="{{ resource.data.pixelfed_url }}" class="button" style="font-size:80%">
         <sl-icon library="remixicon" name="logos/pixelfed-fill"></sl-icon>
         View on Pixelfed
       </a>
-    </p>
-  {% else %}
-    <p style="text-align:center; margin-top:3rem">
+    {% else %}
       <a href="{{ resource.data.cloudinary_id | cloudinary_url }}" class="button" style="font-size:80%">
         <sl-icon library="remixicon" name="system/download-2-fill"></sl-icon>
         High-Resolution Image
       </a>
-    </p>
-  {% end %}
+    {% end %}
+
+    <a href="https://rezmason.github.io/matrix/?effect=image&url={%= data.cloudinary_id ? "https://res.cloudinary.com/mariposta/image/upload/w_2048,c_limit,q_#{resource.data.cloudinary_quality || 65}/#{data.cloudinary_id}.jpg" : data.image %}" class="button" target="_blank" style="font-size:80%">
+      <sl-icon library="remixicon" name="others/glasses-2-fill"></sl-icon>
+      As Matrix “Digital Rain”
+    </a>
+  </p>
 
   {%@ PublishedDateComponent resource: resource %}
 </article>

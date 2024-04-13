@@ -16,8 +16,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #
 # Happy Bridgetowning!
 
-gem "bridgetown", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "fast-refresh-feature" #, path: "../bridgetown"
-gem "bridgetown-routes", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "fast-refresh-feature" #, path: "../bridgetown"
+gem "bridgetown", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "main" #, path: "../bridgetown"
+gem "bridgetown-routes", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "main" #, path: "../bridgetown"
 
 # Puma is a Rack-compatible server
 # (you can optionally limit this to the "development" group)

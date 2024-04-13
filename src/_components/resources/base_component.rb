@@ -22,5 +22,7 @@ module Resources
     def initialize(resource:, h_level: :h2, show_thumbnail: false)
       @resource, @h_level, @show_thumbnail = resource, h_level, show_thumbnail
     end
+
+    def data = resource.data
   end
 end
