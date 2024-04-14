@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bridgetownrb/bridgetown.git
-  revision: 4f02007b8245781086c60982890776c3ae0bcd70
+  revision: c6c0dfd3383e0aa019bef2ade715bcd4636d4771
   branch: main
   specs:
     bridgetown (1.3.4)

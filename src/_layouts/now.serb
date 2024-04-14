@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% now_entry = resource.data.current_now_entry.presence || resource %}
+{% now_entry = resource.data.current_now_entry || resource %}
 {% is_entry_now = now_entry == collections.now_entries.resources.first %}
 {% if now_entry.collection.label == "now_entries" %}
   <h2>
