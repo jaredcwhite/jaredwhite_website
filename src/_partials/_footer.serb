@@ -16,7 +16,7 @@
 
   <p>Writing and Personal Photography Copyright © 2012-{{ site.time | strftime: "%Y" }} Jared White</p>
 
-  <p>JaredWhite.com is a self-built, open web site published with <a href="https://www.bridgetownrb.com" target="_blank">Bridgetown</a> and hosted by <a href="https://render.com" target="_blank">Render</a>.</p>
+  <p>JaredWhite.com is a homegrown, open Web site published with <a href="https://www.bridgetownrb.com" target="_blank">Bridgetown</a> and hosted by <a href="https://render.com" target="_blank">Render</a>.</p>
 
   <p>Want a site like this? <a href="https://www.whitefusion.studio" target="_blank">That's what I do for a living!</a></p>
 
