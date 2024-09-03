@@ -44,8 +44,8 @@
       <li><a href="https://{{ site.metadata.social.pixelfed }}">
         <sl-icon library="remixicon" name="logos/pixelfed-fill" style="margin-right:8px"></sl-icon>Pixelfed
       </a></li>
-      <li><a href="https://{{ site.metadata.social.bluesky }}">
-        <sl-icon library="remixicon" name="logos/bluesky-fill" style="margin-right:8px"></sl-icon>Bluesky
+      <li><a href="https://{{ site.metadata.social.threads }}">
+        <sl-icon library="remixicon" name="logos/threads-fill" style="margin-right:8px"></sl-icon>Threads
       </a></li>
       <li><a href="https://flipboard.com/@jaredcwhite/happy-cities-6retv5m2y">
         <sl-icon library="remixicon" name="buildings/building-fill" style="margin-right:8px"></sl-icon>Flipboard: Happy Cities
