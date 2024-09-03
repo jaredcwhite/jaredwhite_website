@@ -4,7 +4,7 @@ subtitle: "I have often wished people who aren't familiar with mindfulness or wh
 cloudinary_id: barbie-meditation
 category: articles
 date: 'Sun, 26 Nov 2023 09:28:18 -0800'
-tags: mindfulness spirituality
+tags: mindfulness spirituality movies
 ---
 
 It has been quite the while since I last wrote about my experiences with mindfulness meditation. I touched on it in [_What Synchronicity Means to Me in Everyday Life_](https://jaredwhite.com/articles/what-synchronicity-means-to-me#the-skill-of-mindful-observation), saying:
