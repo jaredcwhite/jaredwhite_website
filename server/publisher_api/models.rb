@@ -1,4 +1,4 @@
-class PublisherApi::Models < Bridgetown::Rack::Routes
+class PublisherAPI::Models < Bridgetown::Rack::Routes
   priority :low
 
   route do |r|

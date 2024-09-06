@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "bridgetown", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "main" #, path: "../bridgetown"
-gem "bridgetown-routes", "~> 1.3.4", github: "bridgetownrb/bridgetown", branch: "main" #, path: "../bridgetown"
+gem "bridgetown", "~> 2.0.0.beta2", github: "bridgetownrb/bridgetown" #, path: "../bridgetown"
+gem "bridgetown-routes", "~> 2.0.0.beta2", github: "bridgetownrb/bridgetown" #, path: "../bridgetown"
 gem "puma", "~> 6.4"
 
 gem "cloudinary", "~> 1.21"

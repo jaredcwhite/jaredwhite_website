@@ -1,5 +1,7 @@
 # TODO: refactor all this stuff!
 
+require "active_support/core_ext/string"
+
 module ResourceFeedExtension
   CATEGORY_TYPES = %w(thoughts pictures links videos)
 

@@ -5,7 +5,7 @@ timezone: America/Los_Angeles
 #  bind: "ssl://0.0.0.0:4000"
 
 development:
-  bind: "tcp://0.0.0.0:4002"
+  port: 4002
 
 permalink: simple
 content_engine: resource
