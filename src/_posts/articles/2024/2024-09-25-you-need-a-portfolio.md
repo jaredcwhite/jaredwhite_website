@@ -24,7 +24,7 @@ No matter which social media platform you use, no matter which email newsletters
 
 Content streams, feeds, whatever you want to call them—they make sense. They really do. There's a reason that's what publishing on the Internet is built around, by and large.
 
-But streams miss out of a vital aspect of creativity. Streams are lacking in _context_. Streams are lacking in _legacy_. And streams are lacking in _relationships_ between disparate pieces of content.
+But streams miss out on a vital aspect of creativity. Streams are lacking in _context_. Streams are lacking in _legacy_. And streams are lacking in _relationships_ between disparate pieces of content.
 
 When you visit an art gallery, **you're participating in multiple layers of experience**. The most basic and obvious layer is when you're looking at one piece of art at a time, which I might call _singular attention_. This painting. That sculpture. This photograph. That projection.
 
