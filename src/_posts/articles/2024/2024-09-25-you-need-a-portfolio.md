@@ -73,3 +73,7 @@ A portfolio is in essence a demonstration of artistic time travel. On my new alb
 But I digress. My takeaway here is for you to **enjoy some time travel of your own**. Get familiar once more with your older work, with additional styles and ideas you might have once pursued. Look for points of contrast between styles, eras, and moods. See what sorts of stories you might tell with your work when these contrasting elements come together in a new and unique fashion. Publish an artistic experience online that's more than simply fuel for the social media streams. And then repeat this process from time to time, forging new _compilations_ as your career progresses.
 
 The art of curation has in many ways been lost to those of us who are Extremely Online™. **We need to reclaim our artistic truths, and thereby reclaim our creative power.**
+
+<br/>
+
+_Photo credit: [Antenna on Unsplash](https://unsplash.com/photos/person-looking-at-painting-jqh0GEvuNBY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)_
