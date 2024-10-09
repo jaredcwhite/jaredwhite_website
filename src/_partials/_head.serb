@@ -13,6 +13,7 @@
 {% end %}
 
 {%= liquid_render "opengraph", site: Bridgetown::Drops::SiteDrop.new(site), page: page, page_title: page_title %}
+<meta name="fediverse:creator" content="@jaredwhite@indieweb.social" />
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.metadata.title }}" href="{{ "feed.xml" | absolute_url }}" />
 
