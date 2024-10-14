@@ -29,7 +29,7 @@ collections:
     sort_by: order
     sort_direction: ascending
   broadcasts:
-    title: "ConvertKit Newsletters"
+    title: "Newsletters"
     output: true
     sort_direction: descending
   posts:

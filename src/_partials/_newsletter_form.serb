@@ -1,11 +1,11 @@
-<form action="https://app.convertkit.com/forms/3216436/subscriptions" method="post" name="creatorkit-form">
+<form action="https://buttondown.com/api/emails/embed-subscribe/creatorclass" method="post" name="creatorkit-form">
   <p style="margin-bottom: 1rem">
     <label>Email address <br/>
-    <input placeholder="me@example.com" type="email" name="email_address"></label>
+    <input placeholder="me@example.com" type="email" name="email"></label>
   </p>
   <p>
     <label>First name (Optional) <br/>
-    <input type="text" name="fields[first_name]"></label>
+    <input type="text" name="metadata__first_name"></label>
   </p>
 
   <p class="revue-form-actions"><!-- text center -->
