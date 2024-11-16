@@ -27,6 +27,6 @@ paginate:
 
 {% if paginator.total_pages > 1 %}{%@ "pagination" %}{% end %}
 
-<p>Past archived issues of Creator Class can be <a href="https://www.getrevue.co/profile/creatorclass" target="_blank">read here on Revue</a>.</p>
+<p>Past archived issues of Creator Class can be <strike href="https://www.getrevue.co/profile/creatorclass" target="_blank">read on Revue</strike> (sorry, the site is offline. I hope to import a local archive soon!)</p>
 
 <p>And an even earlier era of newsletters can be <a href="/newsletters">found here</a>.</p>

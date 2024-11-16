@@ -1,5 +1,5 @@
-const build = require("./config/esbuild.defaults.js")
-const ruby2js = require("@ruby2js/esbuild-plugin")
+import build from "./config/esbuild.defaults.js"
+import ruby2js from "@ruby2js/esbuild-plugin"
 
 
 // You can customize this as you wish, perhaps to add new esbuild plugins.
