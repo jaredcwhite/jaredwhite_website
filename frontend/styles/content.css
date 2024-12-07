@@ -151,6 +151,12 @@ article.mono-styled {
     font-family: mononoki;
     font-variant-ligatures: 'ss01';
   }
+
+  &:has(> h2) {
+    & category-indicator p {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 body.post:not(.category-pictures) {
