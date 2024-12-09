@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: 2024-01-12 17:10:58.014610000 -08:00
 mono_styled: true
 ---

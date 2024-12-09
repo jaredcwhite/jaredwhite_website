@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: 2024-01-23 14:29:21.709704000 -08:00
 tags: openweb fediverse writing enshittification
 mono_styled: true

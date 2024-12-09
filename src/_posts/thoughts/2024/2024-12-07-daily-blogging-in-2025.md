@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 mono_styled: true
 date: Saturday, December 7, 2024 at 10:36:57 AM PST
 title: "My 2025 Goal: Daily Blogging"

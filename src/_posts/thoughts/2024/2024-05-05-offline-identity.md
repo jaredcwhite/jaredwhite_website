@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: Sunday, May 5, 2024 at 10:04:44 AM PDT
 tags: family portland micromobility
 mono_styled: true

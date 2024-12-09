@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: Thursday, April 25, 2024 at 4:00:20 PM PDT
 title: The Best of Times
 tags: openweb fediverse enshittification

@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: 2024-01-13 10:47:59.531120000 -08:00
 tags: spirituality politics
 mono_styled: true

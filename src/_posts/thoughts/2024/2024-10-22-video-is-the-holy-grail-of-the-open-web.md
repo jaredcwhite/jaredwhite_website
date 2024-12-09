@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: Tue, 22 Oct 2024 09:18:49 -0700
 title: Video is the Holy Grail of the Open Web
 tags: openweb vlog enshittification

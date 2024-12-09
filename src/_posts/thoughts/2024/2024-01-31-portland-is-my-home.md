@@ -1,6 +1,5 @@
 ---
 published: true
-category: thoughts
 date: 2024-01-31 15:18:18.137906000 -08:00
 tags: portland
 mono_styled: true
