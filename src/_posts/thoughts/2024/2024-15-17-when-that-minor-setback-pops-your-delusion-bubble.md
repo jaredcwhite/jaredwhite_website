@@ -6,7 +6,7 @@ tags: lifehacks
 
 _Noooooo! My day is ruined!!! Why me?? Why now?!!_ 😫💢
 
-We all have those moments. You're going about your day, minding your own business, feeling good about your "adulting" skills, and then a cascade of events begin to unfold which leaves your scheduled FUBARed and your composure in tatters.
+We all have those moments. You're going about your day, minding your own business, feeling good about your "adulting" skills, and then a cascade of events begins to unfold which leaves your scheduled FUBARed and your composure in tatters.
 
 Here's the thing though. Your "good day" was an illusion to begin with. You had deluded yourself into thinking you had it all together. It was taking an extraordinary amount of effort to "adult" in the first place, and as soon as bottom fell out of your routine, it was time for such magical thinking to dissipate.
 
