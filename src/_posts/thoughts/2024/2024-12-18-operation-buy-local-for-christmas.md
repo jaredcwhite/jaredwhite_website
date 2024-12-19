@@ -8,7 +8,7 @@ tags: portland
 
 A few days ago I talked about [how I was going radical on this](/20241215/radically-local), and then today nearly by accident I wandered into a warehouse down by the river and discovered that it was [tens of thousands of square feet of vintage goods](https://www.memorydenpdx.com) along with wares by local #Portland artisans. I had a chance to talk with the Creative Director there and told him it was like Ikea if Ikea was a local antique mall!
 
-![Liminal Space](/20241218/IMG_5870.jpg)
+![Liminal Space](/20241218/img_5870b.jpg)
 
 **I absolutely had a blast and can't wait to go back.** I needed some stocking stuffers for the kids, so I ended up buying a toy, a necklace, and a couple of original art prints.
 
