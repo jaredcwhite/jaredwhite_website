@@ -5,7 +5,7 @@ category: thoughts
 tags: openweb website Twitter
 ---
 
-Back to the #openweb I go. Not that I ever left it…but to be quite frank, it's _so_ easy to post and get immediate feeback on #Twitter that I spend most of my day-to-day "chit-chat energy" there and _not_ on my own #website.
+Back to the #openweb I go. Not that I ever left it…but to be quite frank, it's _so_ easy to post and get immediate feedback on #Twitter that I spend most of my day-to-day "chit-chat energy" there and _not_ on my own #website.
 
 [No longer!](https://www.theverge.com/2022/4/25/23028323/elon-musk-twitter-offer-buyout-hostile-takeover-ownership) Now that Elon Musk is buying Twitter and taking it private, I'm _done_ putting serious effort into creating content for walled gardens. Everything, and I mean _everything_ I publish from here on out will **start on my own properties** and then get syndicated elsewhere.
 
