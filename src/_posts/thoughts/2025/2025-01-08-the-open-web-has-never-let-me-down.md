@@ -1,7 +1,7 @@
 ---
 date: Wed, 08 Jan 2025 19:51:51 -0800
 mono_styled: true
-keywords: openweb fediverse
+tags: openweb fediverse
 ---
 
 [Recent events](https://www.theverge.com/2025/1/7/24338127/meta-end-fact-checking-misinformation-zuckerberg) online have been [truly sucky](https://www.theverge.com/2025/1/7/24338125/meta-mark-zuckerberg-fact-checking-censorship-brendan-carr-trump), but as always the one shining light has been the #openweb (and by extension, the #fediverse—run by independent operators of course).
