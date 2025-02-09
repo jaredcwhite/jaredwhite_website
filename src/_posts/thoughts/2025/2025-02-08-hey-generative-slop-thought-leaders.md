@@ -15,7 +15,7 @@ But **cut the crap** with the frankly insane rhetoric about how this is "the fut
 
 You don't sound like smart people. **You don't.** You sound like fucking psychopaths. And we're pretty damn tired of it.
 
-So *please*, for the love of god, **dial down the hype machine like 98%**, and let's have a civilized conversation. Because if you're not willing to do that, if you're going to go out on talk shows or head conferences and tell the gullible masses that "AGI is nearly here" and that [we'd all better get used to working alongside an "AI workforce" chatting with "AI agents" all day](/20250123/marc-benioff-artificial-slave-labor), either one of two things is true:
+So *please*, for the love of god, **dial down the hype machine like 98%**, and let's have a civilized conversation. Because if you're not willing to do that, if you're going to go out on talk shows or headline conferences and tell the gullible masses that "AGI is nearly here" and that [we'd all better get used to working alongside an "AI workforce" while chatting with "AI agents" all day](/20250123/marc-benioff-artificial-slave-labor), either one of two things is true:
 
 1. You're a lunatic, or
 2. You're a carnival barker.
