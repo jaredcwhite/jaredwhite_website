@@ -1,6 +1,6 @@
 ---
 date: Sat, 08 Mar 2025 19:46:58 -0800
-title: There's Never Been a World in Which I Could Have Afforded This
+title: There’s Never Been a World in Which I Could Have Afforded This
 link_url: https://thehill.com/business/5183840-late-car-payments-record-high/
 link_excerpt: |
   “Higher car prices combined with higher interest rates have driven monthly payments upward and have put pressure on consumers across the income and credit score spectrum,” researchers at the New York Fed wrote.
