@@ -9,4 +9,4 @@ link_excerpt: |
 tags: micromobility
 ---
 
-This is neat idea: offering rebates to help subsidize #micro￼mobility purchases in order to replace trips by car in specific regions/neighborhoods. (Obviously my preference would be to offer broad subsidies at high levels of city or state governments. But programs like this are certainly far better than nothing!￼)
+This is neat idea: offering rebates to help subsidize #micromobility purchases in order to replace trips by car in specific regions/neighborhoods. (Obviously my preference would be to offer broad subsidies at high levels of city or state governments. But programs like this are certainly far better than nothing!￼)
