@@ -10,6 +10,6 @@ link_excerpt: |
 
 **Incredible news.** 🙌
 
-I've mentioned this in passing before, but I will reiterate it here in the strongest terms: advances in solar power generation combined with advances in battery technology is ushering in a unbelievable paradigm shift in how electricity￼ gets produced (and by whom!).
+I've mentioned this in passing before, but I will reiterate it here in the strongest terms: advances in solar power generation combined with advances in battery technology is ushering in an unbelievable paradigm shift in how electricity gets produced (and by whom!).
 
 If we're in "the Age of" anything right now after the rise of computers/the Internet, it's **the Age of Solar**. (And yes, wind and other renewable energy sources are a factor as well.)
