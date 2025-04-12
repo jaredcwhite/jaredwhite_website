@@ -80,9 +80,11 @@
     <h2>Popular Hashtags</h2>
 
     <ul>
+      <li><a href="/tag/nomadlifestyle/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>nomadlifestyle</a></li>
       <li><a href="/tag/portland/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>portland</a></li>
       <li><a href="/tag/oregonexplored/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>oregonexplored</a></li>
       <li><a href="/tag/micromobility/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>micromobility</a></li>
+      <li><a href="/tag/generativeai/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>generativeai</a></li>
       <li><a href="/tag/creativity"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>creativity</a></li>
       <li><a href="/tag/spirituality/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>spirituality</a></li>
       <li><a href="/tag/mindfulness/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>mindfulness</a></li>
@@ -90,7 +92,6 @@
       <li><a href="/tag/openweb/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>openweb</a></li>
       <li><a href="/tag/minimalism/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>minimalism</a></li>
       <li><a href="/tag/writing/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>writing</a></li>
-      <li><a href="/tag/website/"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>website</a></li>
       <li><a href="/tags"><sl-icon library="remixicon" name="editor/hashtag"></sl-icon>More Tags This Way…</a></li>
     </ul>
   </nav>
