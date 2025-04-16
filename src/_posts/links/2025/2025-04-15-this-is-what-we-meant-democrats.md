@@ -11,6 +11,6 @@ tags: politics
 
 I think the Democrats are finally starting to **get it**.
 
-We're done with speeches and charts and sternly-worded memos. We're asking you to **get in the fight** and make real spectacle that is messy and uncouth and raw and real. Become the story. Become unignorable. Take control of the narrative and wrest it away from the MAGA propagandists.
+We're done with speeches and charts and sternly-worded memos. We're asking you to **get in the fight** and make audacious spectacle that is messy and uncouth and raw and real. Become the story. Become unignorable. Take control of the narrative and wrest it away from the MAGA propagandists.
 
 Senator Van Hollen, I salute you. 🫡 Godspeed on your travels and I hope you can get to the bottom of what's really happening to Kilmar Abrego Garcia and aid in _bringing him home_. #politics
