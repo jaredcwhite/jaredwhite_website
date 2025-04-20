@@ -302,3 +302,40 @@ toottown-comment:last-child {
   padding-block-end: 0;
   border-block-end: none;
 }
+
+figure.travelogue {
+  margin-inline: 0;
+  margin-block: 1.3em;
+  text-align: center;
+
+  > fig-images {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: .75rem;
+    align-items: center;
+
+    > a:first-child:last-child > img {
+      max-width: 500px;
+      width: 100%;
+      margin-inline:auto;
+    }
+  }
+
+  img, responsive-embed {
+    border: 8px solid rgba(255,255,255,0.9);
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px -1px rgba(0,0,0,0.1);
+  }
+
+  responsive-embed {
+    margin-block-end: 1em;
+  }
+
+  > figcaption {
+    margin-block: .5rem;
+    font-size: 85%;
+    font-family: var(--body-font);
+    color: color-mix(in srgb, var(--text-color), var(--primary-light) 50%);
+  }
+}
