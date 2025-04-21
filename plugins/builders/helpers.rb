@@ -2,6 +2,7 @@ class Builders::Helpers < SiteBuilder
   def build
     helper "hashtags", :hashtags
     liquid_filter "hashtags", :hashtags
+    helper "travelogue_2025", :travelogue_2025
     helper "translate_title", :translate_title
   end
 
@@ -27,5 +28,9 @@ class Builders::Helpers < SiteBuilder
   def translate_title(input)
     segments = input.split
     %(#{I18n.t(segments[0])} #{segments[1..]&.join(" ")})
+  end
+
+  def travelogue_2025(input)
+    "https://intuitivefuture.sfo3.cdn.digitaloceanspaces.com/travelogue/2025/#{input}"
   end
 end
