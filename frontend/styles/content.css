@@ -316,7 +316,7 @@ figure.travelogue {
     align-items: center;
 
     > a:first-child:last-child > img {
-      max-width: 500px;
+      max-width: 600px;
       width: 100%;
       margin-inline:auto;
     }
