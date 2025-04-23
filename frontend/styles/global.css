@@ -209,6 +209,13 @@ main {
         font-size: 1.4rem;
         line-height: 1;
       }
+
+    }
+
+    &.tighter {
+      & li {
+        margin-bottom: 0.325rem;
+      }
     }
   }
 
