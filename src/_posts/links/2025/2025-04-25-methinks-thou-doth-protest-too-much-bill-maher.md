@@ -10,6 +10,6 @@ tags: comedy politics
 
 I read Larry David's satire piece for the Times.￼ **It was very funny of course.** It should be noted  I am a huge, huge fan of Larry David. Bill Maher, not so much.
 
-**The fact he really seems to have gotten his knickers in a twist over this exchange** ￼seems to me a sign his conscience is a bit discomfited…but OK, keep digging that hole for yourself.
+**The fact he really seems to have gotten his knickers in a twist over this exchange** seems to me a sign his conscience is a bit discomfited…but OK, keep digging that hole for yourself.
 
 And no, nobody is arguing you can't ever sit down for dinner with _anyone_ who is on the other side. Just, y'know, _Orange Hitler.￼_
