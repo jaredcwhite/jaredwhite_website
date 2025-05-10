@@ -1,6 +1,7 @@
 ---
 date: Fri, 09 May 2025 20:17:23 -0700
 title: "Washington State Really Starting to Turn Things Around (re: Transit-Oriented Development)"
+link_url: https://www.theurbanist.org/2025/05/08/rent-stabilization-parking-reforms-become-law-in-washington/
 link_excerpt: |
   Senate Bill 5184, sponsored by Senator Jessica Bateman (D-22nd, Olympia), represents one of the most comprehensive parking reform bills enacted in any US state. In any city with more than 30,000 residents, builders will be prevented from being required to add more than one off-street parking space for every two units in an apartment building, nor more than two spaces for every 1,000 square feet of commercial space.
 tags: micromobility
