@@ -10,7 +10,7 @@ link_excerpt: |
 
 This deep dive analysis by Kyra Buckley, business reporter at Oregon Public Broadcasting (OPB), is absolutely fascinating. I honestly had no idea that Oregon exported more than it imported in global trade—particularly that "more than 80% of the soft, white wheat grown in Eastern Oregon is sold overseas for products ranging from noodles and dumplings to crackers."
 
-All of this is affected now by the trade wars. Not only must we contend with rising prices for imports, but Oregon's exports are threated by retaliatory tariffs other countries impose on those imports coming in.
+All of this is affected now by the trade wars. Not only must we contend with rising prices for imports, but Oregon's exports are threatened by retaliatory tariffs other countries impose on those imports coming in.
 
 One of our more famous food brands is **Bob's Red Mill**, maker of many fine whole grain and baking products. Well, CEO Trey Winthrop has been sounding the alarm about how the company's exports are being affected:
 
