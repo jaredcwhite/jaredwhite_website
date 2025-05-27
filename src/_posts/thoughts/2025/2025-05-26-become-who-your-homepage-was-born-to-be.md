@@ -26,3 +26,5 @@ The company in question here was Facebook, recently embroiled in the Cambridge A
 And that's the beauty of the Web. It's ever-changing, evolving, growing, and adapting. Things may seem to _really, really suck_ in the now, but the moral arc of the digital universe bends towards digital justice.
 
 **That is what I believe.** I have to…the alternative is far too dismal to contemplate.
+
+_TL;DR: HOMEPAGES RULE!!_ 🤘
