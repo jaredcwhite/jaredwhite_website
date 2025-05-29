@@ -33,7 +33,7 @@
 
     {%@ "newsletter_form" %}
 
-    <a href="https://notbyai.fyi" target="_blank"><img src="/images/Written-By-Human-Not-By-AI-Badge-white.svg" alt="Written by Human, Not by AI" style="height: 42px" loading="lazy" /></a>
+    <img src="/images/Written-By-Human-Not-By-AI-Badge-white.svg" alt="Written by Human, Not by AI" style="height: 42px" loading="lazy" />
 
     <h2>Follow</h2>
 
