@@ -15,7 +15,7 @@
             <h-inner>
               {{ site.metadata.title }}
             </h-inner>
-            <img alt="Photo of Jared" src="/images/jared-white-2022.jpg" style="height: 96px; vertical-align: -2rem; margin-left: 7px; border-radius: 96px; border:4px solid var(--secondary)" />
+            <img alt="Photo of Jared" src="/images/jared-white-2025-sm.jpg" style="height: 96px; vertical-align: -2rem; margin-left: 7px; border-radius: 96px; border:4px solid var(--secondary)" />
           </h1>
         </a>
 
