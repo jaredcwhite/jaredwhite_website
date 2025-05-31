@@ -15,4 +15,4 @@ Out with the old, in with the new. **Reinvention.**
 
 I think it's a cycle that only ends when we die. Some people die before they die, because they cease to reinvent themselves. I've never wanted to be that person.
 
-So who's the Jared we'll uncover in 2025? **Check back with me in a decade!** 😄
+So who's the Jared we'll uncover in 2035? **Check back with me in a decade!** 😄
