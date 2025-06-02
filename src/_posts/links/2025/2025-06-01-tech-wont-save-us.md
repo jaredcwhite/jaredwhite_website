@@ -4,7 +4,7 @@ title: Tech Won’t Save Us (Recommended Episodes)
 link_url: https://www.techwontsave.us
 link_excerpt: |
   Tech Won’t Save Us challenges the notion that tech alone can drive our world forward by showing that tech is inherently political and ignoring that has serious consequences. It encourages listeners to think beyond the confines of the capitalist tech industry, to consider how we can dismantle oppressive technologies, and how technology can be developed for the public good.
-----
+---
 
 Paris Marx has had a string of fantastic guests on his show lately. Some of the standouts:
 
