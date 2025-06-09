@@ -1,7 +1,7 @@
 ---
 date: Sun, 11 May 2025 20:31:23 -0700
 category: articles
-tags: nomadlifestyle
+tags: nomadlifestyle washingtonexplored
 title: A Nomad’s Pacific Northwest Travelogue, Part II
 subtitle: Messy as hell, yet thoroughly delicious!
 cloudinary_id: new-seattle-waterfront

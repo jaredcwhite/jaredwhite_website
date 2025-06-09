@@ -1,7 +1,7 @@
 ---
 date: Mon, 21 Apr 2025 09:51:46 -0700
 category: articles
-tags: nomadlifestyle
+tags: nomadlifestyle oregonexplored
 title: A Nomad’s Pacific Northwest Travelogue, Part I
 subtitle: You’re reading this because I’m not a professional YouTuber. Also I didn’t take this photograph of Mt. Hood. (Wish I did!)
 cloudinary_id: mthood_adoleh
