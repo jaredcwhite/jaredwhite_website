@@ -44,18 +44,6 @@
       <li><a href="https://{{ site.metadata.social.pixelfed }}">
         <sl-icon library="remixicon" name="logos/pixelfed-fill" style="margin-right:8px"></sl-icon>Pixelfed
       </a></li>
-      <li><a href="https://{{ site.metadata.social.threads }}">
-        <sl-icon library="remixicon" name="logos/threads-fill" style="margin-right:8px"></sl-icon>Threads
-      </a></li>
-      <li><a href="https://flipboard.com/@jaredcwhite/happy-cities-6retv5m2y">
-        <sl-icon library="remixicon" name="buildings/building-fill" style="margin-right:8px"></sl-icon>Flipboard: Happy Cities
-      </a></li>
-      <li><a href="https://makertube.net/c/essentiallifejared/videos">
-        <sl-icon library="remixicon" name="media/clapperboard-fill" style="margin-right:8px"></sl-icon>PeerTube: Essential Life
-      </a></li>
-      <li><a href="https://github.com/{{ site.metadata.social.github }}">
-        <sl-icon library="remixicon" name="logos/github-fill" style="margin-right:8px"></sl-icon>GitHub
-      </a></li>
       <li><a href="/feed.xml">
         <sl-icon library="remixicon" name="device/rss-fill" style="margin-right:8px"></sl-icon>News Feed
       </a></li>
