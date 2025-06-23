@@ -2,7 +2,7 @@
 date: Sun, 22 Jun 2025 22:17:04 -0700
 title: Dreaming of Passion Projects
 link_url: https://mastodon.social/@fishsauce/114716950244794446
-link_content: |
+link_excerpt: |
   August C. Bourré: A forum I'm on has a "stupid ideas" thread, in which people talk about passion projects they doubt they'll ever realize because they are, typically, labour and capital intensive with virtually no hope of generating a reasonable income, or even any income at all. Pretty much all of them involve making art, food, labour, care, and space available to the public in a thoughtful way. None of them are about phones, computers, or "tech." The world needs these stupid ideas.
 tags: creativity
 ---
