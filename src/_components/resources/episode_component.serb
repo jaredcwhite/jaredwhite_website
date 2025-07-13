@@ -13,21 +13,25 @@
 
     {%@ CategoryIndicatorComponent destination: "podcast" %}
 
-    <flex-row style="align-items:center; margin-bottom:2.5em">
-      <flex-cell>
-        <a href="/podcast">
-          <img class="u-photo podcast-cover" style="width:150px" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
-        </a>
-      </flex-cell>
-      <flex-cell style="flex-basis:100%">
-        <p><audio controls class="u-audio" src="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" style="width:100%; max-width:350px; display: block; border-radius: 14px; margin:0; background: var(--primary)"></audio></p>
-    
-        <p style="margin-bottom:0"><a href="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" class="button" style="font-size:80%">
-          <sl-icon library="remixicon" name="system/download-2-fill"></sl-icon>
-          Download MP3 File
-        </a></p>
-      </flex-cell>
-    </flex-row>
+    {% if embed? %}
+      <iframe style="margin-bottom: 2.5em" width="100%" height="180" frameborder="no" scrolling="no" seamless src="{{ resource.data.embed_url }}"></iframe>
+    {% else %}
+      <flex-row style="align-items:center; margin-bottom:2.5em">
+        <flex-cell>
+          <a href="/podcast">
+            <img class="u-photo podcast-cover" style="width:150px" src="{{ resource.site.metadata.podcast_cover_img }}" alt="{{ resource.site.metadata.podcast_title }}" />
+          </a>
+        </flex-cell>
+        <flex-cell style="flex-basis:100%">
+          <p><audio controls class="u-audio" src="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" style="width:100%; max-width:350px; display: block; border-radius: 14px; margin:0; background: var(--primary)"></audio></p>
+      
+          <p style="margin-bottom:0"><a href="https://media.blubrry.com/jaredwhiteshow/{{ resource.data.enclosure_mp3_url | sub: 'https://', '' }}" class="button" style="font-size:80%">
+            <sl-icon library="remixicon" name="system/download-2-fill"></sl-icon>
+            Download MP3 File
+          </a></p>
+        </flex-cell>
+      </flex-row>
+    {% end %}
   {% end %}
 
 {% if h_level == :h2 %}

@@ -31,6 +31,9 @@ services:
       - type: rewrite
         source: /publisher_api/*
         destination: https://jaredwhite-site-api.onrender.com/publisher_api/*
+      - type: redirect
+        source: /podcast.xml
+        destination: https://feeds.transistor.fm/fresh-fusion
   - type: redis
     name: jaredwhite-redis
     plan: free
