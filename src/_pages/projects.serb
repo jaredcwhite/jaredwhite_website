@@ -16,7 +16,7 @@ icon: true
 
       {{ project.content }}
 
-      <p><a class="button" href="{{ project.data.link }}" target="_blank">{{ project.data.link | sub: "https://www.", "" }}</a></p>
+      <p><a class="button" href="{{ project.data.link }}" target="_blank">{{ project.data.link | sub: "https://", "" }}</a></p>
     </article>
   </a-card>
 {% end %}

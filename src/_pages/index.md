@@ -20,9 +20,14 @@ This is my **home base** on the internet. I hope you enjoy browsing around! 📍
 
 ## Things I Do <sl-icon library="remixicon" name="{{ "destinations.projects.icon" | t }}"></sl-icon>
 
-It would seem I'm always but one step away from reaching for an endeavor to occupy my time with at any given moment. Besides what's obviously available on this website…from Bridgetown, a Ruby-powered site generator, to Yarred, my musical alter-ego, there's something for…well…somebody.
+It would seem I'm always but one step away from reaching for an endeavor to occupy my time with at any given moment. Besides what's obviously available on this website…from **Vibe Coded**, a podcast about the perils of creative intellectual automation, to **That HTML Blog**, the fresh place to be to learn about developing “vanilla” web apps, there's something for…well…somebody.
 
-**[Welcome to the Jaredverse!](/projects)** 😌
+**Welcome to the Jaredverse!** 😌
+
+<p style="text-align:center;"><a class="button" href="/projects">
+  Projects & Links Here
+  <sl-icon style="font-size:1.1em; vertical-align:-4px" library="remixicon" name="arrows/arrow-right-circle-line"></sl-icon>
+</a></p>
 
 ----
 

@@ -1,4 +1,5 @@
 ---
+published: false
 order: 1
 title: The Spicy Web
 link: https://www.spicyweb.dev
