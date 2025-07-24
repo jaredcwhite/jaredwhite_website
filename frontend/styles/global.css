@@ -51,6 +51,7 @@ h2, resources-feed h3 {
   line-height: 1.3;
   margin-top: 0;
   margin-bottom: 2rem;
+  overflow-wrap: break-word;
 }
 
 h3 {
