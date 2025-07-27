@@ -11,6 +11,9 @@
   <meta name="google-site-verification" content="pYA_JJDJUgWs862mXC9tmlAYACXm1IPL9Ps1zk-UDO8" />
   <meta name="p:domain_verify" content="7329ff40a69a24a5bf73f53f29300fc2"/>
 {% end %}
+{% if no_google %}
+  <meta name="googlebot" content="noindex" />
+{% end %}
 
 {%= liquid_render "opengraph", site: Bridgetown::Drops::SiteDrop.new(site), page: page, page_title: page_title %}
 <meta name="fediverse:creator" content="@jaredwhite@indieweb.social" />

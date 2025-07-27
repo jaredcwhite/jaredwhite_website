@@ -5,6 +5,7 @@ date: '2014-11-04 02:22:24'
 cloudinary_id: ope22wuzf8qyuwatoegc
 category: articles
 tags: mindfulness
+no_google: true
 ---
 
 Recently I've been doing a good deal of research on the topic of meditation from a Christian perspective, and one of the things I've run into right off the bat is the **limitations of language**.

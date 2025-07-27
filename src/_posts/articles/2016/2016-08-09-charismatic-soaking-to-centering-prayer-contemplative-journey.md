@@ -4,6 +4,7 @@ subtitle: This is my story of discovering the joys of Christian mindfulness medi
 cloudinary_id: bgpon2jkwuwjgad702iv
 category: articles
 tags: mindfulness spirituality
+no_google: true
 ---
 
 Growing up, I didn't really have any awareness of contemplative practices. I thought meditation was something only New Age "weirdos" engaged in. In my mind, for a Christian, personal spirituality consisted mainly of Bible reading, giving thanks, and praying prayers of supplication. That was what I was taught anyway, and I wasn't given a reason to challenge it. Until...

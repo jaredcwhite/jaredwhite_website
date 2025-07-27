@@ -4,6 +4,7 @@ subtitle: A Guest Post by Dr. Amy Oden, Professor of Early Church History at St.
 cloudinary_id: image_obhqdr
 category: articles
 tags: interviews mindfulness spirituality
+no_google: true
 ---
 
 **Editor's Note:** I (Jared) have had the distinct pleasure of corresponding and Skype'ing with Dr. Amy Oden over the past several months, sharing thoughts and inspirations regarding mindfulness and the rich contemplative tradition we have as Christians. I consider her a kindred spirit, and I'm thrilled she was able to take time out of her busy schedule to write a guest blog post for [Jared White.com](http://jaredwhite.com). Her perspective as a teacher and soon-to-be book author of Christian history is greatly insightful. Enjoy.

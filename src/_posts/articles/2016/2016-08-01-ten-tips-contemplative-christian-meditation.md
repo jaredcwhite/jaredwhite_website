@@ -4,6 +4,7 @@ subtitle: Feeling like you've fallen behind on your meditation habit? Overloaded
 cloudinary_id: image_vigxyr
 category: articles
 tags: mindfulness spirituality
+no_google: true
 ---
 
 As I write this, it's been one head-spinning summer so far...from unprecedented political turmoil to a steady stream of shockingly bad news, it's left many people wondering if this might just be the "worst year ever" (hint: [it isn't](http://www.slate.com/articles/news_and_politics/history/2016/07/is_2016_the_worst_year_in_history.html)). Between the world's craziness and our attempts to escape it via travel and adventure to the great outdoors, it seems all too easy to get off one's game in the area of the contemplative.

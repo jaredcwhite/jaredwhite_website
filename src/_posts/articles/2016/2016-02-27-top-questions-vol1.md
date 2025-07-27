@@ -6,6 +6,7 @@ subtitle: Readers frequently ask me questions about mindfulness, meditation, and
 cloudinary_id: g9liw3td1987vgmyjo1q
 category: articles
 tags: mindfulness spirituality
+no_google: true
 ---
 
 Over the past few years, mindfulness has been the subject of intense scrutiny among life hackers, spiritual seekers, business leaders, athletes, entrepreneurs, health professionals, and even military personnel. As with any regular practice that has spiritual or religious connotations, mindfulness has garnered some genuine controversy.
