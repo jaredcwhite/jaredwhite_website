@@ -9,7 +9,7 @@ tags: politics
 
 Like so many ordinary blokes I suppose, I had no clear idea of who Ghislaine Maxwell is other than the bits and pieces of news reports I'd seen over the years. She was mixed up with Jeffrey Epstein and was found to have engaged in sex trafficking. That was the extent of my knowledge, and I didn't feel particularly compelled to dig into it further…
 
-…until the bizarre situation we know find ourselves in when _suddenly_ Ghislaine Maxwell is lifted from a Florida federal prison housing 800 inmates (men and women) and _transferred_ to a cushy minimum-security women-only white collar compound giving off "resort" vibes located in Texas, amidst swirling rumors that Trump might pardon her. There was also the [awful news earlier this year](https://www.nbcnews.com/news/us-news/virginia-giuffre-one-jeffrey-epsteins-prominent-abuse-survivors-dies-s-rcna203027) that Virginia Giuffre, a victim of Epstein & Maxwell, had taken her own life.
+…until the bizarre situation we know find ourselves in when _suddenly_ Ghislaine Maxwell is lifted from a Florida federal prison housing 800 inmates (men and women) and _transferred_ to a cushy minimum-security women-only white-collar compound giving off "resort" vibes located in Texas, amidst swirling rumors that Trump might pardon her. There was also the [awful news earlier this year](https://www.nbcnews.com/news/us-news/virginia-giuffre-one-jeffrey-epsteins-prominent-abuse-survivors-dies-s-rcna203027) that Virginia Giuffre, a victim of Epstein & Maxwell, had taken her own life.
 
 Given this horrific backdrop, when I was browsing through Starz and saw the 2022 documentary _Who Is Ghislaine Maxwell?_ appear, I immediately watched it…and what I saw made my stomach churn.
 
